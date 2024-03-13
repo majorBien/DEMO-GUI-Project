@@ -1,0 +1,57 @@
+Drawable.hpp:132:23:virtual touchgfx::Drawable* touchgfx::Drawable::getFirstChild()	0	static
+Drawable.hpp:269:18:virtual void touchgfx::Drawable::setX(int16_t)	0	static
+Drawable.hpp:281:18:virtual void touchgfx::Drawable::setY(int16_t)	0	static
+Drawable.hpp:310:18:virtual void touchgfx::Drawable::setWidth(int16_t)	0	static
+Drawable.hpp:322:18:virtual void touchgfx::Drawable::setHeight(int16_t)	0	static
+Drawable.hpp:332:18:virtual void touchgfx::Drawable::childGeometryChanged()	0	static
+Drawable.hpp:343:18:virtual void touchgfx::Drawable::handleClickEvent(const touchgfx::ClickEvent&)	0	static
+Drawable.hpp:354:18:virtual void touchgfx::Drawable::handleGestureEvent(const touchgfx::GestureEvent&)	0	static
+Drawable.hpp:442:18:virtual void touchgfx::Drawable::handleDragEvent(const touchgfx::DragEvent&)	0	static
+Drawable.hpp:452:18:virtual void touchgfx::Drawable::handleTickEvent()	0	static
+Drawable.hpp:539:18:virtual void touchgfx::Drawable::moveTo(int16_t, int16_t)	4	static
+Drawable.hpp:654:18:virtual void touchgfx::Drawable::setupDrawChain(const touchgfx::Rect&, touchgfx::Drawable**)	0	static
+Container.hpp:152:23:virtual touchgfx::Drawable* touchgfx::Container::getFirstChild()	0	static
+Screen.hpp:92:18:virtual void touchgfx::Screen::setupScreen()	0	static
+Screen.hpp:103:18:virtual void touchgfx::Screen::afterTransition()	0	static
+Screen.hpp:114:18:virtual void touchgfx::Screen::tearDownScreen()	0	static
+Screen.hpp:143:18:virtual void touchgfx::Screen::handleTickEvent()	0	static
+Screen.hpp:153:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	0	static
+Widget.hpp:47:18:virtual void touchgfx::Widget::getLastChild(int16_t, int16_t, touchgfx::Drawable**)	0	static
+TypedText.hpp:65:13:touchgfx::TypedText::~TypedText()	0	static
+AbstractButtonContainer.hpp:114:18:virtual void touchgfx::AbstractButtonContainer::handlePressedUpdated()	0	static
+AbstractButtonContainer.hpp:119:18:virtual void touchgfx::AbstractButtonContainer::handleAlphaUpdated()	0	static
+AbstractButtonContainer.hpp:34:7:touchgfx::AbstractButtonContainer::~AbstractButtonContainer()	0	static
+TouchButtonTrigger.hpp:47:18:virtual void touchgfx::TouchButtonTrigger::handleClickEvent(const touchgfx::ClickEvent&)	16	static
+View.hpp:36:7:touchgfx::View<Screen2Presenter>::~View()	0	static
+Screen2ViewBase.hpp:21:13:Screen2ViewBase::~Screen2ViewBase()	0	static
+Screen2ViewBase.hpp:27:18:virtual void Screen2ViewBase::downclicked()	0	static
+Screen2ViewBase.hpp:32:18:virtual void Screen2ViewBase::upclicked()	0	static
+Screen2ViewBase.cpp:64:6:virtual void Screen2ViewBase::setupScreen()	0	static
+TouchButtonTrigger.hpp:35:7:touchgfx::TouchButtonTrigger::~TouchButtonTrigger()	0	static
+BoxWithBorderButtonStyle.hpp:123:18:void touchgfx::BoxWithBorderButtonStyle<T>::handlePressedUpdated() [with T = touchgfx::TouchButtonTrigger]	0	static
+Callback.hpp:357:8:touchgfx::Callback<Screen2ViewBase, const touchgfx::AbstractButtonContainer&>::~Callback()	0	static
+Callback.hpp:357:8:touchgfx::Callback<Screen2ViewBase, const touchgfx::AbstractButton&>::~Callback()	0	static
+BoxWithBorderButtonStyle.hpp:41:7:touchgfx::BoxWithBorderButtonStyle<touchgfx::TouchButtonTrigger>::~BoxWithBorderButtonStyle()	0	static
+Callback.hpp:386:18:void touchgfx::Callback<dest_type, T1, void, void>::execute(T1) [with dest_type = Screen2ViewBase; T1 = const touchgfx::AbstractButtonContainer&]	8	static
+Callback.hpp:396:18:bool touchgfx::Callback<dest_type, T1, void, void>::isValid() const [with dest_type = Screen2ViewBase; T1 = const touchgfx::AbstractButtonContainer&]	0	static
+Callback.hpp:386:18:void touchgfx::Callback<dest_type, T1, void, void>::execute(T1) [with dest_type = Screen2ViewBase; T1 = const touchgfx::AbstractButton&]	8	static
+Callback.hpp:396:18:bool touchgfx::Callback<dest_type, T1, void, void>::isValid() const [with dest_type = Screen2ViewBase; T1 = const touchgfx::AbstractButton&]	0	static
+BoxWithBorderButtonStyle.hpp:131:18:void touchgfx::BoxWithBorderButtonStyle<T>::handleAlphaUpdated() [with T = touchgfx::TouchButtonTrigger]	0	static
+TypedText.hpp:65:13:virtual touchgfx::TypedText::~TypedText()	8	static
+View.hpp:36:7:virtual touchgfx::View<Screen2Presenter>::~View()	8	static
+AbstractButtonContainer.hpp:34:7:virtual touchgfx::AbstractButtonContainer::~AbstractButtonContainer()	8	static
+TouchButtonTrigger.hpp:35:7:virtual touchgfx::TouchButtonTrigger::~TouchButtonTrigger()	8	static
+BoxWithBorderButtonStyle.hpp:41:7:virtual touchgfx::BoxWithBorderButtonStyle<touchgfx::TouchButtonTrigger>::~BoxWithBorderButtonStyle()	8	static
+Callback.hpp:357:8:virtual touchgfx::Callback<Screen2ViewBase, const touchgfx::AbstractButton&>::~Callback()	8	static
+Callback.hpp:357:8:virtual touchgfx::Callback<Screen2ViewBase, const touchgfx::AbstractButtonContainer&>::~Callback()	8	static
+Screen2ViewBase.hpp:21:13:virtual Screen2ViewBase::~Screen2ViewBase()	8	static
+AbstractButtonContainer.hpp:99:18:virtual void touchgfx::AbstractButtonContainer::executeAction()	8	static
+Screen2ViewBase.cpp:80:6:void Screen2ViewBase::flexButtonCallbackHandler(const touchgfx::AbstractButtonContainer&)	0	static
+Screen2ViewBase.cpp:69:6:void Screen2ViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	8	static
+Drawable.hpp:48:5:touchgfx::Drawable::Drawable()	0	static
+Drawable.hpp:297:10:void touchgfx::Drawable::setXY(int16_t, int16_t)	16	static
+Drawable.hpp:216:10:void touchgfx::Drawable::setPosition(int16_t, int16_t, int16_t, int16_t)	16	static
+Box.hpp:33:5:touchgfx::Box::Box()	8	static
+TextArea.hpp:42:5:touchgfx::TextArea::TextArea()	8	static
+BoxWithBorderButtonStyle.hpp:44:5:touchgfx::BoxWithBorderButtonStyle<T>::BoxWithBorderButtonStyle() [with T = touchgfx::TouchButtonTrigger]	16	static
+Screen2ViewBase.cpp:9:1:Screen2ViewBase::Screen2ViewBase()	96	static

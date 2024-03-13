@@ -1,0 +1,12 @@
+Screen.hpp:103:18:virtual void touchgfx::Screen::afterTransition()	0	static
+Screen.hpp:143:18:virtual void touchgfx::Screen::handleTickEvent()	0	static
+Screen.hpp:153:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	0	static
+Screen1View.hpp:11:13:Screen1View::~Screen1View()	0	static
+Screen1View.cpp:14:6:virtual void Screen1View::tearDownScreen()	0	static
+Screen1View.cpp:9:6:virtual void Screen1View::setupScreen()	0	static
+Screen1View.hpp:11:13:virtual Screen1View::~Screen1View()	8	static
+Bitmap.hpp:133:14:touchgfx::BitmapId touchgfx::Bitmap::getId() const	8	static
+ToggleButton.hpp:58:10:bool touchgfx::ToggleButton::getState() const	8	static
+Screen1View.cpp:20:6:virtual void Screen1View::ToggleLED()	8	static
+Screen1View.cpp:26:6:virtual void Screen1View::ToggleLED2()	8	static
+Screen1View.cpp:4:1:Screen1View::Screen1View()	8	static
