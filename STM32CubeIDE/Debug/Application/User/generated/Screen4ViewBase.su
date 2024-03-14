@@ -38,7 +38,8 @@ Screen4ViewBase.hpp:82:18:virtual void Screen4ViewBase::clicked_mul()	0	static
 Screen4ViewBase.hpp:87:18:virtual void Screen4ViewBase::clicked_eq()	0	static
 Screen4ViewBase.hpp:92:18:virtual void Screen4ViewBase::clicked_div()	0	static
 Screen4ViewBase.hpp:97:18:virtual void Screen4ViewBase::clicked_sub()	0	static
-Screen4ViewBase.cpp:258:6:virtual void Screen4ViewBase::setupScreen()	0	static
+Screen4ViewBase.hpp:102:18:virtual void Screen4ViewBase::clicked_clear()	0	static
+Screen4ViewBase.cpp:278:6:virtual void Screen4ViewBase::setupScreen()	0	static
 ClickButtonTrigger.hpp:35:7:touchgfx::ClickButtonTrigger::~ClickButtonTrigger()	0	static
 BoxWithBorderButtonStyle.hpp:123:18:void touchgfx::BoxWithBorderButtonStyle<T>::handlePressedUpdated() [with T = touchgfx::ClickButtonTrigger]	0	static
 Callback.hpp:357:8:touchgfx::Callback<Screen4ViewBase, const touchgfx::AbstractButtonContainer&>::~Callback()	0	static
@@ -55,7 +56,7 @@ Callback.hpp:357:8:virtual touchgfx::Callback<Screen4ViewBase, const touchgfx::A
 Screen4ViewBase.hpp:21:13:virtual Screen4ViewBase::~Screen4ViewBase()	8	static
 AbstractButtonContainer.hpp:99:18:virtual void touchgfx::AbstractButtonContainer::executeAction()	8	static
 ClickButtonTrigger.hpp:47:18:virtual void touchgfx::ClickButtonTrigger::handleClickEvent(const touchgfx::ClickEvent&)	16	static
-Screen4ViewBase.cpp:263:6:void Screen4ViewBase::flexButtonCallbackHandler(const touchgfx::AbstractButtonContainer&)	8	static
+Screen4ViewBase.cpp:283:6:void Screen4ViewBase::flexButtonCallbackHandler(const touchgfx::AbstractButtonContainer&)	8	static
 Drawable.hpp:48:5:touchgfx::Drawable::Drawable()	0	static
 Drawable.hpp:297:10:void touchgfx::Drawable::setXY(int16_t, int16_t)	16	static
 Drawable.hpp:216:10:void touchgfx::Drawable::setPosition(int16_t, int16_t, int16_t, int16_t)	16	static
@@ -63,4 +64,4 @@ Box.hpp:33:5:touchgfx::Box::Box()	8	static
 TextArea.hpp:42:5:touchgfx::TextArea::TextArea()	8	static
 BoxWithBorderButtonStyle.hpp:44:5:touchgfx::BoxWithBorderButtonStyle<T>::BoxWithBorderButtonStyle() [with T = touchgfx::ClickButtonTrigger]	16	static
 BoxWithBorderButtonStyle.hpp:94:10:void touchgfx::BoxWithBorderButtonStyle<T>::setBoxWithBorderColors(touchgfx::colortype, touchgfx::colortype, touchgfx::colortype, touchgfx::colortype) [with T = touchgfx::ClickButtonTrigger]	4	static
-Screen4ViewBase.cpp:9:1:Screen4ViewBase::Screen4ViewBase()	208	static
+Screen4ViewBase.cpp:9:1:Screen4ViewBase::Screen4ViewBase()	224	static

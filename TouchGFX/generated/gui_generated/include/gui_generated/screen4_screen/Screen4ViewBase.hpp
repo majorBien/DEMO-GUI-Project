@@ -99,6 +99,11 @@ public:
         // Override and implement this function in Screen4
     }
 
+    virtual void clicked_clear()
+    {
+        // Override and implement this function in Screen4
+    }
+
 protected:
     FrontendApplication& application() {
         return *static_cast<FrontendApplication*>(touchgfx::Application::getInstance());
@@ -145,14 +150,19 @@ protected:
     touchgfx::TextArea textArea17_1;
     touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger > flexButton10;
     touchgfx::ScalableImage scalableImage2;
+    touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger > flexButtonClear;
+    touchgfx::ScalableImage scalableImage3;
+    touchgfx::TextAreaWithOneWildcard calculation_text_area_2;
 
     /*
      * Wildcard Buffers
      */
-    static const uint16_t CALCULATION_TEXT_AREA_SIZE = 4;
+    static const uint16_t CALCULATION_TEXT_AREA_SIZE = 10;
     touchgfx::Unicode::UnicodeChar calculation_text_areaBuffer[CALCULATION_TEXT_AREA_SIZE];
     static const uint16_t RESULT_TEXT_AREA_SIZE = 5;
     touchgfx::Unicode::UnicodeChar result_text_areaBuffer[RESULT_TEXT_AREA_SIZE];
+    static const uint16_t CALCULATION_TEXT_AREA_2_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar calculation_text_area_2Buffer[CALCULATION_TEXT_AREA_2_SIZE];
 
 private:
 

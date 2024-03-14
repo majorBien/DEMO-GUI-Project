@@ -110,7 +110,7 @@ Screen4ViewBase::Screen4ViewBase() :
     scalableImage1.setPosition(7, 60, 227, 114);
     scalableImage1.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
 
-    calculation_text_area.setPosition(18, 71, 205, 29);
+    calculation_text_area.setPosition(18, 71, 102, 31);
     calculation_text_area.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     calculation_text_area.setLinespacing(0);
     Unicode::snprintf(calculation_text_areaBuffer, CALCULATION_TEXT_AREA_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID8).getText());
@@ -205,15 +205,32 @@ Screen4ViewBase::Screen4ViewBase() :
     textArea17_1.setLinespacing(0);
     textArea17_1.setTypedText(touchgfx::TypedText(T_SINGLEUSEID26));
 
-    flexButton10.setBoxWithBorderPosition(0, 0, 227, 54);
+    flexButton10.setBoxWithBorderPosition(0, 0, 120, 54);
     flexButton10.setBorderSize(5);
     flexButton10.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
-    flexButton10.setPosition(7, 6, 227, 54);
+    flexButton10.setPosition(7, 6, 120, 54);
     flexButton10.setAction(flexButtonCallback);
 
     scalableImage2.setBitmap(touchgfx::Bitmap(BITMAP_DARK_ICONS_GO_BACK_32_ID));
-    scalableImage2.setPosition(88, 13, 57, 40);
+    scalableImage2.setPosition(37, 13, 57, 40);
     scalableImage2.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
+
+    flexButtonClear.setBoxWithBorderPosition(0, 0, 114, 54);
+    flexButtonClear.setBorderSize(5);
+    flexButtonClear.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
+    flexButtonClear.setPosition(120, 6, 114, 54);
+    flexButtonClear.setAction(flexButtonCallback);
+
+    scalableImage3.setBitmap(touchgfx::Bitmap(BITMAP_DARK_ICONS_TRASH_32_ID));
+    scalableImage3.setPosition(157, 13, 40, 40);
+    scalableImage3.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
+
+    calculation_text_area_2.setPosition(134, 71, 102, 31);
+    calculation_text_area_2.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    calculation_text_area_2.setLinespacing(0);
+    Unicode::snprintf(calculation_text_area_2Buffer, CALCULATION_TEXT_AREA_2_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID28).getText());
+    calculation_text_area_2.setWildcard(calculation_text_area_2Buffer);
+    calculation_text_area_2.setTypedText(touchgfx::TypedText(T_SINGLEUSEID27));
 
     add(__background);
     add(image1);
@@ -253,6 +270,9 @@ Screen4ViewBase::Screen4ViewBase() :
     add(textArea17_1);
     add(flexButton10);
     add(scalableImage2);
+    add(flexButtonClear);
+    add(scalableImage3);
+    add(calculation_text_area_2);
 }
 
 void Screen4ViewBase::setupScreen()
@@ -373,5 +393,12 @@ void Screen4ViewBase::flexButtonCallbackHandler(const touchgfx::AbstractButtonCo
         //When flexButton10 clicked change screen to Screen3
         //Go to Screen3 with no screen transition
         application().gotoScreen3ScreenNoTransition();
+    }
+    else if (&src == &flexButtonClear)
+    {
+        //clicked_clear
+        //When flexButtonClear clicked call virtual function
+        //Call clicked_clear
+        clicked_clear();
     }
 }

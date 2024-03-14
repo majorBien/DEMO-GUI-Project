@@ -44,7 +44,8 @@ C:/TouchGFXProjects/app_test/TouchGFX/generated/images/src/__designer/image_Blue
 C:/TouchGFXProjects/app_test/TouchGFX/generated/images/src/__designer/image_Dark_Backgrounds_main_bg_portrait_texture_240x320px.cpp \
 C:/TouchGFXProjects/app_test/TouchGFX/generated/images/src/__designer/image_Dark_Icons_Done_48.cpp \
 C:/TouchGFXProjects/app_test/TouchGFX/generated/images/src/__designer/image_Dark_Icons_Go_back_32.cpp \
-C:/TouchGFXProjects/app_test/TouchGFX/generated/images/src/__designer/image_Dark_Icons_Remove_48.cpp 
+C:/TouchGFXProjects/app_test/TouchGFX/generated/images/src/__designer/image_Dark_Icons_Remove_48.cpp \
+C:/TouchGFXProjects/app_test/TouchGFX/generated/images/src/__designer/image_Dark_Icons_trash_32.cpp 
 
 OBJS += \
 ./Application/User/generated/ApplicationFontProvider.o \
@@ -86,7 +87,8 @@ OBJS += \
 ./Application/User/generated/image_Dark_Backgrounds_main_bg_portrait_texture_240x320px.o \
 ./Application/User/generated/image_Dark_Icons_Done_48.o \
 ./Application/User/generated/image_Dark_Icons_Go_back_32.o \
-./Application/User/generated/image_Dark_Icons_Remove_48.o 
+./Application/User/generated/image_Dark_Icons_Remove_48.o \
+./Application/User/generated/image_Dark_Icons_trash_32.o 
 
 CPP_DEPS += \
 ./Application/User/generated/ApplicationFontProvider.d \
@@ -128,7 +130,8 @@ CPP_DEPS += \
 ./Application/User/generated/image_Dark_Backgrounds_main_bg_portrait_texture_240x320px.d \
 ./Application/User/generated/image_Dark_Icons_Done_48.d \
 ./Application/User/generated/image_Dark_Icons_Go_back_32.d \
-./Application/User/generated/image_Dark_Icons_Remove_48.d 
+./Application/User/generated/image_Dark_Icons_Remove_48.d \
+./Application/User/generated/image_Dark_Icons_trash_32.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
@@ -211,5 +214,7 @@ Application/User/generated/image_Dark_Icons_Done_48.o: C:/TouchGFXProjects/app_t
 Application/User/generated/image_Dark_Icons_Go_back_32.o: C:/TouchGFXProjects/app_test/TouchGFX/generated/images/src/__designer/image_Dark_Icons_Go_back_32.cpp Application/User/generated/subdir.mk
 	arm-none-eabi-g++ "$<" -mcpu=cortex-m4 -std=gnu++14 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F429xx -c -I../../Core/Inc -I../../Drivers/CMSIS/Include -I../../Drivers/BSP -I../../TouchGFX/target -I../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../../TouchGFX/App -I../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../../TouchGFX/target/generated -I../../Middlewares/Third_Party/FreeRTOS/Source/include -I../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../../Drivers/STM32F4xx_HAL_Driver/Inc -I../../Middlewares/ST/touchgfx/framework/include -I../../TouchGFX/generated/fonts/include -I../../TouchGFX/generated/gui_generated/include -I../../TouchGFX/generated/images/include -I../../TouchGFX/generated/texts/include -I../../TouchGFX/gui/include -Os -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -femit-class-debug-always -fstack-usage -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "$@"
 Application/User/generated/image_Dark_Icons_Remove_48.o: C:/TouchGFXProjects/app_test/TouchGFX/generated/images/src/__designer/image_Dark_Icons_Remove_48.cpp Application/User/generated/subdir.mk
+	arm-none-eabi-g++ "$<" -mcpu=cortex-m4 -std=gnu++14 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F429xx -c -I../../Core/Inc -I../../Drivers/CMSIS/Include -I../../Drivers/BSP -I../../TouchGFX/target -I../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../../TouchGFX/App -I../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../../TouchGFX/target/generated -I../../Middlewares/Third_Party/FreeRTOS/Source/include -I../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../../Drivers/STM32F4xx_HAL_Driver/Inc -I../../Middlewares/ST/touchgfx/framework/include -I../../TouchGFX/generated/fonts/include -I../../TouchGFX/generated/gui_generated/include -I../../TouchGFX/generated/images/include -I../../TouchGFX/generated/texts/include -I../../TouchGFX/gui/include -Os -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -femit-class-debug-always -fstack-usage -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "$@"
+Application/User/generated/image_Dark_Icons_trash_32.o: C:/TouchGFXProjects/app_test/TouchGFX/generated/images/src/__designer/image_Dark_Icons_trash_32.cpp Application/User/generated/subdir.mk
 	arm-none-eabi-g++ "$<" -mcpu=cortex-m4 -std=gnu++14 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F429xx -c -I../../Core/Inc -I../../Drivers/CMSIS/Include -I../../Drivers/BSP -I../../TouchGFX/target -I../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../../TouchGFX/App -I../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../../TouchGFX/target/generated -I../../Middlewares/Third_Party/FreeRTOS/Source/include -I../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../../Drivers/STM32F4xx_HAL_Driver/Inc -I../../Middlewares/ST/touchgfx/framework/include -I../../TouchGFX/generated/fonts/include -I../../TouchGFX/generated/gui_generated/include -I../../TouchGFX/generated/images/include -I../../TouchGFX/generated/texts/include -I../../TouchGFX/gui/include -Os -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -femit-class-debug-always -fstack-usage -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "$@"
 

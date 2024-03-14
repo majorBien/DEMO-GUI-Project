@@ -1369,13 +1369,13 @@
             "Wildcard1": {
               "TextId": "SingleUseId8",
               "UseBuffer": true,
-              "BufferSize": 4
+              "BufferSize": 10
             },
             "Name": "calculation_text_area",
             "X": 18,
             "Y": 71,
-            "Width": 205,
-            "Height": 29,
+            "Width": 102,
+            "Height": 31,
             "Visible": true,
             "LockPosition": false,
             "Draggable": false,
@@ -1427,8 +1427,8 @@
             "Name": "result_text_area",
             "X": 18,
             "Y": 131,
-            "Width": 13,
-            "Height": 25,
+            "Width": 17,
+            "Height": 36,
             "Visible": true,
             "LockPosition": false,
             "Draggable": false,
@@ -1807,7 +1807,7 @@
                 "Type": "BoxWithBorderButtonStyle",
                 "X": 0,
                 "Y": 0,
-                "Width": 227,
+                "Width": 120,
                 "Height": 54,
                 "LockToFlexButtonSize": true,
                 "BorderSize": 5,
@@ -1836,7 +1836,7 @@
             "Name": "flexButton10",
             "X": 7,
             "Y": 6,
-            "Width": 227,
+            "Width": 120,
             "Height": 54,
             "Visible": true,
             "LockPosition": false,
@@ -1851,10 +1851,105 @@
             "Alpha": 255,
             "ScalingAlgorithm": "Nearest-neighbor",
             "Name": "scalableImage2",
-            "X": 88,
+            "X": 37,
             "Y": 13,
             "Width": 57,
             "Height": 40,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "FlexButton",
+            "Alpha": 255,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "X": 0,
+                "Y": 0,
+                "Width": 114,
+                "Height": 54,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Red": 0,
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Red": 0,
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Red": 0,
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ],
+            "Name": "flexButtonClear",
+            "X": 120,
+            "Y": 6,
+            "Width": 114,
+            "Height": 54,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "ScalableImage",
+            "Filename": "__designer\\Dark_Icons_trash_32.png",
+            "Alpha": 255,
+            "ScalingAlgorithm": "Nearest-neighbor",
+            "Name": "scalableImage3",
+            "X": 157,
+            "Y": 13,
+            "Width": 40,
+            "Height": 40,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "SingleUseId27",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "AutoSize": false,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId28",
+              "UseBuffer": true,
+              "BufferSize": 10
+            },
+            "Name": "calculation_text_area_2",
+            "X": 134,
+            "Y": 71,
+            "Width": 102,
+            "Height": 31,
             "Visible": true,
             "LockPosition": false,
             "Draggable": false,
@@ -2056,6 +2151,28 @@
               "Type": "ActionCustom",
               "FunctionName": "clicked_sub"
             }
+          },
+          {
+            "InteractionName": "Interaction1",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "Type": "ActionNone"
+            }
+          },
+          {
+            "InteractionName": "clicked_clear",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "flexButtonClear"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "clicked_clear"
+            }
           }
         ],
         "Name": "Screen4",
@@ -2167,6 +2284,14 @@
       },
       {
         "TextEntryId": "SingleUseId26",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId27",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId28",
         "IsResource": false
       }
     ],
