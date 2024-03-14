@@ -36,12 +36,18 @@ Screen3ViewBase::Screen3ViewBase() :
     buttonWithIcon1.setIconXY(70, 16);
     buttonWithIcon1.setAction(buttonCallback);
 
+    buttonWithIcon2.setXY(35, 189);
+    buttonWithIcon2.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_PRESSED_ID), touchgfx::Bitmap(BITMAP_BLUE_ICONS_ADD_NEW_32_ID), touchgfx::Bitmap(BITMAP_BLUE_ICONS_ADD_NEW_32_ID));
+    buttonWithIcon2.setIconXY(71, 16);
+    buttonWithIcon2.setAction(buttonCallback);
+
     add(__background);
     add(image1);
     add(LightOFF);
     add(LightON);
     add(textArea1);
     add(buttonWithIcon1);
+    add(buttonWithIcon2);
 }
 
 void Screen3ViewBase::setupScreen()
@@ -57,5 +63,12 @@ void Screen3ViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
         //When buttonWithIcon1 clicked change screen to Screen1
         //Go to Screen1 with no screen transition
         application().gotoScreen1ScreenNoTransition();
+    }
+    else if (&src == &buttonWithIcon2)
+    {
+        //ChangeScreen5
+        //When buttonWithIcon2 clicked change screen to Screen4
+        //Go to Screen4 with no screen transition
+        application().gotoScreen4ScreenNoTransition();
     }
 }

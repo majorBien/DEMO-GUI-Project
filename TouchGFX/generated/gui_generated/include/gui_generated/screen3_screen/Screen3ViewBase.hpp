@@ -33,6 +33,7 @@ protected:
     touchgfx::Image LightON;
     touchgfx::TextAreaWithOneWildcard textArea1;
     touchgfx::ButtonWithIcon buttonWithIcon1;
+    touchgfx::ButtonWithIcon buttonWithIcon2;
 
     /*
      * Wildcard Buffers
