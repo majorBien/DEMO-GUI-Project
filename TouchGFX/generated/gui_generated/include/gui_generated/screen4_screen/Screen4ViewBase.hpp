@@ -159,7 +159,7 @@ protected:
      */
     static const uint16_t CALCULATION_TEXT_AREA_SIZE = 10;
     touchgfx::Unicode::UnicodeChar calculation_text_areaBuffer[CALCULATION_TEXT_AREA_SIZE];
-    static const uint16_t RESULT_TEXT_AREA_SIZE = 5;
+    static const uint16_t RESULT_TEXT_AREA_SIZE = 20;
     touchgfx::Unicode::UnicodeChar result_text_areaBuffer[RESULT_TEXT_AREA_SIZE];
     static const uint16_t CALCULATION_TEXT_AREA_2_SIZE = 10;
     touchgfx::Unicode::UnicodeChar calculation_text_area_2Buffer[CALCULATION_TEXT_AREA_2_SIZE];

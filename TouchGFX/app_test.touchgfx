@@ -1417,17 +1417,17 @@
               "Blue": 0
             },
             "Alpha": 255,
-            "AutoSize": true,
+            "AutoSize": false,
             "LineSpacing": 0,
             "Wildcard1": {
               "TextId": "SingleUseId11",
               "UseBuffer": true,
-              "BufferSize": 5
+              "BufferSize": 20
             },
             "Name": "result_text_area",
             "X": 18,
             "Y": 131,
-            "Width": 17,
+            "Width": 207,
             "Height": 36,
             "Visible": true,
             "LockPosition": false,

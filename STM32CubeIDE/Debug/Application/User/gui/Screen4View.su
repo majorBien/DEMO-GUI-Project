@@ -2,19 +2,23 @@ Screen.hpp:103:18:virtual void touchgfx::Screen::afterTransition()	0	static
 Screen.hpp:143:18:virtual void touchgfx::Screen::handleTickEvent()	0	static
 Screen.hpp:153:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	0	static
 Screen4View.hpp:11:13:Screen4View::~Screen4View()	0	static
-Screen4View.cpp:13:6:virtual void Screen4View::tearDownScreen()	0	static
-Screen4View.cpp:279:6:virtual void Screen4View::clicked_add()	0	static
-Screen4View.cpp:305:6:virtual void Screen4View::clicked_clear()	0	static
-Screen4View.cpp:8:6:virtual void Screen4View::setupScreen()	0	static
+Screen4View.cpp:14:6:virtual void Screen4View::tearDownScreen()	0	static
+Screen4View.cpp:280:6:virtual void Screen4View::clicked_add()	0	static
+Screen4View.cpp:286:6:virtual void Screen4View::clicked_sub()	0	static
+Screen4View.cpp:292:6:virtual void Screen4View::clicked_div()	0	static
+Screen4View.cpp:298:6:virtual void Screen4View::clicked_mul()	0	static
+Screen4View.cpp:9:6:virtual void Screen4View::setupScreen()	0	static
+Screen4View.cpp:304:6:virtual void Screen4View::clicked_eq()	8	static
+Screen4View.cpp:330:6:virtual void Screen4View::clicked_clear()	8	static
 Screen4View.hpp:11:13:virtual Screen4View::~Screen4View()	8	static
-Screen4View.cpp:19:6:virtual void Screen4View::clicked_one()	8	static
-Screen4View.cpp:44:6:virtual void Screen4View::clicked_two()	8	static
-Screen4View.cpp:71:6:virtual void Screen4View::clicked_three()	8	static
-Screen4View.cpp:97:6:virtual void Screen4View::clicked_four()	8	static
-Screen4View.cpp:123:6:virtual void Screen4View::clicked_five()	8	static
-Screen4View.cpp:149:6:virtual void Screen4View::clicked_six()	8	static
-Screen4View.cpp:175:6:virtual void Screen4View::clicked_seven()	8	static
-Screen4View.cpp:201:6:virtual void Screen4View::clicked_eight()	8	static
-Screen4View.cpp:227:6:virtual void Screen4View::clicked_nine()	8	static
-Screen4View.cpp:253:6:virtual void Screen4View::clicked_zero()	8	static
-Screen4View.cpp:3:1:Screen4View::Screen4View()	8	static
+Screen4View.cpp:20:6:virtual void Screen4View::clicked_one()	8	static
+Screen4View.cpp:45:6:virtual void Screen4View::clicked_two()	8	static
+Screen4View.cpp:72:6:virtual void Screen4View::clicked_three()	8	static
+Screen4View.cpp:98:6:virtual void Screen4View::clicked_four()	8	static
+Screen4View.cpp:124:6:virtual void Screen4View::clicked_five()	8	static
+Screen4View.cpp:150:6:virtual void Screen4View::clicked_six()	8	static
+Screen4View.cpp:176:6:virtual void Screen4View::clicked_seven()	8	static
+Screen4View.cpp:202:6:virtual void Screen4View::clicked_eight()	8	static
+Screen4View.cpp:228:6:virtual void Screen4View::clicked_nine()	8	static
+Screen4View.cpp:254:6:virtual void Screen4View::clicked_zero()	8	static
+Screen4View.cpp:4:1:Screen4View::Screen4View()	8	static

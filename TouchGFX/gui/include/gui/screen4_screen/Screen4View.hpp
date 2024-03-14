@@ -41,8 +41,12 @@ protected:
     int value2 = 0;
     uint8_t i_text_buffer1 = 0;
     uint8_t i_text_buffer2 = 0;
-    char result[10];
+    int result;
     bool value = 0;
+    bool add_v = 0;
+    bool sub = 0;
+    bool div = 0;
+    bool mul = 0;
 
 };
 

@@ -1,5 +1,6 @@
 #include <gui/screen4_screen/Screen4View.hpp>
 #include <stdlib.h>
+#include <string.h>
 Screen4View::Screen4View()
 {
 
@@ -279,25 +280,49 @@ void Screen4View::clicked_zero()
 void Screen4View::clicked_add()
 {
 	value = 1;
+	add_v = 1;
 }
 
 void Screen4View::clicked_sub()
 {
 	value = 1;
+	sub = 1;
 }
 
 void Screen4View::clicked_div()
 {
 	value = 1;
+	div = 1;
 }
 
 void Screen4View::clicked_mul()
 {
 	value = 1;
+	mul = 1;
 }
 
 void Screen4View::clicked_eq()
 {
+	if(add_v==1&&value==1)
+	{
+		result = value1 + value2;
+	}
+	else if (sub == 1 && value == 1)
+	{
+		result = value1 - value2;
+	}
+	else if (div == 1 && value == 1)
+	{
+		result = value1 / value2;
+	}
+	else if (mul == 1 && value == 1)
+	{
+		result = value1 * value2;
+	}
+
+	Unicode::snprintf(result_text_areaBuffer, RESULT_TEXT_AREA_SIZE, "%lf",result);
+	result_text_area.invalidate();
+
 
 }
 
@@ -305,4 +330,23 @@ void Screen4View::clicked_eq()
 void Screen4View::clicked_clear()
 {
 	value = 0;
+	add_v = 0;
+	sub = 0;
+	mul = 0;
+	div = 0;
+	i_text_buffer1 = 0;
+	i_text_buffer2 = 0;
+	value1 = 0;
+	value2 = 0;
+	result = 0;
+	memset(text_buffer1, 0, sizeof(text_buffer1));
+	memset(text_buffer2, 0, sizeof(text_buffer2));
+	Unicode::snprintf(calculation_text_areaBuffer, CALCULATION_TEXT_AREA_SIZE, "%d", value1);
+    Unicode::snprintf(calculation_text_area_2Buffer, CALCULATION_TEXT_AREA_2_SIZE, "%d", value2);
+	Unicode::snprintf(result_text_areaBuffer, RESULT_TEXT_AREA_SIZE, "%d",result);
+	calculation_text_area.invalidate();
+	calculation_text_area_2.invalidate();
+	result_text_area.invalidate();
+
+
 }

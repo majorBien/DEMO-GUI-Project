@@ -122,12 +122,11 @@ Screen4ViewBase::Screen4ViewBase() :
     textArea2.setLinespacing(0);
     textArea2.setTypedText(touchgfx::TypedText(T_SINGLEUSEID9));
 
-    result_text_area.setXY(18, 131);
+    result_text_area.setPosition(18, 131, 207, 36);
     result_text_area.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     result_text_area.setLinespacing(0);
     Unicode::snprintf(result_text_areaBuffer, RESULT_TEXT_AREA_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID11).getText());
     result_text_area.setWildcard(result_text_areaBuffer);
-    result_text_area.resizeToCurrentText();
     result_text_area.setTypedText(touchgfx::TypedText(T_SINGLEUSEID10));
 
     textArea4.setXY(25, 187);
