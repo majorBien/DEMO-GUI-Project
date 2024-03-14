@@ -14706,7 +14706,7 @@ LOAD c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.exte
 .iplt           0x000000000801deec        0x0
  .iplt          0x000000000801deec        0x0 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 
-.rodata         0x000000000801deec     0x3d9c
+.rodata         0x000000000801deec     0x3d98
                 0x000000000801deec                . = ALIGN (0x4)
  *(.rodata)
  .rodata        0x000000000801deec       0x48 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(Screen.o)
@@ -14869,522 +14869,520 @@ LOAD c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.exte
                 0x000000000801f4f0       0x30 ./Application/User/gui/Screen4Presenter.o
                 0x000000000801f4f0                vtable for Screen4Presenter
  .rodata._ZN11Screen4View10clicked_eqEv.str1.1
-                0x000000000801f520        0x4 ./Application/User/gui/Screen4View.o
- .rodata._ZN11Screen4View13clicked_clearEv.str1.1
-                0x000000000801f524        0x3 ./Application/User/gui/Screen4View.o
+                0x000000000801f520        0x3 ./Application/User/gui/Screen4View.o
  .rodata._ZTV11Screen4View
-                0x000000000801f524       0x74 ./Application/User/gui/Screen4View.o
-                0x000000000801f524                vtable for Screen4View
+                0x000000000801f520       0x74 ./Application/User/gui/Screen4View.o
+                0x000000000801f520                vtable for Screen4View
  .rodata.AHBPrescTable
-                0x000000000801f598       0x10 ./Drivers/CMSIS/system_stm32f4xx.o
-                0x000000000801f598                AHBPrescTable
+                0x000000000801f594       0x10 ./Drivers/CMSIS/system_stm32f4xx.o
+                0x000000000801f594                AHBPrescTable
  .rodata.APBPrescTable
-                0x000000000801f5a8        0x8 ./Drivers/CMSIS/system_stm32f4xx.o
-                0x000000000801f5a8                APBPrescTable
+                0x000000000801f5a4        0x8 ./Drivers/CMSIS/system_stm32f4xx.o
+                0x000000000801f5a4                APBPrescTable
  .rodata.vTaskStartScheduler.str1.1
-                0x000000000801f5b0        0x5 ./Middlewares/FreeRTOS/tasks.o
+                0x000000000801f5ac        0x5 ./Middlewares/FreeRTOS/tasks.o
  .rodata.prvCheckForValidListAndQueue.str1.1
-                0x000000000801f5b5        0x5 ./Middlewares/FreeRTOS/timers.o
+                0x000000000801f5b1        0x5 ./Middlewares/FreeRTOS/timers.o
  .rodata.xTimerCreateTimerTask.str1.1
-                0x000000000801f5ba        0x8 ./Middlewares/FreeRTOS/timers.o
+                0x000000000801f5b6        0x8 ./Middlewares/FreeRTOS/timers.o
  .rodata._ZN8touchgfx17AbstractPartition7indexOfEPKv.str1.1
-                0x000000000801f5c2       0xbd C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(AbstractPartition.o)
+                0x000000000801f5be       0xbd C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(AbstractPartition.o)
  .rodata._ZN8touchgfx17AbstractPartition8allocateEt.str1.1
-                0x000000000801f67f       0x30 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(AbstractPartition.o)
- *fill*         0x000000000801f6af        0x1 
+                0x000000000801f67b       0x30 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(AbstractPartition.o)
+ *fill*         0x000000000801f6ab        0x1 
  .rodata._ZTVN8touchgfx17AbstractPartitionE
-                0x000000000801f6b0       0x34 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(AbstractPartition.o)
-                0x000000000801f6b0                vtable for touchgfx::AbstractPartition
+                0x000000000801f6ac       0x34 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(AbstractPartition.o)
+                0x000000000801f6ac                vtable for touchgfx::AbstractPartition
  .rodata._ZZN8touchgfx17AbstractPartition10allocateAtEttE19__PRETTY_FUNCTION__
-                0x000000000801f6e4       0x4a C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(AbstractPartition.o)
+                0x000000000801f6e0       0x4a C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(AbstractPartition.o)
  .rodata._ZZN8touchgfx17AbstractPartition7indexOfEPKvE19__PRETTY_FUNCTION__
-                0x000000000801f72e       0x43 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(AbstractPartition.o)
+                0x000000000801f72a       0x43 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(AbstractPartition.o)
  .rodata._ZZN8touchgfx17AbstractPartition8allocateEtE19__PRETTY_FUNCTION__
-                0x000000000801f771       0x3e C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(AbstractPartition.o)
+                0x000000000801f76d       0x3e C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(AbstractPartition.o)
  .rodata._ZN8touchgfx9Container3addERNS_8DrawableE.str1.1
-                0x000000000801f7af       0xc8 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(Container.o)
- *fill*         0x000000000801f877        0x1 
+                0x000000000801f7ab       0xc8 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(Container.o)
+ *fill*         0x000000000801f873        0x1 
  .rodata._ZTVN8touchgfx9ContainerE
-                0x000000000801f878       0x88 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(Container.o)
-                0x000000000801f878                vtable for touchgfx::Container
+                0x000000000801f874       0x88 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(Container.o)
+                0x000000000801f874                vtable for touchgfx::Container
  .rodata._ZZN8touchgfx9Container3addERNS_8DrawableEE19__PRETTY_FUNCTION__
-                0x000000000801f900       0x3b C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(Container.o)
+                0x000000000801f8fc       0x3b C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(Container.o)
  .rodata._ZN8touchgfx3HAL12blitCopyWordEPKttttttt.str1.1
-                0x000000000801f93b       0x7d C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(HAL.o)
+                0x000000000801f937       0x7d C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(HAL.o)
  .rodata._ZN8touchgfx3HAL12blitFillWordEtttttt.str1.1
-                0x000000000801f9b8       0x82 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(HAL.o)
+                0x000000000801f9b4       0x82 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(HAL.o)
  .rodata._ZN8touchgfx3HAL20copyFBRegionToMemoryENS_4RectE.str1.1
-                0x000000000801fa3a       0x6e C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(HAL.o)
+                0x000000000801fa36       0x6e C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(HAL.o)
  .rodata._ZN8touchgfx3HAL27configurePartialFrameBufferEtttt.str1.1
-                0x000000000801faa8       0xc1 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(HAL.o)
+                0x000000000801faa4       0xc1 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(HAL.o)
  .rodata._ZNK8touchgfx3HAL11getBitDepthENS_6Bitmap12BitmapFormatE.str1.1
-                0x000000000801fb69       0x32 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(HAL.o)
+                0x000000000801fb65       0x32 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(HAL.o)
  .rodata._ZZN8touchgfx3HAL12blitCopyWordEPKtttttttE19__PRETTY_FUNCTION__
-                0x000000000801fb9b       0x76 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(HAL.o)
+                0x000000000801fb97       0x76 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(HAL.o)
  .rodata._ZZN8touchgfx3HAL12blitFillWordEttttttE19__PRETTY_FUNCTION__
-                0x000000000801fc11       0x65 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(HAL.o)
+                0x000000000801fc0d       0x65 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(HAL.o)
  .rodata._ZZN8touchgfx3HAL13blitCopyGlyphEPKhtttttNS_9colortypeEhNS_14BlitOperationsEE19__PRETTY_FUNCTION__
-                0x000000000801fc76       0xa4 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(HAL.o)
+                0x000000000801fc72       0xa4 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(HAL.o)
  .rodata._ZZN8touchgfx3HAL20copyFBRegionToMemoryENS_4RectEE19__PRETTY_FUNCTION__
-                0x000000000801fd1a       0x46 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(HAL.o)
+                0x000000000801fd16       0x46 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(HAL.o)
  .rodata._ZZN8touchgfx3HAL27configurePartialFrameBufferEttttE19__PRETTY_FUNCTION__
-                0x000000000801fd60       0x64 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(HAL.o)
+                0x000000000801fd5c       0x64 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(HAL.o)
  .rodata._ZZN8touchgfx3HAL8blitCopyEPKtPKhttttthbtNS_6Bitmap12BitmapFormatES6_E19__PRETTY_FUNCTION__
-                0x000000000801fdc4       0xd1 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(HAL.o)
+                0x000000000801fdc0       0xd1 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(HAL.o)
  .rodata._ZZN8touchgfx3HAL8blitFillENS_9colortypeEtttthtNS_6Bitmap12BitmapFormatEE19__PRETTY_FUNCTION__
-                0x000000000801fe95       0x95 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(HAL.o)
+                0x000000000801fe91       0x95 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(HAL.o)
  .rodata._ZZNK8touchgfx3HAL11getBitDepthENS_6Bitmap12BitmapFormatEE19__PRETTY_FUNCTION__
-                0x000000000801ff2a       0x49 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(HAL.o)
+                0x000000000801ff26       0x49 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(HAL.o)
  .rodata._ZN8touchgfx13DMA_Interface7executeEv.str1.1
-                0x000000000801ff73       0x4b C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(DMA.o)
+                0x000000000801ff6f       0x4b C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(DMA.o)
  .rodata._ZN8touchgfx17LockFreeDMA_Queue10pushCopyOfERKNS_6BlitOpE.str1.1
-                0x000000000801ffbe       0x23 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(DMA.o)
+                0x000000000801ffba       0x23 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(DMA.o)
  .rodata._ZN8touchgfx17LockFreeDMA_Queue3popEv.str1.1
-                0x000000000801ffe1       0x2d C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(DMA.o)
- *fill*         0x000000000802000e        0x2 
+                0x000000000801ffdd       0x2d C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(DMA.o)
+ *fill*         0x000000000802000a        0x2 
  .rodata._ZTVN8touchgfx17LockFreeDMA_QueueE
-                0x0000000008020010       0x24 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(DMA.o)
-                0x0000000008020010                vtable for touchgfx::LockFreeDMA_Queue
+                0x000000000802000c       0x24 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(DMA.o)
+                0x000000000802000c                vtable for touchgfx::LockFreeDMA_Queue
  .rodata._ZZN8touchgfx13DMA_Interface7executeEvE19__PRETTY_FUNCTION__
-                0x0000000008020034       0x30 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(DMA.o)
+                0x0000000008020030       0x30 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(DMA.o)
  .rodata._ZZN8touchgfx17LockFreeDMA_Queue10pushCopyOfERKNS_6BlitOpEE19__PRETTY_FUNCTION__
-                0x0000000008020064       0x4e C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(DMA.o)
+                0x0000000008020060       0x4e C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(DMA.o)
  .rodata._ZZN8touchgfx17LockFreeDMA_Queue3popEvE19__PRETTY_FUNCTION__
-                0x00000000080200b2       0x30 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(DMA.o)
- *fill*         0x00000000080200e2        0x2 
+                0x00000000080200ae       0x30 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(DMA.o)
+ *fill*         0x00000000080200de        0x2 
  .rodata._ZTVN8touchgfx12ToggleButtonE
-                0x00000000080200e4       0x70 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(ToggleButton.o)
-                0x00000000080200e4                vtable for touchgfx::ToggleButton
+                0x00000000080200e0       0x70 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(ToggleButton.o)
+                0x00000000080200e0                vtable for touchgfx::ToggleButton
  .rodata._ZTVN8touchgfx13ScalableImageE
-                0x0000000008020154       0x70 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(ScalableImage.o)
-                0x0000000008020154                vtable for touchgfx::ScalableImage
+                0x0000000008020150       0x70 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(ScalableImage.o)
+                0x0000000008020150                vtable for touchgfx::ScalableImage
  .rodata._ZNK8touchgfx8TextArea12getTextWidthEv.str1.1
-                0x00000000080201c4       0x2d C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(TextArea.o)
+                0x00000000080201c0       0x2d C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(TextArea.o)
                                          0xbd (size before relaxing)
  .rodata._ZTVN8touchgfx8TextAreaE
-                0x00000000080201c4       0x78 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(TextArea.o)
-                0x00000000080201c4                vtable for touchgfx::TextArea
+                0x00000000080201c0       0x78 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(TextArea.o)
+                0x00000000080201c0                vtable for touchgfx::TextArea
  .rodata._ZZNK8touchgfx9TypedText11assertValidEvE19__PRETTY_FUNCTION__
-                0x000000000802023c       0x2e C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(TextArea.o)
- *fill*         0x000000000802026a        0x2 
+                0x0000000008020238       0x2e C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(TextArea.o)
+ *fill*         0x0000000008020266        0x2 
  .rodata._ZTVN8touchgfx3BoxE
-                0x000000000802026c       0x64 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(Box.o)
-                0x000000000802026c                vtable for touchgfx::Box
+                0x0000000008020268       0x64 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(Box.o)
+                0x0000000008020268                vtable for touchgfx::Box
  .rodata._ZNK8touchgfx6Button4drawERKNS_4RectE.str1.1
-                0x00000000080202d0       0x2d C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(Button.o)
+                0x00000000080202cc       0x2d C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(Button.o)
                                          0x62 (size before relaxing)
  .rodata._ZZNK8touchgfx6Bitmap5getIdEvE19__PRETTY_FUNCTION__
-                0x00000000080202d0       0x33 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(Button.o)
+                0x00000000080202cc       0x33 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(Button.o)
  .rodata._ZN8touchgfx8TextArea12setBaselineYEs.str1.1
-                0x0000000008020303       0xbd C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(TextAreaWithWildcard.o)
- *fill*         0x0000000008020303        0x1 
+                0x00000000080202ff       0xbd C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(TextAreaWithWildcard.o)
+ *fill*         0x00000000080202ff        0x1 
  .rodata._ZTVN8touchgfx23TextAreaWithOneWildcardE
-                0x0000000008020304       0x78 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(TextAreaWithWildcard.o)
-                0x0000000008020304                vtable for touchgfx::TextAreaWithOneWildcard
+                0x0000000008020300       0x78 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(TextAreaWithWildcard.o)
+                0x0000000008020300                vtable for touchgfx::TextAreaWithOneWildcard
  .rodata._ZZNK8touchgfx9TypedText11assertValidEvE19__PRETTY_FUNCTION__
-                0x000000000802037c       0x2e C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(TextAreaWithWildcard.o)
- *fill*         0x00000000080203aa        0x2 
+                0x0000000008020378       0x2e C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(TextAreaWithWildcard.o)
+ *fill*         0x00000000080203a6        0x2 
  .rodata._ZTVN8touchgfx13BoxWithBorderE
-                0x00000000080203ac       0x64 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(BoxWithBorder.o)
-                0x00000000080203ac                vtable for touchgfx::BoxWithBorder
+                0x00000000080203a8       0x64 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(BoxWithBorder.o)
+                0x00000000080203a8                vtable for touchgfx::BoxWithBorder
  .rodata._ZNK8touchgfx14ButtonWithIcon4drawERKNS_4RectE.str1.1
-                0x0000000008020410       0x62 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(ButtonWithIcon.o)
+                0x000000000802040c       0x62 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(ButtonWithIcon.o)
  .rodata._ZTVN8touchgfx14ButtonWithIconE
-                0x0000000008020410       0x74 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(ButtonWithIcon.o)
-                0x0000000008020410                vtable for touchgfx::ButtonWithIcon
+                0x000000000802040c       0x74 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(ButtonWithIcon.o)
+                0x000000000802040c                vtable for touchgfx::ButtonWithIcon
  .rodata._ZZNK8touchgfx6Bitmap5getIdEvE19__PRETTY_FUNCTION__
-                0x0000000008020484       0x33 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(ButtonWithIcon.o)
- *fill*         0x00000000080204b7        0x1 
+                0x0000000008020480       0x33 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(ButtonWithIcon.o)
+ *fill*         0x00000000080204b3        0x1 
  .rodata._ZTVN8touchgfx5ImageE
-                0x00000000080204b8       0x68 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(Image.o)
-                0x00000000080204b8                vtable for touchgfx::Image
+                0x00000000080204b4       0x68 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(Image.o)
+                0x00000000080204b4                vtable for touchgfx::Image
  .rodata._ZN8touchgfx11Application12switchScreenEPNS_6ScreenE.str1.1
-                0x0000000008020520       0x34 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(Application.o)
+                0x000000000802051c       0x34 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(Application.o)
  .rodata._ZN8touchgfx6VectorINS_4RectELt8EE3addES1_.str1.1
-                0x0000000008020554       0x58 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(Application.o)
+                0x0000000008020550       0x58 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(Application.o)
  .rodata._ZTVN8touchgfx11ApplicationE
-                0x00000000080205ac       0x44 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(Application.o)
-                0x00000000080205ac                vtable for touchgfx::Application
+                0x00000000080205a8       0x44 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(Application.o)
+                0x00000000080205a8                vtable for touchgfx::Application
  .rodata._ZZN8touchgfx11Application12switchScreenEPNS_6ScreenEE19__PRETTY_FUNCTION__
-                0x00000000080205f0       0x44 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(Application.o)
+                0x00000000080205ec       0x44 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(Application.o)
  .rodata._ZZN8touchgfx6VectorINS_4RectELt8EE3addES1_E19__PRETTY_FUNCTION__
-                0x0000000008020634       0x66 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(Application.o)
- *fill*         0x000000000802069a        0x2 
+                0x0000000008020630       0x66 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(Application.o)
+ *fill*         0x0000000008020696        0x2 
  .rodata._ZTVN8touchgfx8DrawableE
-                0x000000000802069c       0x64 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(Drawable.o)
-                0x000000000802069c                vtable for touchgfx::Drawable
+                0x0000000008020698       0x64 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(Drawable.o)
+                0x0000000008020698                vtable for touchgfx::Drawable
  .rodata._ZTVN8touchgfx9ConstFontE
-                0x0000000008020700       0x58 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(ConstFont.o)
-                0x0000000008020700                vtable for touchgfx::ConstFont
+                0x00000000080206fc       0x58 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(ConstFont.o)
+                0x00000000080206fc                vtable for touchgfx::ConstFont
  .rodata._ZTVN8touchgfx10ClickEventE
-                0x0000000008020758       0x14 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(Screen.o)
-                0x0000000008020758                vtable for touchgfx::ClickEvent
+                0x0000000008020754       0x14 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(Screen.o)
+                0x0000000008020754                vtable for touchgfx::ClickEvent
  .rodata._ZTVN8touchgfx9DragEventE
-                0x000000000802076c       0x14 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(Screen.o)
-                0x000000000802076c                vtable for touchgfx::DragEvent
+                0x0000000008020768       0x14 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(Screen.o)
+                0x0000000008020768                vtable for touchgfx::DragEvent
  .rodata._ZTVN8touchgfx12GestureEventE
-                0x0000000008020780       0x14 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(Screen.o)
-                0x0000000008020780                vtable for touchgfx::GestureEvent
+                0x000000000802077c       0x14 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(Screen.o)
+                0x000000000802077c                vtable for touchgfx::GestureEvent
  .rodata._ZTVN8touchgfx6ScreenE
-                0x0000000008020794       0x34 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(Screen.o)
-                0x0000000008020794                vtable for touchgfx::Screen
+                0x0000000008020790       0x34 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(Screen.o)
+                0x0000000008020790                vtable for touchgfx::Screen
  .rodata._ZN8touchgfx12TextProvider11endOfStringEv.str1.1
-                0x00000000080207c8       0x58 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(TextProvider.o)
+                0x00000000080207c4       0x58 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(TextProvider.o)
                                          0x35 (size before relaxing)
  .rodata._ZN8touchgfx12TextProvider15fillInputBufferEv.str1.1
-                0x00000000080207c8        0xc C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(TextProvider.o)
+                0x00000000080207c4        0xc C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(TextProvider.o)
  .rodata._ZN8touchgfx12TextProvider16unicodeConverterEh.str1.1
-                0x00000000080207d4        0xe C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(TextProvider.o)
+                0x00000000080207d0        0xe C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(TextProvider.o)
  .rodata._ZN8touchgfx12TextProvider22replaceInputCharactersEttPKt.str1.1
-                0x00000000080207d4       0x1f C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(TextProvider.o)
+                0x00000000080207d0       0x1f C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(TextProvider.o)
  .rodata._ZZN8touchgfx12TextProvider14circularBufferILj10EE13allocateFrontEtE19__PRETTY_FUNCTION__
-                0x00000000080207f3       0x88 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(TextProvider.o)
+                0x00000000080207ef       0x88 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(TextProvider.o)
  .rodata._ZZN8touchgfx12TextProvider14circularBufferILj10EE7popBackEvE19__PRETTY_FUNCTION__
-                0x000000000802087b       0xaa C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(TextProvider.o)
+                0x0000000008020877       0xaa C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(TextProvider.o)
  .rodata._ZZN8touchgfx12TextProvider14circularBufferILj10EE8peekCharEtE19__PRETTY_FUNCTION__
-                0x0000000008020925       0xd2 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(TextProvider.o)
+                0x0000000008020921       0xd2 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(TextProvider.o)
  .rodata._ZZN8touchgfx12TextProvider14circularBufferILj10EE8peekCharEvE19__PRETTY_FUNCTION__
-                0x00000000080209f7       0xab C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(TextProvider.o)
+                0x00000000080209f3       0xab C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(TextProvider.o)
  .rodata._ZZN8touchgfx12TextProvider14circularBufferILj10EE8popFrontEvE19__PRETTY_FUNCTION__
-                0x0000000008020aa2       0xab C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(TextProvider.o)
+                0x0000000008020a9e       0xab C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(TextProvider.o)
  .rodata._ZZN8touchgfx12TextProvider14circularBufferILj10EE8pushBackEtE19__PRETTY_FUNCTION__
-                0x0000000008020b4d       0xaf C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(TextProvider.o)
+                0x0000000008020b49       0xaf C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(TextProvider.o)
  .rodata._ZZN8touchgfx12TextProvider14circularBufferILj10EE9dropFrontEtE19__PRETTY_FUNCTION__
-                0x0000000008020bfc       0x84 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(TextProvider.o)
+                0x0000000008020bf8       0x84 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(TextProvider.o)
  .rodata._ZZN8touchgfx12TextProvider14circularBufferILj2EE8peekCharEtE19__PRETTY_FUNCTION__
-                0x0000000008020c80       0xd1 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(TextProvider.o)
+                0x0000000008020c7c       0xd1 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(TextProvider.o)
  .rodata._ZN8touchgfx11floorDivModEllRlS0_.str1.1
-                0x0000000008020d51       0x3f C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(TextureMapTypes.o)
+                0x0000000008020d4d       0x3f C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(TextureMapTypes.o)
  .rodata._ZZN8touchgfx11floorDivModEllRlS0_E19__PRETTY_FUNCTION__
-                0x0000000008020d90       0x41 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(TextureMapTypes.o)
+                0x0000000008020d8c       0x41 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(TextureMapTypes.o)
  .rodata._ZN8touchgfx6Bitmap17copyBitmapToCacheEtPh.str1.1
-                0x0000000008020dd1       0x5d C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(Bitmap.o)
+                0x0000000008020dcd       0x5d C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(Bitmap.o)
  .rodata._ZN8touchgfx6Bitmap8setCacheEPtmm.str1.1
-                0x0000000008020e2e       0x59 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(Bitmap.o)
+                0x0000000008020e2a       0x59 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(Bitmap.o)
  .rodata._ZNK8touchgfx6Bitmap8getWidthEv.str1.1
-                0x0000000008020e87       0x3c C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(Bitmap.o)
+                0x0000000008020e83       0x3c C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(Bitmap.o)
  .rodata._ZZN8touchgfx6Bitmap8setCacheEPtmmE19__PRETTY_FUNCTION__
-                0x0000000008020e87       0x46 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(Bitmap.o)
+                0x0000000008020e83       0x46 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(Bitmap.o)
  .rodata._ZZNK8touchgfx6Bitmap12getSolidRectEvE19__PRETTY_FUNCTION__
-                0x0000000008020ecd       0x36 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(Bitmap.o)
+                0x0000000008020ec9       0x36 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(Bitmap.o)
  .rodata._ZZNK8touchgfx6Bitmap7getDataEvE19__PRETTY_FUNCTION__
-                0x0000000008020f03       0x31 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(Bitmap.o)
+                0x0000000008020eff       0x31 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(Bitmap.o)
  .rodata._ZZNK8touchgfx6Bitmap8getWidthEvE19__PRETTY_FUNCTION__
-                0x0000000008020f34       0x2c C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(Bitmap.o)
+                0x0000000008020f30       0x2c C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(Bitmap.o)
  .rodata._ZZNK8touchgfx6Bitmap9getHeightEvE19__PRETTY_FUNCTION__
-                0x0000000008020f60       0x2d C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(Bitmap.o)
+                0x0000000008020f5c       0x2d C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(Bitmap.o)
  .rodata._ZN8touchgfx8LCD16bpp10fillBufferEPhtRKNS_4RectENS_9colortypeEh.str1.1
-                0x0000000008020f8d       0x2f C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
+                0x0000000008020f89       0x2f C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
  .rodata._ZN8touchgfx8LCD16bpp17blitCopyL8_RGB565EPKhS2_RKNS_4RectES5_h.str1.1
-                0x0000000008020fbc       0x4e C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
+                0x0000000008020fb8       0x4e C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
  .rodata._ZN8touchgfx8LCD16bpp17blitCopyL8_RGB888EPKhS2_RKNS_4RectES5_h.str1.1
-                0x000000000802100a       0x4e C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
+                0x0000000008021006       0x4e C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
  .rodata._ZN8touchgfx8LCD16bpp17drawPartialBitmapERKNS_6BitmapEssRKNS_4RectEhb.str1.1
-                0x0000000008021058       0x34 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
+                0x0000000008021054       0x34 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
  .rodata._ZN8touchgfx8LCD16bpp19blitCopyL8_ARGB8888EPKhS2_RKNS_4RectES5_h.str1.1
-                0x000000000802108c       0x50 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
+                0x0000000008021088       0x50 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
  .rodata._ZN8touchgfx8LCD16bpp29copyFrameBufferRegionToMemoryERKNS_4RectES3_t.str1.1
-                0x00000000080210dc      0x1c6 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
+                0x00000000080210d8      0x1c6 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
  .rodata._ZN8touchgfx8LCD16bpp55TextureMapper_L8_RGB565_Opaque_BilinearInterpolation_GA16writePixelOnEdgeEPtPKhPKtssiihhh.str1.1
-                0x00000000080212a2       0x11 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
+                0x000000000802129e       0x11 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
  .rodata._ZN8touchgfx8LCD16bpp8blitCopyEPKhNS_6Bitmap12BitmapFormatERKNS_4RectES7_hb.str1.1
-                0x00000000080212b3       0x31 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
+                0x00000000080212af       0x31 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
  .rodata._ZNK8touchgfx8LCD16bpp17framebufferStrideEv.str1.1
-                0x00000000080212e4       0x75 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
- *fill*         0x0000000008021359        0x3 
+                0x00000000080212e0       0x75 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
+ *fill*         0x0000000008021355        0x3 
  .rodata._ZTVN8touchgfx8LCD16bpp35TextureMapper_A4_NearestNeighbor_GAE
-                0x000000000802135c       0x14 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
-                0x000000000802135c                vtable for touchgfx::LCD16bpp::TextureMapper_A4_NearestNeighbor_GA
+                0x0000000008021358       0x14 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
+                0x0000000008021358                vtable for touchgfx::LCD16bpp::TextureMapper_A4_NearestNeighbor_GA
  .rodata._ZTVN8touchgfx8LCD16bpp37TextureMapper_A4_NearestNeighbor_NoGAE
-                0x0000000008021370       0x14 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
-                0x0000000008021370                vtable for touchgfx::LCD16bpp::TextureMapper_A4_NearestNeighbor_NoGA
+                0x000000000802136c       0x14 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
+                0x000000000802136c                vtable for touchgfx::LCD16bpp::TextureMapper_A4_NearestNeighbor_NoGA
  .rodata._ZTVN8touchgfx8LCD16bpp41TextureMapper_A4_BilinearInterpolation_GAE
-                0x0000000008021384       0x14 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
-                0x0000000008021384                vtable for touchgfx::LCD16bpp::TextureMapper_A4_BilinearInterpolation_GA
+                0x0000000008021380       0x14 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
+                0x0000000008021380                vtable for touchgfx::LCD16bpp::TextureMapper_A4_BilinearInterpolation_GA
  .rodata._ZTVN8touchgfx8LCD16bpp43TextureMapper_A4_BilinearInterpolation_NoGAE
-                0x0000000008021398       0x14 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
-                0x0000000008021398                vtable for touchgfx::LCD16bpp::TextureMapper_A4_BilinearInterpolation_NoGA
+                0x0000000008021394       0x14 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
+                0x0000000008021394                vtable for touchgfx::LCD16bpp::TextureMapper_A4_BilinearInterpolation_NoGA
  .rodata._ZTVN8touchgfx8LCD16bpp46TextureMapper_RGB565_Opaque_NearestNeighbor_GAE
-                0x00000000080213ac       0x14 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
-                0x00000000080213ac                vtable for touchgfx::LCD16bpp::TextureMapper_RGB565_Opaque_NearestNeighbor_GA
+                0x00000000080213a8       0x14 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
+                0x00000000080213a8                vtable for touchgfx::LCD16bpp::TextureMapper_RGB565_Opaque_NearestNeighbor_GA
  .rodata._ZTVN8touchgfx8LCD16bpp48TextureMapper_RGB565_Opaque_NearestNeighbor_NoGAE
-                0x00000000080213c0       0x14 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
-                0x00000000080213c0                vtable for touchgfx::LCD16bpp::TextureMapper_RGB565_Opaque_NearestNeighbor_NoGA
+                0x00000000080213bc       0x14 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
+                0x00000000080213bc                vtable for touchgfx::LCD16bpp::TextureMapper_RGB565_Opaque_NearestNeighbor_NoGA
  .rodata._ZTVN8touchgfx8LCD16bpp49TextureMapper_L8_RGB565_Opaque_NearestNeighbor_GAE
-                0x00000000080213d4       0x14 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
-                0x00000000080213d4                vtable for touchgfx::LCD16bpp::TextureMapper_L8_RGB565_Opaque_NearestNeighbor_GA
+                0x00000000080213d0       0x14 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
+                0x00000000080213d0                vtable for touchgfx::LCD16bpp::TextureMapper_L8_RGB565_Opaque_NearestNeighbor_GA
  .rodata._ZTVN8touchgfx8LCD16bpp49TextureMapper_L8_RGB888_Opaque_NearestNeighbor_GAE
-                0x00000000080213e8       0x14 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
-                0x00000000080213e8                vtable for touchgfx::LCD16bpp::TextureMapper_L8_RGB888_Opaque_NearestNeighbor_GA
+                0x00000000080213e4       0x14 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
+                0x00000000080213e4                vtable for touchgfx::LCD16bpp::TextureMapper_L8_RGB888_Opaque_NearestNeighbor_GA
  .rodata._ZTVN8touchgfx8LCD16bpp49TextureMapper_RGB565_NonOpaque_NearestNeighbor_GAE
-                0x00000000080213fc       0x14 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
-                0x00000000080213fc                vtable for touchgfx::LCD16bpp::TextureMapper_RGB565_NonOpaque_NearestNeighbor_GA
+                0x00000000080213f8       0x14 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
+                0x00000000080213f8                vtable for touchgfx::LCD16bpp::TextureMapper_RGB565_NonOpaque_NearestNeighbor_GA
  .rodata._ZTVN8touchgfx8LCD16bpp51TextureMapper_ARGB8888_NonOpaque_NearestNeighbor_GAE
-                0x0000000008021410       0x14 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
-                0x0000000008021410                vtable for touchgfx::LCD16bpp::TextureMapper_ARGB8888_NonOpaque_NearestNeighbor_GA
+                0x000000000802140c       0x14 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
+                0x000000000802140c                vtable for touchgfx::LCD16bpp::TextureMapper_ARGB8888_NonOpaque_NearestNeighbor_GA
  .rodata._ZTVN8touchgfx8LCD16bpp51TextureMapper_L8_RGB565_Opaque_NearestNeighbor_NoGAE
-                0x0000000008021424       0x14 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
-                0x0000000008021424                vtable for touchgfx::LCD16bpp::TextureMapper_L8_RGB565_Opaque_NearestNeighbor_NoGA
+                0x0000000008021420       0x14 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
+                0x0000000008021420                vtable for touchgfx::LCD16bpp::TextureMapper_L8_RGB565_Opaque_NearestNeighbor_NoGA
  .rodata._ZTVN8touchgfx8LCD16bpp51TextureMapper_L8_RGB888_Opaque_NearestNeighbor_NoGAE
-                0x0000000008021438       0x14 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
-                0x0000000008021438                vtable for touchgfx::LCD16bpp::TextureMapper_L8_RGB888_Opaque_NearestNeighbor_NoGA
+                0x0000000008021434       0x14 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
+                0x0000000008021434                vtable for touchgfx::LCD16bpp::TextureMapper_L8_RGB888_Opaque_NearestNeighbor_NoGA
  .rodata._ZTVN8touchgfx8LCD16bpp51TextureMapper_RGB565_NonOpaque_NearestNeighbor_NoGAE
-                0x000000000802144c       0x14 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
-                0x000000000802144c                vtable for touchgfx::LCD16bpp::TextureMapper_RGB565_NonOpaque_NearestNeighbor_NoGA
+                0x0000000008021448       0x14 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
+                0x0000000008021448                vtable for touchgfx::LCD16bpp::TextureMapper_RGB565_NonOpaque_NearestNeighbor_NoGA
  .rodata._ZTVN8touchgfx8LCD16bpp52TextureMapper_RGB565_Opaque_BilinearInterpolation_GAE
-                0x0000000008021460       0x14 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
-                0x0000000008021460                vtable for touchgfx::LCD16bpp::TextureMapper_RGB565_Opaque_BilinearInterpolation_GA
+                0x000000000802145c       0x14 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
+                0x000000000802145c                vtable for touchgfx::LCD16bpp::TextureMapper_RGB565_Opaque_BilinearInterpolation_GA
  .rodata._ZTVN8touchgfx8LCD16bpp53TextureMapper_ARGB8888_NonOpaque_NearestNeighbor_NoGAE
-                0x0000000008021474       0x14 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
-                0x0000000008021474                vtable for touchgfx::LCD16bpp::TextureMapper_ARGB8888_NonOpaque_NearestNeighbor_NoGA
+                0x0000000008021470       0x14 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
+                0x0000000008021470                vtable for touchgfx::LCD16bpp::TextureMapper_ARGB8888_NonOpaque_NearestNeighbor_NoGA
  .rodata._ZTVN8touchgfx8LCD16bpp54TextureMapper_L8_ARGB8888_NonOpaque_NearestNeighbor_GAE
-                0x0000000008021488       0x14 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
-                0x0000000008021488                vtable for touchgfx::LCD16bpp::TextureMapper_L8_ARGB8888_NonOpaque_NearestNeighbor_GA
+                0x0000000008021484       0x14 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
+                0x0000000008021484                vtable for touchgfx::LCD16bpp::TextureMapper_L8_ARGB8888_NonOpaque_NearestNeighbor_GA
  .rodata._ZTVN8touchgfx8LCD16bpp54TextureMapper_RGB565_Opaque_BilinearInterpolation_NoGAE
-                0x000000000802149c       0x14 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
-                0x000000000802149c                vtable for touchgfx::LCD16bpp::TextureMapper_RGB565_Opaque_BilinearInterpolation_NoGA
+                0x0000000008021498       0x14 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
+                0x0000000008021498                vtable for touchgfx::LCD16bpp::TextureMapper_RGB565_Opaque_BilinearInterpolation_NoGA
  .rodata._ZTVN8touchgfx8LCD16bpp55TextureMapper_L8_RGB565_Opaque_BilinearInterpolation_GAE
-                0x00000000080214b0       0x14 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
-                0x00000000080214b0                vtable for touchgfx::LCD16bpp::TextureMapper_L8_RGB565_Opaque_BilinearInterpolation_GA
+                0x00000000080214ac       0x14 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
+                0x00000000080214ac                vtable for touchgfx::LCD16bpp::TextureMapper_L8_RGB565_Opaque_BilinearInterpolation_GA
  .rodata._ZTVN8touchgfx8LCD16bpp55TextureMapper_L8_RGB888_Opaque_BilinearInterpolation_GAE
-                0x00000000080214c4       0x14 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
-                0x00000000080214c4                vtable for touchgfx::LCD16bpp::TextureMapper_L8_RGB888_Opaque_BilinearInterpolation_GA
+                0x00000000080214c0       0x14 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
+                0x00000000080214c0                vtable for touchgfx::LCD16bpp::TextureMapper_L8_RGB888_Opaque_BilinearInterpolation_GA
  .rodata._ZTVN8touchgfx8LCD16bpp55TextureMapper_RGB565_NonOpaque_BilinearInterpolation_GAE
-                0x00000000080214d8       0x14 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
-                0x00000000080214d8                vtable for touchgfx::LCD16bpp::TextureMapper_RGB565_NonOpaque_BilinearInterpolation_GA
+                0x00000000080214d4       0x14 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
+                0x00000000080214d4                vtable for touchgfx::LCD16bpp::TextureMapper_RGB565_NonOpaque_BilinearInterpolation_GA
  .rodata._ZTVN8touchgfx8LCD16bpp56TextureMapper_L8_ARGB8888_NonOpaque_NearestNeighbor_NoGAE
-                0x00000000080214ec       0x14 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
-                0x00000000080214ec                vtable for touchgfx::LCD16bpp::TextureMapper_L8_ARGB8888_NonOpaque_NearestNeighbor_NoGA
+                0x00000000080214e8       0x14 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
+                0x00000000080214e8                vtable for touchgfx::LCD16bpp::TextureMapper_L8_ARGB8888_NonOpaque_NearestNeighbor_NoGA
  .rodata._ZTVN8touchgfx8LCD16bpp57TextureMapper_ARGB8888_NonOpaque_BilinearInterpolation_GAE
-                0x0000000008021500       0x14 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
-                0x0000000008021500                vtable for touchgfx::LCD16bpp::TextureMapper_ARGB8888_NonOpaque_BilinearInterpolation_GA
+                0x00000000080214fc       0x14 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
+                0x00000000080214fc                vtable for touchgfx::LCD16bpp::TextureMapper_ARGB8888_NonOpaque_BilinearInterpolation_GA
  .rodata._ZTVN8touchgfx8LCD16bpp57TextureMapper_L8_RGB565_Opaque_BilinearInterpolation_NoGAE
-                0x0000000008021514       0x14 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
-                0x0000000008021514                vtable for touchgfx::LCD16bpp::TextureMapper_L8_RGB565_Opaque_BilinearInterpolation_NoGA
+                0x0000000008021510       0x14 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
+                0x0000000008021510                vtable for touchgfx::LCD16bpp::TextureMapper_L8_RGB565_Opaque_BilinearInterpolation_NoGA
  .rodata._ZTVN8touchgfx8LCD16bpp57TextureMapper_L8_RGB888_Opaque_BilinearInterpolation_NoGAE
-                0x0000000008021528       0x14 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
-                0x0000000008021528                vtable for touchgfx::LCD16bpp::TextureMapper_L8_RGB888_Opaque_BilinearInterpolation_NoGA
+                0x0000000008021524       0x14 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
+                0x0000000008021524                vtable for touchgfx::LCD16bpp::TextureMapper_L8_RGB888_Opaque_BilinearInterpolation_NoGA
  .rodata._ZTVN8touchgfx8LCD16bpp57TextureMapper_RGB565_NonOpaque_BilinearInterpolation_NoGAE
-                0x000000000802153c       0x14 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
-                0x000000000802153c                vtable for touchgfx::LCD16bpp::TextureMapper_RGB565_NonOpaque_BilinearInterpolation_NoGA
+                0x0000000008021538       0x14 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
+                0x0000000008021538                vtable for touchgfx::LCD16bpp::TextureMapper_RGB565_NonOpaque_BilinearInterpolation_NoGA
  .rodata._ZTVN8touchgfx8LCD16bpp59TextureMapper_ARGB8888_NonOpaque_BilinearInterpolation_NoGAE
-                0x0000000008021550       0x14 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
-                0x0000000008021550                vtable for touchgfx::LCD16bpp::TextureMapper_ARGB8888_NonOpaque_BilinearInterpolation_NoGA
+                0x000000000802154c       0x14 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
+                0x000000000802154c                vtable for touchgfx::LCD16bpp::TextureMapper_ARGB8888_NonOpaque_BilinearInterpolation_NoGA
  .rodata._ZTVN8touchgfx8LCD16bpp60TextureMapper_L8_ARGB8888_NonOpaque_BilinearInterpolation_GAE
-                0x0000000008021564       0x14 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
-                0x0000000008021564                vtable for touchgfx::LCD16bpp::TextureMapper_L8_ARGB8888_NonOpaque_BilinearInterpolation_GA
+                0x0000000008021560       0x14 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
+                0x0000000008021560                vtable for touchgfx::LCD16bpp::TextureMapper_L8_ARGB8888_NonOpaque_BilinearInterpolation_GA
  .rodata._ZTVN8touchgfx8LCD16bpp62TextureMapper_L8_ARGB8888_NonOpaque_BilinearInterpolation_NoGAE
-                0x0000000008021578       0x14 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
-                0x0000000008021578                vtable for touchgfx::LCD16bpp::TextureMapper_L8_ARGB8888_NonOpaque_BilinearInterpolation_NoGA
+                0x0000000008021574       0x14 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
+                0x0000000008021574                vtable for touchgfx::LCD16bpp::TextureMapper_L8_ARGB8888_NonOpaque_BilinearInterpolation_NoGA
  .rodata._ZTVN8touchgfx8LCD16bppE
-                0x000000000802158c       0x4c C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
-                0x000000000802158c                vtable for touchgfx::LCD16bpp
+                0x0000000008021588       0x4c C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
+                0x0000000008021588                vtable for touchgfx::LCD16bpp
  .rodata._ZZN8touchgfx8LCD16bpp10fillBufferEPhtRKNS_4RectENS_9colortypeEhE19__PRETTY_FUNCTION__
-                0x00000000080215d8       0x75 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
+                0x00000000080215d4       0x75 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
  .rodata._ZZN8touchgfx8LCD16bpp17blitCopyL8_RGB565EPKhS2_RKNS_4RectES5_hE19__PRETTY_FUNCTION__
-                0x000000000802164d       0x89 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
+                0x0000000008021649       0x89 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
  .rodata._ZZN8touchgfx8LCD16bpp17blitCopyL8_RGB888EPKhS2_RKNS_4RectES5_hE19__PRETTY_FUNCTION__
-                0x00000000080216d6       0x89 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
+                0x00000000080216d2       0x89 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
  .rodata._ZZN8touchgfx8LCD16bpp17drawPartialBitmapERKNS_6BitmapEssRKNS_4RectEhbE19__PRETTY_FUNCTION__
-                0x000000000802175f       0x84 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
+                0x000000000802175b       0x84 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
  .rodata._ZZN8touchgfx8LCD16bpp19blitCopyL8_ARGB8888EPKhS2_RKNS_4RectES5_hE19__PRETTY_FUNCTION__
-                0x00000000080217e3       0x8b C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
+                0x00000000080217df       0x8b C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
  .rodata._ZZN8touchgfx8LCD16bpp20bilinearInterpolate8EhhhhhhE19__PRETTY_FUNCTION__
-                0x000000000802186e       0x6e C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
+                0x000000000802186a       0x6e C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
  .rodata._ZZN8touchgfx8LCD16bpp20getFramebufferStrideEvE19__PRETTY_FUNCTION__
-                0x00000000080218dc       0x3b C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
+                0x00000000080218d8       0x3b C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
  .rodata._ZZN8touchgfx8LCD16bpp22bilinearInterpolate565EtttthhE19__PRETTY_FUNCTION__
-                0x0000000008021917       0x75 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
+                0x0000000008021913       0x75 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
  .rodata._ZZN8touchgfx8LCD16bpp29copyFrameBufferRegionToMemoryERKNS_4RectES3_tE19__PRETTY_FUNCTION__
-                0x000000000802198c       0x86 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
+                0x0000000008021988       0x86 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
  .rodata._ZZN8touchgfx8LCD16bpp8blitCopyEPKhNS_6Bitmap12BitmapFormatERKNS_4RectES7_hbE19__PRETTY_FUNCTION__
-                0x0000000008021a12       0x97 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
+                0x0000000008021a0e       0x97 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD16bpp.o)
  .rodata.__assert_func.str1.1
-                0x0000000008021aa9       0x3c c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-assert.o)
+                0x0000000008021aa5       0x3c c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-assert.o)
                                          0x3d (size before relaxing)
- *fill*         0x0000000008021ae5        0x3 
+ *fill*         0x0000000008021ae1        0x3 
  .rodata.__sf_fake_stderr
-                0x0000000008021ae8       0x20 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-findfp.o)
-                0x0000000008021ae8                __sf_fake_stderr
+                0x0000000008021ae4       0x20 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-findfp.o)
+                0x0000000008021ae4                __sf_fake_stderr
  .rodata.__sf_fake_stdin
-                0x0000000008021b08       0x20 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-findfp.o)
-                0x0000000008021b08                __sf_fake_stdin
+                0x0000000008021b04       0x20 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-findfp.o)
+                0x0000000008021b04                __sf_fake_stdin
  .rodata.__sf_fake_stdout
-                0x0000000008021b28       0x20 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-findfp.o)
-                0x0000000008021b28                __sf_fake_stdout
+                0x0000000008021b24       0x20 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-findfp.o)
+                0x0000000008021b24                __sf_fake_stdout
  .rodata._global_impure_ptr
-                0x0000000008021b48        0x4 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-impure.o)
-                0x0000000008021b48                _global_impure_ptr
+                0x0000000008021b44        0x4 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-impure.o)
+                0x0000000008021b44                _global_impure_ptr
  .rodata._vfprintf_r.str1.1
-                0x0000000008021b4c       0x11 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-vfprintf.o)
+                0x0000000008021b48       0x11 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-vfprintf.o)
  .rodata._printf_i.str1.1
-                0x0000000008021b5d       0x22 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-vfprintf_i.o)
- *fill*         0x0000000008021b7f        0x1 
+                0x0000000008021b59       0x22 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-nano-vfprintf_i.o)
+ *fill*         0x0000000008021b7b        0x1 
  .rodata.__on_exit_args
-                0x0000000008021b80        0x4 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-on_exit_args.o)
-                0x0000000008021b80                __on_exit_args
+                0x0000000008021b7c        0x4 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-on_exit_args.o)
+                0x0000000008021b7c                __on_exit_args
  .rodata._ctype_
-                0x0000000008021b84      0x101 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-ctype_.o)
-                0x0000000008021b84                _ctype_
-                0x0000000008021c88                . = ALIGN (0x4)
- *fill*         0x0000000008021c85        0x3 
+                0x0000000008021b80      0x101 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-ctype_.o)
+                0x0000000008021b80                _ctype_
+                0x0000000008021c84                . = ALIGN (0x4)
+ *fill*         0x0000000008021c81        0x3 
 
 FontFlashSection
-                0x0000000008021c88     0x2846
+                0x0000000008021c84     0x2846
  FontFlashSection
-                0x0000000008021c88      0x63c ./Application/User/generated/Font_ariblk_25_4bpp_0.o
-                0x0000000008021c88                unicodes_ariblk_25_4bpp_0
+                0x0000000008021c84      0x63c ./Application/User/generated/Font_ariblk_25_4bpp_0.o
+                0x0000000008021c84                unicodes_ariblk_25_4bpp_0
  FontFlashSection
-                0x00000000080222c4       0x18 ./Application/User/generated/Font_verdana_10_4bpp_0.o
-                0x00000000080222c4                unicodes_verdana_10_4bpp_0
+                0x00000000080222c0       0x18 ./Application/User/generated/Font_verdana_10_4bpp_0.o
+                0x00000000080222c0                unicodes_verdana_10_4bpp_0
  FontFlashSection
-                0x00000000080222dc     0x1adf ./Application/User/generated/Font_verdana_20_4bpp_0.o
-                0x00000000080222dc                unicodes_verdana_20_4bpp_0
- *fill*         0x0000000008023dbb        0x1 
+                0x00000000080222d8     0x1adf ./Application/User/generated/Font_verdana_20_4bpp_0.o
+                0x00000000080222d8                unicodes_verdana_20_4bpp_0
+ *fill*         0x0000000008023db7        0x1 
  FontFlashSection
-                0x0000000008023dbc      0x117 ./Application/User/generated/Font_verdana_40_4bpp_0.o
-                0x0000000008023dbc                unicodes_verdana_40_4bpp_0
- *fill*         0x0000000008023ed3        0x1 
+                0x0000000008023db8      0x117 ./Application/User/generated/Font_verdana_40_4bpp_0.o
+                0x0000000008023db8                unicodes_verdana_40_4bpp_0
+ *fill*         0x0000000008023ecf        0x1 
  FontFlashSection
-                0x0000000008023ed4       0xa8 ./Application/User/generated/Table_ariblk_25_4bpp.o
-                0x0000000008023ed4                glyphs_ariblk_25_4bpp
+                0x0000000008023ed0       0xa8 ./Application/User/generated/Table_ariblk_25_4bpp.o
+                0x0000000008023ed0                glyphs_ariblk_25_4bpp
  FontFlashSection
-                0x0000000008023f7c        0xe ./Application/User/generated/Table_verdana_10_4bpp.o
-                0x0000000008023f7c                glyphs_verdana_10_4bpp
- *fill*         0x0000000008023f8a        0x2 
+                0x0000000008023f78        0xe ./Application/User/generated/Table_verdana_10_4bpp.o
+                0x0000000008023f78                glyphs_verdana_10_4bpp
+ *fill*         0x0000000008023f86        0x2 
  FontFlashSection
-                0x0000000008023f8c      0x532 ./Application/User/generated/Table_verdana_20_4bpp.o
-                0x0000000008023f8c                glyphs_verdana_20_4bpp
- *fill*         0x00000000080244be        0x2 
+                0x0000000008023f88      0x532 ./Application/User/generated/Table_verdana_20_4bpp.o
+                0x0000000008023f88                glyphs_verdana_20_4bpp
+ *fill*         0x00000000080244ba        0x2 
  FontFlashSection
-                0x00000000080244c0        0xe ./Application/User/generated/Table_verdana_40_4bpp.o
-                0x00000000080244c0                glyphs_verdana_40_4bpp
+                0x00000000080244bc        0xe ./Application/User/generated/Table_verdana_40_4bpp.o
+                0x00000000080244bc                glyphs_verdana_40_4bpp
 
 FontSearchFlashSection
-                0x00000000080244d0      0x1b0
+                0x00000000080244cc      0x1b0
  FontSearchFlashSection
-                0x00000000080244d0        0x4 ./Application/User/generated/Kerning_ariblk_25_4bpp.o
-                0x00000000080244d0                kerning_ariblk_25_4bpp
+                0x00000000080244cc        0x4 ./Application/User/generated/Kerning_ariblk_25_4bpp.o
+                0x00000000080244cc                kerning_ariblk_25_4bpp
  FontSearchFlashSection
-                0x00000000080244d4        0x4 ./Application/User/generated/Kerning_verdana_10_4bpp.o
-                0x00000000080244d4                kerning_verdana_10_4bpp
+                0x00000000080244d0        0x4 ./Application/User/generated/Kerning_verdana_10_4bpp.o
+                0x00000000080244d0                kerning_verdana_10_4bpp
  FontSearchFlashSection
-                0x00000000080244d8      0x1a4 ./Application/User/generated/Kerning_verdana_20_4bpp.o
-                0x00000000080244d8                kerning_verdana_20_4bpp
+                0x00000000080244d4      0x1a4 ./Application/User/generated/Kerning_verdana_20_4bpp.o
+                0x00000000080244d4                kerning_verdana_20_4bpp
  FontSearchFlashSection
-                0x000000000802467c        0x4 ./Application/User/generated/Kerning_verdana_40_4bpp.o
-                0x000000000802467c                kerning_verdana_40_4bpp
+                0x0000000008024678        0x4 ./Application/User/generated/Kerning_verdana_40_4bpp.o
+                0x0000000008024678                kerning_verdana_40_4bpp
 
 TextFlashSection
-                0x0000000008024680      0x144
+                0x000000000802467c      0x144
  TextFlashSection
-                0x0000000008024680       0x70 ./Application/User/generated/LanguageGb.o
-                0x0000000008024680                indicesGb
+                0x000000000802467c       0x70 ./Application/User/generated/LanguageGb.o
+                0x000000000802467c                indicesGb
  TextFlashSection
-                0x00000000080246f0       0x96 ./Application/User/generated/Texts.o
-                0x00000000080246f0                texts_all_languages
- *fill*         0x0000000008024786        0x2 
+                0x00000000080246ec       0x96 ./Application/User/generated/Texts.o
+                0x00000000080246ec                texts_all_languages
+ *fill*         0x0000000008024782        0x2 
  TextFlashSection
-                0x0000000008024788       0x3c ./Application/User/generated/TypedTextDatabase.o
-                0x0000000008024788                typedText_database_DEFAULT
-                0x00000000080247c0                typedTextDatabaseArray
+                0x0000000008024784       0x3c ./Application/User/generated/TypedTextDatabase.o
+                0x0000000008024784                typedText_database_DEFAULT
+                0x00000000080247bc                typedTextDatabaseArray
 
 ExtFlashSection
-                0x00000000080247c4    0x73494
+                0x00000000080247c0    0x73494
  ExtFlashSection
-                0x00000000080247c4    0x25800 ./Application/User/generated/image_Blue_Backgrounds_Main_bg_320x240px.o
-                0x00000000080247c4                image_blue_backgrounds_main_bg_320x240px
+                0x00000000080247c0    0x25800 ./Application/User/generated/image_Blue_Backgrounds_Main_bg_320x240px.o
+                0x00000000080247c0                image_blue_backgrounds_main_bg_320x240px
  ExtFlashSection
-                0x0000000008049fc4     0x9f60 ./Application/User/generated/image_Blue_Buttons_Round_Edge_small.o
-                0x0000000008049fc4                image_blue_buttons_round_edge_small
+                0x0000000008049fc0     0x9f60 ./Application/User/generated/image_Blue_Buttons_Round_Edge_small.o
+                0x0000000008049fc0                image_blue_buttons_round_edge_small
  ExtFlashSection
-                0x0000000008053f24     0x9f60 ./Application/User/generated/image_Blue_Buttons_Round_Edge_small_pressed.o
-                0x0000000008053f24                image_blue_buttons_round_edge_small_pressed
+                0x0000000008053f20     0x9f60 ./Application/User/generated/image_Blue_Buttons_Round_Edge_small_pressed.o
+                0x0000000008053f20                image_blue_buttons_round_edge_small_pressed
  ExtFlashSection
-                0x000000000805de84      0xd24 ./Application/User/generated/image_Blue_Icons_Add_new_32.o
-                0x000000000805de84                image_blue_icons_add_new_32
+                0x000000000805de80      0xd24 ./Application/User/generated/image_Blue_Icons_Add_new_32.o
+                0x000000000805de80                image_blue_icons_add_new_32
  ExtFlashSection
-                0x000000000805eba8      0xd20 ./Application/User/generated/image_Blue_Icons_Go_back_32.o
-                0x000000000805eba8                image_blue_icons_go_back_32
+                0x000000000805eba4      0xd20 ./Application/User/generated/image_Blue_Icons_Go_back_32.o
+                0x000000000805eba4                image_blue_icons_go_back_32
  ExtFlashSection
-                0x000000000805f8c8     0x1550 ./Application/User/generated/image_Blue_Icons_Play_48.o
-                0x000000000805f8c8                image_blue_icons_play_48
+                0x000000000805f8c4     0x1550 ./Application/User/generated/image_Blue_Icons_Play_48.o
+                0x000000000805f8c4                image_blue_icons_play_48
  ExtFlashSection
-                0x0000000008060e18      0xd20 ./Application/User/generated/image_Blue_Icons_Refresh_32.o
-                0x0000000008060e18                image_blue_icons_refresh_32
+                0x0000000008060e14      0xd20 ./Application/User/generated/image_Blue_Icons_Refresh_32.o
+                0x0000000008060e14                image_blue_icons_refresh_32
  ExtFlashSection
-                0x0000000008061b38      0xd20 ./Application/User/generated/image_Blue_Icons_Tools_32.o
-                0x0000000008061b38                image_blue_icons_tools_32
+                0x0000000008061b34      0xd20 ./Application/User/generated/image_Blue_Icons_Tools_32.o
+                0x0000000008061b34                image_blue_icons_tools_32
  ExtFlashSection
-                0x0000000008062858     0x4c00 ./Application/User/generated/image_Blue_Togglebars_Toggle_round_large_button_OFF.o
-                0x0000000008062858                image_blue_togglebars_toggle_round_large_button_off
+                0x0000000008062854     0x4c00 ./Application/User/generated/image_Blue_Togglebars_Toggle_round_large_button_OFF.o
+                0x0000000008062854                image_blue_togglebars_toggle_round_large_button_off
  ExtFlashSection
-                0x0000000008067458     0x4c00 ./Application/User/generated/image_Blue_Togglebars_Toggle_round_large_button_ON.o
-                0x0000000008067458                image_blue_togglebars_toggle_round_large_button_on
+                0x0000000008067454     0x4c00 ./Application/User/generated/image_Blue_Togglebars_Toggle_round_large_button_ON.o
+                0x0000000008067454                image_blue_togglebars_toggle_round_large_button_on
  ExtFlashSection
-                0x000000000806c058    0x25800 ./Application/User/generated/image_Dark_Backgrounds_main_bg_portrait_texture_240x320px.o
-                0x000000000806c058                image_dark_backgrounds_main_bg_portrait_texture_240x320px
+                0x000000000806c054    0x25800 ./Application/User/generated/image_Dark_Backgrounds_main_bg_portrait_texture_240x320px.o
+                0x000000000806c054                image_dark_backgrounds_main_bg_portrait_texture_240x320px
  ExtFlashSection
-                0x0000000008091858     0x2400 ./Application/User/generated/image_Dark_Icons_Done_48.o
-                0x0000000008091858                image_dark_icons_done_48
+                0x0000000008091854     0x2400 ./Application/User/generated/image_Dark_Icons_Done_48.o
+                0x0000000008091854                image_dark_icons_done_48
  ExtFlashSection
-                0x0000000008093c58      0xf00 ./Application/User/generated/image_Dark_Icons_Go_back_32.o
-                0x0000000008093c58                image_dark_icons_go_back_32
+                0x0000000008093c54      0xf00 ./Application/User/generated/image_Dark_Icons_Go_back_32.o
+                0x0000000008093c54                image_dark_icons_go_back_32
  ExtFlashSection
-                0x0000000008094b58     0x2400 ./Application/User/generated/image_Dark_Icons_Remove_48.o
-                0x0000000008094b58                image_dark_icons_remove_48
+                0x0000000008094b54     0x2400 ./Application/User/generated/image_Dark_Icons_Remove_48.o
+                0x0000000008094b54                image_dark_icons_remove_48
  ExtFlashSection
-                0x0000000008096f58      0xd00 ./Application/User/generated/image_Dark_Icons_trash_32.o
-                0x0000000008096f58                image_dark_icons_trash_32
+                0x0000000008096f54      0xd00 ./Application/User/generated/image_Dark_Icons_trash_32.o
+                0x0000000008096f54                image_dark_icons_trash_32
 
-.ARM.extab      0x0000000008097c58        0x0
-                0x0000000008097c58                . = ALIGN (0x4)
+.ARM.extab      0x0000000008097c54        0x0
+                0x0000000008097c54                . = ALIGN (0x4)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x0000000008097c58                . = ALIGN (0x4)
+                0x0000000008097c54                . = ALIGN (0x4)
 
-.ARM            0x0000000008097c58        0x8
-                0x0000000008097c58                . = ALIGN (0x4)
-                0x0000000008097c58                __exidx_start = .
+.ARM            0x0000000008097c54        0x8
+                0x0000000008097c54                . = ALIGN (0x4)
+                0x0000000008097c54                __exidx_start = .
  *(.ARM.exidx*)
- .ARM.exidx     0x0000000008097c58        0x8 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
-                0x0000000008097c60                __exidx_end = .
-                0x0000000008097c60                . = ALIGN (0x4)
+ .ARM.exidx     0x0000000008097c54        0x8 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
+                0x0000000008097c5c                __exidx_end = .
+                0x0000000008097c5c                . = ALIGN (0x4)
 
-.rel.dyn        0x0000000008097c60        0x0
- .rel.iplt      0x0000000008097c60        0x0 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+.rel.dyn        0x0000000008097c5c        0x0
+ .rel.iplt      0x0000000008097c5c        0x0 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 
-.preinit_array  0x0000000008097c60        0x0
-                0x0000000008097c60                . = ALIGN (0x4)
-                0x0000000008097c60                PROVIDE (__preinit_array_start = .)
+.preinit_array  0x0000000008097c5c        0x0
+                0x0000000008097c5c                . = ALIGN (0x4)
+                0x0000000008097c5c                PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x0000000008097c60                PROVIDE (__preinit_array_end = .)
-                0x0000000008097c60                . = ALIGN (0x4)
+                0x0000000008097c5c                PROVIDE (__preinit_array_end = .)
+                0x0000000008097c5c                . = ALIGN (0x4)
 
-.init_array     0x0000000008097c60       0x14
-                0x0000000008097c60                . = ALIGN (0x4)
-                0x0000000008097c60                PROVIDE (__init_array_start = .)
+.init_array     0x0000000008097c5c       0x14
+                0x0000000008097c5c                . = ALIGN (0x4)
+                0x0000000008097c5c                PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array*)
- .init_array    0x0000000008097c60        0x4 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtbegin.o
- .init_array    0x0000000008097c64        0x4 ./Application/User/TouchGFX/target/generated/TouchGFXConfiguration.o
- .init_array    0x0000000008097c68        0x4 ./Application/User/generated/TypedTextDatabase.o
- .init_array    0x0000000008097c6c        0x4 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD.o)
- .init_array    0x0000000008097c70        0x4 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(Application.o)
-                0x0000000008097c74                PROVIDE (__init_array_end = .)
-                0x0000000008097c74                . = ALIGN (0x4)
+ .init_array    0x0000000008097c5c        0x4 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .init_array    0x0000000008097c60        0x4 ./Application/User/TouchGFX/target/generated/TouchGFXConfiguration.o
+ .init_array    0x0000000008097c64        0x4 ./Application/User/generated/TypedTextDatabase.o
+ .init_array    0x0000000008097c68        0x4 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(LCD.o)
+ .init_array    0x0000000008097c6c        0x4 C:/TouchGFXProjects/app_test/Middlewares/ST/touchgfx/lib/core/cortex_m4f/gcc\libtouchgfx-float-abi-hard.a(Application.o)
+                0x0000000008097c70                PROVIDE (__init_array_end = .)
+                0x0000000008097c70                . = ALIGN (0x4)
 
-.fini_array     0x0000000008097c74        0x8
-                0x0000000008097c74                . = ALIGN (0x4)
+.fini_array     0x0000000008097c70        0x8
+                0x0000000008097c70                . = ALIGN (0x4)
                 [!provide]                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x0000000008097c74        0x4 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtbegin.o
- .fini_array    0x0000000008097c78        0x4 ./Application/User/TouchGFX/target/generated/TouchGFXConfiguration.o
+ .fini_array    0x0000000008097c70        0x4 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .fini_array    0x0000000008097c74        0x4 ./Application/User/TouchGFX/target/generated/TouchGFXConfiguration.o
                 [!provide]                        PROVIDE (__fini_array_end = .)
-                0x0000000008097c7c                . = ALIGN (0x4)
-                0x0000000008097c7c                _sidata = LOADADDR (.data)
+                0x0000000008097c78                . = ALIGN (0x4)
+                0x0000000008097c78                _sidata = LOADADDR (.data)
 
-.data           0x0000000020000000      0x164 load address 0x0000000008097c7c
+.data           0x0000000020000000      0x164 load address 0x0000000008097c78
                 0x0000000020000000                . = ALIGN (0x4)
                 0x0000000020000000                _sdata = .
  *(.data)
@@ -15492,11 +15490,11 @@ ExtFlashSection
                 0x0000000020000164                . = ALIGN (0x4)
                 0x0000000020000164                _edata = .
 
-.igot.plt       0x0000000020000164        0x0 load address 0x0000000008097de0
+.igot.plt       0x0000000020000164        0x0 load address 0x0000000008097ddc
  .igot.plt      0x0000000020000164        0x0 c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+fp/hard/crtbegin.o
                 0x0000000020000164                . = ALIGN (0x4)
 
-.bss            0x0000000020000164    0x1313c load address 0x0000000008097de0
+.bss            0x0000000020000164    0x1313c load address 0x0000000008097ddc
                 0x0000000020000164                _sbss = .
                 0x0000000020000164                __bss_start__ = _sbss
  *(.bss)
@@ -15865,7 +15863,7 @@ ExtFlashSection
                 0x00000000200132a0                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x00000000200132a0     0x1400 load address 0x0000000008097de0
+                0x00000000200132a0     0x1400 load address 0x0000000008097ddc
                 0x00000000200132a0                . = ALIGN (0x8)
                 0x00000000200132a0                PROVIDE (end = .)
                 [!provide]                        PROVIDE (_end = .)

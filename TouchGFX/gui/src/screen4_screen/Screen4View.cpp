@@ -320,7 +320,7 @@ void Screen4View::clicked_eq()
 		result = value1 * value2;
 	}
 
-	Unicode::snprintf(result_text_areaBuffer, RESULT_TEXT_AREA_SIZE, "%lf",result);
+	Unicode::snprintf(result_text_areaBuffer, RESULT_TEXT_AREA_SIZE, "%d",result);
 	result_text_area.invalidate();
 
 

@@ -7,31 +7,31 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, ALLOC, LOAD, READONLY, DATA
   1 .text         0001dd3c  080001b0  080001b0  000101b0  2**4
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
-  2 .rodata       00003d9c  0801deec  0801deec  0002deec  2**2
+  2 .rodata       00003d98  0801deec  0801deec  0002deec  2**2
                   CONTENTS, ALLOC, LOAD, READONLY, DATA
-  3 FontFlashSection 00002846  08021c88  08021c88  00031c88  2**2
+  3 FontFlashSection 00002846  08021c84  08021c84  00031c84  2**2
                   CONTENTS, ALLOC, LOAD, READONLY, DATA
-  4 FontSearchFlashSection 000001b0  080244d0  080244d0  000344d0  2**2
+  4 FontSearchFlashSection 000001b0  080244cc  080244cc  000344cc  2**2
                   CONTENTS, ALLOC, LOAD, READONLY, DATA
-  5 TextFlashSection 00000144  08024680  08024680  00034680  2**2
+  5 TextFlashSection 00000144  0802467c  0802467c  0003467c  2**2
                   CONTENTS, ALLOC, LOAD, READONLY, DATA
-  6 ExtFlashSection 00073494  080247c4  080247c4  000347c4  2**2
+  6 ExtFlashSection 00073494  080247c0  080247c0  000347c0  2**2
                   CONTENTS, ALLOC, LOAD, READONLY, DATA
-  7 .ARM.extab    00000000  08097c58  08097c58  000b0164  2**0
+  7 .ARM.extab    00000000  08097c54  08097c54  000b0164  2**0
                   CONTENTS
-  8 .ARM          00000008  08097c58  08097c58  000a7c58  2**2
+  8 .ARM          00000008  08097c54  08097c54  000a7c54  2**2
                   CONTENTS, ALLOC, LOAD, READONLY, DATA
-  9 .preinit_array 00000000  08097c60  08097c60  000b0164  2**0
+  9 .preinit_array 00000000  08097c5c  08097c5c  000b0164  2**0
                   CONTENTS, ALLOC, LOAD, DATA
- 10 .init_array   00000014  08097c60  08097c60  000a7c60  2**2
+ 10 .init_array   00000014  08097c5c  08097c5c  000a7c5c  2**2
                   CONTENTS, ALLOC, LOAD, DATA
- 11 .fini_array   00000008  08097c74  08097c74  000a7c74  2**2
+ 11 .fini_array   00000008  08097c70  08097c70  000a7c70  2**2
                   CONTENTS, ALLOC, LOAD, DATA
- 12 .data         00000164  20000000  08097c7c  000b0000  2**2
+ 12 .data         00000164  20000000  08097c78  000b0000  2**2
                   CONTENTS, ALLOC, LOAD, DATA
- 13 .bss          0001313c  20000164  08097de0  000b0164  2**2
+ 13 .bss          0001313c  20000164  08097ddc  000b0164  2**2
                   ALLOC
- 14 ._user_heap_stack 00001400  200132a0  08097de0  000b32a0  2**0
+ 14 ._user_heap_stack 00001400  200132a0  08097ddc  000b32a0  2**0
                   ALLOC
  15 .ARM.attributes 00000030  00000000  00000000  000b0164  2**0
                   CONTENTS, READONLY
@@ -500,7 +500,7 @@ LoopFillZerobss:
   ldr   sp, =_estack       /* set stack pointer */
  80005c0:	20030000 	.word	0x20030000
   ldr  r3, =_sidata
- 80005c4:	08097c7c 	.word	0x08097c7c
+ 80005c4:	08097c78 	.word	0x08097c78
   ldr  r0, =_sdata
  80005c8:	20000000 	.word	0x20000000
   ldr  r3, =_edata
@@ -6756,7 +6756,7 @@ protected:
     }
  800277c:	4770      	bx	lr
  800277e:	bf00      	nop
- 8002780:	080206a4 	.word	0x080206a4
+ 8002780:	080206a0 	.word	0x080206a0
 
 08002784 <_ZN8touchgfx8Drawable5setXYEss>:
     void setXY(int16_t x, int16_t y)
@@ -6831,7 +6831,7 @@ public:
  80027d2:	4620      	mov	r0, r4
  80027d4:	bd10      	pop	{r4, pc}
  80027d6:	bf00      	nop
- 80027d8:	080200ec 	.word	0x080200ec
+ 80027d8:	080200e8 	.word	0x080200e8
 
 080027dc <_ZN15Screen1ViewBaseC1Ev>:
 Screen1ViewBase::Screen1ViewBase() :
@@ -7085,8 +7085,8 @@ public:
  80029ee:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
  80029f2:	bf00      	nop
  80029f4:	0801ed0c 	.word	0x0801ed0c
- 80029f8:	08020274 	.word	0x08020274
- 80029fc:	080204c0 	.word	0x080204c0
+ 80029f8:	08020270 	.word	0x08020270
+ 80029fc:	080204bc 	.word	0x080204bc
  8002a00:	0801ecf4 	.word	0x0801ecf4
  8002a04:	08002713 	.word	0x08002713
 
@@ -7495,7 +7495,7 @@ protected:
     }
  8002bc0:	4620      	mov	r0, r4
  8002bc2:	bd10      	pop	{r4, pc}
- 8002bc4:	08020274 	.word	0x08020274
+ 8002bc4:	08020270 	.word	0x08020270
 
 08002bc8 <_ZN8touchgfx8TextAreaC1Ev>:
  *       the pointer remains valid when drawing.
@@ -7529,7 +7529,7 @@ public:
     }
  8002bf4:	4620      	mov	r0, r4
  8002bf6:	bd10      	pop	{r4, pc}
- 8002bf8:	080201cc 	.word	0x080201cc
+ 8002bf8:	080201c8 	.word	0x080201c8
  8002bfc:	0801e5e0 	.word	0x0801e5e0
 
 08002c00 <_ZN8touchgfx24BoxWithBorderButtonStyleINS_18TouchButtonTriggerEEC1Ev>:
@@ -7575,7 +7575,7 @@ public:
  8002c4c:	4620      	mov	r0, r4
  8002c4e:	bd70      	pop	{r4, r5, r6, pc}
  8002c50:	0801ee54 	.word	0x0801ee54
- 8002c54:	080203b4 	.word	0x080203b4
+ 8002c54:	080203b0 	.word	0x080203b0
 
 08002c58 <_ZN15Screen2ViewBaseC1Ev>:
 Screen2ViewBase::Screen2ViewBase() :
@@ -7918,8 +7918,8 @@ private:
  8002f44:	ecbd 8b04 	vpop	{d8-d9}
  8002f48:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
  8002f4c:	0801ef18 	.word	0x0801ef18
- 8002f50:	080204c0 	.word	0x080204c0
- 8002f54:	0802030c 	.word	0x0802030c
+ 8002f50:	080204bc 	.word	0x080204bc
+ 8002f54:	08020308 	.word	0x08020308
  8002f58:	0801eee8 	.word	0x0801eee8
  8002f5c:	08002b63 	.word	0x08002b63
  8002f60:	0801ef00 	.word	0x0801ef00
@@ -8080,7 +8080,7 @@ protected:
  800304e:	4620      	mov	r0, r4
  8003050:	bd38      	pop	{r3, r4, r5, pc}
  8003052:	bf00      	nop
- 8003054:	080204c0 	.word	0x080204c0
+ 8003054:	080204bc 	.word	0x080204bc
 
 08003058 <_ZN15Screen3ViewBaseC1Ev>:
 Screen3ViewBase::Screen3ViewBase() :
@@ -8350,9 +8350,9 @@ Screen3ViewBase::Screen3ViewBase() :
  80032e6:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
  80032ea:	bf00      	nop
  80032ec:	0801ef6c 	.word	0x0801ef6c
- 80032f0:	08020274 	.word	0x08020274
+ 80032f0:	08020270 	.word	0x08020270
  80032f4:	0801e5e0 	.word	0x0801e5e0
- 80032f8:	0802030c 	.word	0x0802030c
+ 80032f8:	08020308 	.word	0x08020308
  80032fc:	0801ef54 	.word	0x0801ef54
  8003300:	08002ff7 	.word	0x08002ff7
  8003304:	20012d98 	.word	0x20012d98
@@ -8878,7 +8878,7 @@ protected:
  800356c:	4620      	mov	r0, r4
  800356e:	bd70      	pop	{r4, r5, r6, pc}
  8003570:	0801efa0 	.word	0x0801efa0
- 8003574:	080203b4 	.word	0x080203b4
+ 8003574:	080203b0 	.word	0x080203b0
 
 08003578 <_ZN8touchgfx24BoxWithBorderButtonStyleINS_18ClickButtonTriggerEE22setBoxWithBorderColorsENS_9colortypeES3_S3_S3_>:
     void setBoxWithBorderColors(const colortype colorReleased, const colortype colorPressed, const colortype borderColorReleased, const colortype borderColorPressed)
@@ -9224,8 +9224,8 @@ Screen4ViewBase::Screen4ViewBase() :
  8003926:	ee1b 0a90 	vmov	r0, s23
  800392a:	e011      	b.n	8003950 <_ZN15Screen4ViewBaseC1Ev+0x3c0>
  800392c:	0801f04c 	.word	0x0801f04c
- 8003930:	080204c0 	.word	0x080204c0
- 8003934:	0802030c 	.word	0x0802030c
+ 8003930:	080204bc 	.word	0x080204bc
+ 8003934:	08020308 	.word	0x08020308
  8003938:	0801f034 	.word	0x0801f034
  800393c:	0800341d 	.word	0x0800341d
  8003940:	ff003366 	.word	0xff003366
@@ -10210,9 +10210,9 @@ touchgfx::GeneratedFont& getFont_ariblk_25_4bpp()
  80042b0:	bd30      	pop	{r4, r5, pc}
  80042b2:	bf00      	nop
  80042b4:	20001e94 	.word	0x20001e94
- 80042b8:	080244d0 	.word	0x080244d0
+ 80042b8:	080244cc 	.word	0x080244cc
  80042bc:	0801f0b8 	.word	0x0801f0b8
- 80042c0:	08023ed4 	.word	0x08023ed4
+ 80042c0:	08023ed0 	.word	0x08023ed0
  80042c4:	20001e98 	.word	0x20001e98
  80042c8:	08004255 	.word	0x08004255
 
@@ -10269,9 +10269,9 @@ touchgfx::GeneratedFont& getFont_verdana_10_4bpp()
  8004324:	bd30      	pop	{r4, r5, pc}
  8004326:	bf00      	nop
  8004328:	20001ec0 	.word	0x20001ec0
- 800432c:	080244d4 	.word	0x080244d4
+ 800432c:	080244d0 	.word	0x080244d0
  8004330:	0801f0bc 	.word	0x0801f0bc
- 8004334:	08023f7c 	.word	0x08023f7c
+ 8004334:	08023f78 	.word	0x08023f78
  8004338:	20001ec4 	.word	0x20001ec4
  800433c:	080042cd 	.word	0x080042cd
 
@@ -10328,9 +10328,9 @@ touchgfx::GeneratedFont& getFont_verdana_20_4bpp()
  8004398:	b00d      	add	sp, #52	; 0x34
  800439a:	bd30      	pop	{r4, r5, pc}
  800439c:	20001eec 	.word	0x20001eec
- 80043a0:	080244d8 	.word	0x080244d8
+ 80043a0:	080244d4 	.word	0x080244d4
  80043a4:	0801f0c0 	.word	0x0801f0c0
- 80043a8:	08023f8c 	.word	0x08023f8c
+ 80043a8:	08023f88 	.word	0x08023f88
  80043ac:	20001ef0 	.word	0x20001ef0
  80043b0:	08004341 	.word	0x08004341
 
@@ -10387,9 +10387,9 @@ touchgfx::GeneratedFont& getFont_verdana_40_4bpp()
  800440c:	bd30      	pop	{r4, r5, pc}
  800440e:	bf00      	nop
  8004410:	20001f18 	.word	0x20001f18
- 8004414:	0802467c 	.word	0x0802467c
+ 8004414:	08024678 	.word	0x08024678
  8004418:	0801f0c4 	.word	0x0801f0c4
- 800441c:	080244c0 	.word	0x080244c0
+ 800441c:	080244bc 	.word	0x080244bc
  8004420:	20001f1c 	.word	0x20001f1c
  8004424:	080043b5 	.word	0x080043b5
 
@@ -10676,9 +10676,9 @@ void touchgfx::Texts::setLanguage(touchgfx::LanguageId id)
  8004574:	20012d98 	.word	0x20012d98
  8004578:	20012da0 	.word	0x20012da0
  800457c:	20012d9c 	.word	0x20012d9c
- 8004580:	080246f0 	.word	0x080246f0
- 8004584:	08024680 	.word	0x08024680
- 8004588:	080247c0 	.word	0x080247c0
+ 8004580:	080246ec 	.word	0x080246ec
+ 8004584:	0802467c 	.word	0x0802467c
+ 8004588:	080247bc 	.word	0x080247bc
 
 0800458c <_ZNK8touchgfx5Texts7getTextEt>:
     languagesArray[id] = (const TranslationHeader*)translation;
@@ -11543,7 +11543,7 @@ void Screen4View::clicked_eq()
  8004966:	f8c4 3e14 	str.w	r3, [r4, #3604]	; 0xe14
 	}
 
-	Unicode::snprintf(result_text_areaBuffer, RESULT_TEXT_AREA_SIZE, "%lf",result);
+	Unicode::snprintf(result_text_areaBuffer, RESULT_TEXT_AREA_SIZE, "%d",result);
  800496a:	f8d4 3e14 	ldr.w	r3, [r4, #3604]	; 0xe14
  800496e:	4a19      	ldr	r2, [pc, #100]	; (80049d4 <_ZN11Screen4View10clicked_eqEv+0x88>)
  8004970:	f604 50a8 	addw	r0, r4, #3496	; 0xda8
@@ -11589,7 +11589,7 @@ void Screen4View::clicked_eq()
  80049cc:	f8d4 3e0c 	ldr.w	r3, [r4, #3596]	; 0xe0c
  80049d0:	4353      	muls	r3, r2
  80049d2:	e7c8      	b.n	8004966 <_ZN11Screen4View10clicked_eqEv+0x1a>
- 80049d4:	0801f520 	.word	0x0801f520
+ 80049d4:	0801f43c 	.word	0x0801f43c
 
 080049d8 <_ZN11Screen4View13clicked_clearEv>:
 
@@ -12335,7 +12335,7 @@ Screen4View::Screen4View()
  8004f8e:	4620      	mov	r0, r4
  8004f90:	bd10      	pop	{r4, pc}
  8004f92:	bf00      	nop
- 8004f94:	0801f52c 	.word	0x0801f52c
+ 8004f94:	0801f528 	.word	0x0801f528
 
 08004f98 <ili9341_GetLcdPixelWidth>:
   */
@@ -17572,7 +17572,7 @@ __weak HAL_StatusTypeDef HAL_RCC_OscConfig(RCC_OscInitTypeDef  *RCC_OscInitStruc
  8006f46:	bf00      	nop
  8006f48:	40023c00 	.word	0x40023c00
  8006f4c:	40023800 	.word	0x40023800
- 8006f50:	0801f598 	.word	0x0801f598
+ 8006f50:	0801f594 	.word	0x0801f594
  8006f54:	20000074 	.word	0x20000074
  8006f58:	2000007c 	.word	0x2000007c
 
@@ -17594,7 +17594,7 @@ uint32_t HAL_RCC_GetPCLK1Freq(void)
  8006f6c:	40d8      	lsrs	r0, r3
  8006f6e:	4770      	bx	lr
  8006f70:	40023800 	.word	0x40023800
- 8006f74:	0801f5a8 	.word	0x0801f5a8
+ 8006f74:	0801f5a4 	.word	0x0801f5a4
  8006f78:	20000074 	.word	0x20000074
 
 08006f7c <HAL_RCC_GetClockConfig>:
@@ -23576,9 +23576,9 @@ static void prvInitialiseNewTask( 	TaskFunction_t pxTaskCode,
  80092e4:	f884 5034 	strb.w	r5, [r4, #52]	; 0x34
  80092e8:	e7c7      	b.n	800927a <prvInitialiseNewTask.isra.0+0x4a>
  80092ea:	bf00      	nop
- 80092ec:	08021b08 	.word	0x08021b08
- 80092f0:	08021b28 	.word	0x08021b28
- 80092f4:	08021ae8 	.word	0x08021ae8
+ 80092ec:	08021b04 	.word	0x08021b04
+ 80092f0:	08021b24 	.word	0x08021b24
+ 80092f4:	08021ae4 	.word	0x08021ae4
 
 080092f8 <prvDeleteTCB>:
 	{
@@ -23934,7 +23934,7 @@ const TickType_t xConstTickCount = xTickCount;
  800954a:	f3bf 8f6f 	isb	sy
  800954e:	f3bf 8f4f 	dsb	sy
  8009552:	e7fe      	b.n	8009552 <vTaskStartScheduler+0x7a>
- 8009554:	0801f5b0 	.word	0x0801f5b0
+ 8009554:	0801f5ac 	.word	0x0801f5ac
  8009558:	08009335 	.word	0x08009335
  800955c:	20012714 	.word	0x20012714
  8009560:	200000fc 	.word	0x200000fc
@@ -24909,7 +24909,7 @@ static void prvCheckForValidListAndQueue( void )
  8009c40:	20012c18 	.word	0x20012c18
  8009c44:	20012c14 	.word	0x20012c14
  8009c48:	20012ce4 	.word	0x20012ce4
- 8009c4c:	0801f5b5 	.word	0x0801f5b5
+ 8009c4c:	0801f5b1 	.word	0x0801f5b1
 
 08009c50 <prvInsertTimerInActiveList>:
 	if( xNextExpiryTime <= xTimeNow )
@@ -25001,7 +25001,7 @@ BaseType_t xProcessTimerNow = pdFALSE;
  8009cdc:	b008      	add	sp, #32
  8009cde:	bd10      	pop	{r4, pc}
  8009ce0:	20012d34 	.word	0x20012d34
- 8009ce4:	0801f5ba 	.word	0x0801f5ba
+ 8009ce4:	0801f5b6 	.word	0x0801f5b6
  8009ce8:	08009dc5 	.word	0x08009dc5
  8009cec:	20012d38 	.word	0x20012d38
 
@@ -25441,10 +25441,10 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  800a022:	e7e7      	b.n	8009ff4 <_ZN8touchgfx17AbstractPartition7indexOfEPKv+0x2c>
  800a024:	4620      	mov	r0, r4
  800a026:	bdf8      	pop	{r3, r4, r5, r6, r7, pc}
- 800a028:	0801f5c2 	.word	0x0801f5c2
- 800a02c:	0801f72e 	.word	0x0801f72e
- 800a030:	0801f5d7 	.word	0x0801f5d7
- 800a034:	0801f605 	.word	0x0801f605
+ 800a028:	0801f5be 	.word	0x0801f5be
+ 800a02c:	0801f72a 	.word	0x0801f72a
+ 800a030:	0801f5d3 	.word	0x0801f5d3
+ 800a034:	0801f601 	.word	0x0801f601
 
 0800a038 <_ZN8touchgfx17AbstractPartition8allocateEt>:
  800a038:	b538      	push	{r3, r4, r5, lr}
@@ -25480,10 +25480,10 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  800a076:	3301      	adds	r3, #1
  800a078:	80a3      	strh	r3, [r4, #4]
  800a07a:	bd38      	pop	{r3, r4, r5, pc}
- 800a07c:	0801f67f 	.word	0x0801f67f
- 800a080:	0801f771 	.word	0x0801f771
- 800a084:	0801f5d7 	.word	0x0801f5d7
- 800a088:	0801f696 	.word	0x0801f696
+ 800a07c:	0801f67b 	.word	0x0801f67b
+ 800a080:	0801f76d 	.word	0x0801f76d
+ 800a084:	0801f5d3 	.word	0x0801f5d3
+ 800a088:	0801f692 	.word	0x0801f692
 
 0800a08c <_ZN8touchgfx17AbstractPartition10allocateAtEtt>:
  800a08c:	b570      	push	{r4, r5, r6, lr}
@@ -25506,9 +25506,9 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  800a0b0:	6a5b      	ldr	r3, [r3, #36]	; 0x24
  800a0b2:	e8bd 4070 	ldmia.w	sp!, {r4, r5, r6, lr}
  800a0b6:	4718      	bx	r3
- 800a0b8:	0801f67f 	.word	0x0801f67f
- 800a0bc:	0801f6e4 	.word	0x0801f6e4
- 800a0c0:	0801f5d7 	.word	0x0801f5d7
+ 800a0b8:	0801f67b 	.word	0x0801f67b
+ 800a0bc:	0801f6e0 	.word	0x0801f6e0
+ 800a0c0:	0801f5d3 	.word	0x0801f5d3
 
 0800a0c4 <_ZN8touchgfx17AbstractPartitionD1Ev>:
  800a0c4:	4770      	bx	lr
@@ -25521,7 +25521,7 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  800a0ce:	8082      	strh	r2, [r0, #4]
  800a0d0:	4770      	bx	lr
  800a0d2:	bf00      	nop
- 800a0d4:	0801f6b8 	.word	0x0801f6b8
+ 800a0d4:	0801f6b4 	.word	0x0801f6b4
 
 0800a0d8 <_ZN8touchgfx9Container8containsERKNS_8DrawableE>:
  800a0d8:	6a83      	ldr	r3, [r0, #40]	; 0x28
@@ -25730,11 +25730,11 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  800a25e:	e7e1      	b.n	800a224 <_ZN8touchgfx9Container3addERNS_8DrawableE+0xc>
  800a260:	6199      	str	r1, [r3, #24]
  800a262:	e7ed      	b.n	800a240 <_ZN8touchgfx9Container3addERNS_8DrawableE+0x28>
- 800a264:	0801f7af 	.word	0x0801f7af
- 800a268:	0801f900 	.word	0x0801f900
- 800a26c:	0801f7db 	.word	0x0801f7db
- 800a270:	0801f80e 	.word	0x0801f80e
- 800a274:	0801f844 	.word	0x0801f844
+ 800a264:	0801f7ab 	.word	0x0801f7ab
+ 800a268:	0801f8fc 	.word	0x0801f8fc
+ 800a26c:	0801f7d7 	.word	0x0801f7d7
+ 800a270:	0801f80a 	.word	0x0801f80a
+ 800a274:	0801f840 	.word	0x0801f840
 
 0800a278 <_ZN8touchgfx4RectaNERKS0_>:
  800a278:	e92d 43f0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, lr}
@@ -26410,11 +26410,11 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  800a8be:	1a9a      	subs	r2, r3, r2
  800a8c0:	63e2      	str	r2, [r4, #60]	; 0x3c
  800a8c2:	e7f2      	b.n	800a8aa <_ZN8touchgfx3HAL27configurePartialFrameBufferEtttt+0x6a>
- 800a8c4:	0801faa8 	.word	0x0801faa8
- 800a8c8:	0801fd60 	.word	0x0801fd60
- 800a8cc:	0801faed 	.word	0x0801faed
+ 800a8c4:	0801faa4 	.word	0x0801faa4
+ 800a8c8:	0801fd5c 	.word	0x0801fd5c
+ 800a8cc:	0801fae9 	.word	0x0801fae9
  800a8d0:	20012d42 	.word	0x20012d42
- 800a8d4:	0801fb13 	.word	0x0801fb13
+ 800a8d4:	0801fb0f 	.word	0x0801fb0f
 
 0800a8d8 <_ZN8touchgfx3HAL8blitCopyEPKtttttthb>:
  800a8d8:	b5f0      	push	{r4, r5, r6, r7, lr}
@@ -26764,10 +26764,10 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  800ac3c:	4798      	blx	r3
  800ac3e:	b008      	add	sp, #32
  800ac40:	e8bd 87f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, pc}
- 800ac44:	0801f93b 	.word	0x0801f93b
- 800ac48:	0801fb9b 	.word	0x0801fb9b
- 800ac4c:	0801faed 	.word	0x0801faed
- 800ac50:	0801f973 	.word	0x0801f973
+ 800ac44:	0801f937 	.word	0x0801f937
+ 800ac48:	0801fb97 	.word	0x0801fb97
+ 800ac4c:	0801fae9 	.word	0x0801fae9
+ 800ac50:	0801f96f 	.word	0x0801f96f
 
 0800ac54 <_ZN8touchgfx3HAL12blitFillWordEtttttt>:
  800ac54:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
@@ -26821,10 +26821,10 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  800acdc:	b009      	add	sp, #36	; 0x24
  800acde:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
  800ace2:	bf00      	nop
- 800ace4:	0801f9b8 	.word	0x0801f9b8
- 800ace8:	0801fc11 	.word	0x0801fc11
- 800acec:	0801faed 	.word	0x0801faed
- 800acf0:	0801f9f0 	.word	0x0801f9f0
+ 800ace4:	0801f9b4 	.word	0x0801f9b4
+ 800ace8:	0801fc0d 	.word	0x0801fc0d
+ 800acec:	0801fae9 	.word	0x0801fae9
+ 800acf0:	0801f9ec 	.word	0x0801f9ec
 
 0800acf4 <_ZN8touchgfx3HAL15lockFrameBufferEv>:
  800acf4:	b510      	push	{r4, lr}
@@ -26874,9 +26874,9 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  800ad5e:	2000      	movs	r0, #0
  800ad60:	e7ef      	b.n	800ad42 <_ZNK8touchgfx3HAL11getBitDepthENS_6Bitmap12BitmapFormatE+0x1a>
  800ad62:	bf00      	nop
- 800ad64:	0801fb69 	.word	0x0801fb69
- 800ad68:	0801ff2a 	.word	0x0801ff2a
- 800ad6c:	0801faed 	.word	0x0801faed
+ 800ad64:	0801fb65 	.word	0x0801fb65
+ 800ad68:	0801ff26 	.word	0x0801ff26
+ 800ad6c:	0801fae9 	.word	0x0801fae9
 
 0800ad70 <_ZNK8touchgfx3HAL13getDstAddressEttPttNS_6Bitmap12BitmapFormatE>:
  800ad70:	b570      	push	{r4, r5, r6, lr}
@@ -26973,10 +26973,10 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  800ae60:	b00a      	add	sp, #40	; 0x28
  800ae62:	e8bd 87f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, pc}
  800ae66:	bf00      	nop
- 800ae68:	0801f93b 	.word	0x0801f93b
- 800ae6c:	0801fdc4 	.word	0x0801fdc4
- 800ae70:	0801faed 	.word	0x0801faed
- 800ae74:	0801f973 	.word	0x0801f973
+ 800ae68:	0801f937 	.word	0x0801f937
+ 800ae6c:	0801fdc0 	.word	0x0801fdc0
+ 800ae70:	0801fae9 	.word	0x0801fae9
+ 800ae74:	0801f96f 	.word	0x0801f96f
 
 0800ae78 <_ZN8touchgfx3HAL8blitFillENS_9colortypeEtttthtNS_6Bitmap12BitmapFormatE>:
  800ae78:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
@@ -27032,9 +27032,9 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  800af04:	4798      	blx	r3
  800af06:	b00b      	add	sp, #44	; 0x2c
  800af08:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
- 800af0c:	0801f973 	.word	0x0801f973
- 800af10:	0801fe95 	.word	0x0801fe95
- 800af14:	0801faed 	.word	0x0801faed
+ 800af0c:	0801f96f 	.word	0x0801f96f
+ 800af10:	0801fe91 	.word	0x0801fe91
+ 800af14:	0801fae9 	.word	0x0801fae9
 
 0800af18 <_ZNK8touchgfx3HAL13getDstAddressEttPt>:
  800af18:	e92d 41f3 	stmdb	sp!, {r0, r1, r4, r5, r6, r7, r8, lr}
@@ -27122,10 +27122,10 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  800afee:	e8bd 81f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, pc}
  800aff2:	bf00      	nop
  800aff4:	20012d42 	.word	0x20012d42
- 800aff8:	0801f93b 	.word	0x0801f93b
- 800affc:	0801fc76 	.word	0x0801fc76
- 800b000:	0801faed 	.word	0x0801faed
- 800b004:	0801f973 	.word	0x0801f973
+ 800aff8:	0801f937 	.word	0x0801f937
+ 800affc:	0801fc72 	.word	0x0801fc72
+ 800b000:	0801fae9 	.word	0x0801fae9
+ 800b004:	0801f96f 	.word	0x0801f96f
 
 0800b008 <_ZN8touchgfx3HAL20copyFBRegionToMemoryENS_4RectE>:
  800b008:	b570      	push	{r4, r5, r6, lr}
@@ -27183,9 +27183,9 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  800b090:	b00a      	add	sp, #40	; 0x28
  800b092:	bd70      	pop	{r4, r5, r6, pc}
  800b094:	20012d47 	.word	0x20012d47
- 800b098:	0801fa3a 	.word	0x0801fa3a
- 800b09c:	0801fd1a 	.word	0x0801fd1a
- 800b0a0:	0801faed 	.word	0x0801faed
+ 800b098:	0801fa36 	.word	0x0801fa36
+ 800b09c:	0801fd16 	.word	0x0801fd16
+ 800b0a0:	0801fae9 	.word	0x0801fae9
  800b0a4:	20012d42 	.word	0x20012d42
 
 0800b0a8 <_ZN8touchgfx3HAL20copyFBRegionToMemoryENS_4RectEPtm>:
@@ -27374,9 +27374,9 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  800b22a:	4798      	blx	r3
  800b22c:	e7eb      	b.n	800b206 <_ZN8touchgfx13DMA_Interface7executeEv+0x6e>
  800b22e:	bf00      	nop
- 800b230:	0801ff73 	.word	0x0801ff73
- 800b234:	08020034 	.word	0x08020034
- 800b238:	0801ff98 	.word	0x0801ff98
+ 800b230:	0801ff6f 	.word	0x0801ff6f
+ 800b234:	08020030 	.word	0x08020030
+ 800b238:	0801ff94 	.word	0x0801ff94
 
 0800b23c <_ZN8touchgfx13DMA_Interface10addToQueueERKNS_6BlitOpE>:
  800b23c:	b570      	push	{r4, r5, r6, lr}
@@ -27483,9 +27483,9 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  800b314:	2139      	movs	r1, #57	; 0x39
  800b316:	f011 fc67 	bl	801cbe8 <__assert_func>
  800b31a:	bf00      	nop
- 800b31c:	0801ffbe 	.word	0x0801ffbe
- 800b320:	08020064 	.word	0x08020064
- 800b324:	0801ff98 	.word	0x0801ff98
+ 800b31c:	0801ffba 	.word	0x0801ffba
+ 800b320:	08020060 	.word	0x08020060
+ 800b324:	0801ff94 	.word	0x0801ff94
 
 0800b328 <_ZN8touchgfx17LockFreeDMA_Queue3popEv>:
  800b328:	b510      	push	{r4, lr}
@@ -27508,9 +27508,9 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  800b34e:	1a9b      	suble	r3, r3, r2
  800b350:	6123      	str	r3, [r4, #16]
  800b352:	bd10      	pop	{r4, pc}
- 800b354:	0801ffe1 	.word	0x0801ffe1
- 800b358:	080200b2 	.word	0x080200b2
- 800b35c:	0801ff98 	.word	0x0801ff98
+ 800b354:	0801ffdd 	.word	0x0801ffdd
+ 800b358:	080200ae 	.word	0x080200ae
+ 800b35c:	0801ff94 	.word	0x0801ff94
 
 0800b360 <_ZN8touchgfx13DMA_Interface16executeCompletedEv>:
  800b360:	b570      	push	{r4, r5, r6, lr}
@@ -27550,7 +27550,7 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  800b3a8:	e9c0 2203 	strd	r2, r2, [r0, #12]
  800b3ac:	bd10      	pop	{r4, pc}
  800b3ae:	bf00      	nop
- 800b3b0:	08020018 	.word	0x08020018
+ 800b3b0:	08020014 	.word	0x08020014
 
 0800b3b4 <_ZN8touchgfx13DMA_Interface15isDmaQueueEmptyEv>:
  800b3b4:	6840      	ldr	r0, [r0, #4]
@@ -27693,8 +27693,8 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  800b4c4:	f884 5029 	strb.w	r5, [r4, #41]	; 0x29
  800b4c8:	4620      	mov	r0, r4
  800b4ca:	bd38      	pop	{r3, r4, r5, pc}
- 800b4cc:	080204c0 	.word	0x080204c0
- 800b4d0:	0802015c 	.word	0x0802015c
+ 800b4cc:	080204bc 	.word	0x080204bc
+ 800b4d0:	08020158 	.word	0x08020158
 
 0800b4d4 <_ZNK8touchgfx13ScalableImage19lookupRenderVariantEv>:
  800b4d4:	4603      	mov	r3, r0
@@ -28074,7 +28074,7 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  800b8f2:	e7fb      	b.n	800b8ec <_ZNK8touchgfx8TextArea12getTextWidthEv+0x5c>
  800b8f4:	20012d98 	.word	0x20012d98
  800b8f8:	0801ed40 	.word	0x0801ed40
- 800b8fc:	0802023c 	.word	0x0802023c
+ 800b8fc:	08020238 	.word	0x08020238
  800b900:	0801edce 	.word	0x0801edce
  800b904:	20012d9c 	.word	0x20012d9c
  800b908:	0801edf7 	.word	0x0801edf7
@@ -28120,7 +28120,7 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  800b962:	bf00      	nop
  800b964:	20012d98 	.word	0x20012d98
  800b968:	0801ed40 	.word	0x0801ed40
- 800b96c:	0802023c 	.word	0x0802023c
+ 800b96c:	08020238 	.word	0x08020238
  800b970:	0801edce 	.word	0x0801edce
  800b974:	20012d9c 	.word	0x20012d9c
  800b978:	0801edf7 	.word	0x0801edf7
@@ -28211,7 +28211,7 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  800ba5a:	bf00      	nop
  800ba5c:	20012d98 	.word	0x20012d98
  800ba60:	0801ed40 	.word	0x0801ed40
- 800ba64:	0802023c 	.word	0x0802023c
+ 800ba64:	08020238 	.word	0x08020238
  800ba68:	0801edce 	.word	0x0801edce
  800ba6c:	20012d9c 	.word	0x20012d9c
  800ba70:	0801edf7 	.word	0x0801edf7
@@ -28310,7 +28310,7 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  800bb64:	2600      	movs	r6, #0
  800bb66:	e7f5      	b.n	800bb54 <_ZNK8touchgfx8TextArea19calculateTextHeightEPKtz+0xd4>
  800bb68:	0801ed40 	.word	0x0801ed40
- 800bb6c:	0802023c 	.word	0x0802023c
+ 800bb6c:	08020238 	.word	0x08020238
  800bb70:	0801edce 	.word	0x0801edce
  800bb74:	0801edf7 	.word	0x0801edf7
  800bb78:	20012d98 	.word	0x20012d98
@@ -28365,7 +28365,7 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  800bbe2:	bd70      	pop	{r4, r5, r6, pc}
  800bbe4:	20012d98 	.word	0x20012d98
  800bbe8:	0801ed40 	.word	0x0801ed40
- 800bbec:	0802023c 	.word	0x0802023c
+ 800bbec:	08020238 	.word	0x08020238
  800bbf0:	0801edce 	.word	0x0801edce
  800bbf4:	20012d9c 	.word	0x20012d9c
  800bbf8:	0801edf7 	.word	0x0801edf7
@@ -28630,7 +28630,7 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  800be3e:	bf00      	nop
  800be40:	20012dd0 	.word	0x20012dd0
  800be44:	0801f31c 	.word	0x0801f31c
- 800be48:	080202d0 	.word	0x080202d0
+ 800be48:	080202cc 	.word	0x080202cc
  800be4c:	0801f3a9 	.word	0x0801f3a9
  800be50:	20012d48 	.word	0x20012d48
 
@@ -28686,7 +28686,7 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  800bebe:	e7fb      	b.n	800beb8 <_ZNK8touchgfx23TextAreaWithOneWildcard12getTextWidthEv+0x60>
  800bec0:	20012d98 	.word	0x20012d98
  800bec4:	0801ed40 	.word	0x0801ed40
- 800bec8:	0802037c 	.word	0x0802037c
+ 800bec8:	08020378 	.word	0x08020378
  800becc:	0801edce 	.word	0x0801edce
  800bed0:	20012d9c 	.word	0x20012d9c
  800bed4:	0801edf7 	.word	0x0801edf7
@@ -28732,7 +28732,7 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  800bf2e:	bd70      	pop	{r4, r5, r6, pc}
  800bf30:	20012d98 	.word	0x20012d98
  800bf34:	0801ed40 	.word	0x0801ed40
- 800bf38:	0802037c 	.word	0x0802037c
+ 800bf38:	08020378 	.word	0x08020378
  800bf3c:	0801edce 	.word	0x0801edce
  800bf40:	20012d9c 	.word	0x20012d9c
  800bf44:	0801edf7 	.word	0x0801edf7
@@ -28827,7 +28827,7 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  800c02e:	e8bd 87f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, pc}
  800c032:	bf00      	nop
  800c034:	0801ed40 	.word	0x0801ed40
- 800c038:	0802037c 	.word	0x0802037c
+ 800c038:	08020378 	.word	0x08020378
  800c03c:	0801edce 	.word	0x0801edce
  800c040:	20012d9c 	.word	0x20012d9c
  800c044:	0801edf7 	.word	0x0801edf7
@@ -29082,7 +29082,7 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  800c2be:	bf00      	nop
  800c2c0:	20012dd0 	.word	0x20012dd0
  800c2c4:	0801f31c 	.word	0x0801f31c
- 800c2c8:	08020484 	.word	0x08020484
+ 800c2c8:	08020480 	.word	0x08020480
  800c2cc:	0801f3a9 	.word	0x0801f3a9
  800c2d0:	20012d48 	.word	0x20012d48
 
@@ -29117,7 +29117,7 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  800c316:	8702      	strh	r2, [r0, #56]	; 0x38
  800c318:	8742      	strh	r2, [r0, #58]	; 0x3a
  800c31a:	bd10      	pop	{r4, pc}
- 800c31c:	08020418 	.word	0x08020418
+ 800c31c:	08020414 	.word	0x08020414
 
 0800c320 <_ZN8touchgfx5ImageD1Ev>:
  800c320:	4770      	bx	lr
@@ -31661,9 +31661,9 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  800dc3c:	6b1b      	ldr	r3, [r3, #48]	; 0x30
  800dc3e:	e8bd 4070 	ldmia.w	sp!, {r4, r5, r6, lr}
  800dc42:	4718      	bx	r3
- 800dc44:	08020520 	.word	0x08020520
- 800dc48:	080205f0 	.word	0x080205f0
- 800dc4c:	0802052a 	.word	0x0802052a
+ 800dc44:	0802051c 	.word	0x0802051c
+ 800dc48:	080205ec 	.word	0x080205ec
+ 800dc4c:	08020526 	.word	0x08020526
  800dc50:	20012d84 	.word	0x20012d84
 
 0800dc54 <_ZNK8touchgfx4Rect9intersectERKS0_>:
@@ -31860,7 +31860,7 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  800de0c:	f001 fabe 	bl	800f38c <_ZN8touchgfx6Screen4drawEv>
  800de10:	e7ec      	b.n	800ddec <_ZN8touchgfx11ApplicationC1Ev+0x44>
  800de12:	bf00      	nop
- 800de14:	080205b4 	.word	0x080205b4
+ 800de14:	080205b0 	.word	0x080205b0
  800de18:	b5e8b5cd 	.word	0xb5e8b5cd
  800de1c:	f407a5c2 	.word	0xf407a5c2
  800de20:	20012d84 	.word	0x20012d84
@@ -31909,9 +31909,9 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  800de8e:	b003      	add	sp, #12
  800de90:	bd30      	pop	{r4, r5, pc}
  800de92:	bf00      	nop
- 800de94:	08020554 	.word	0x08020554
- 800de98:	08020634 	.word	0x08020634
- 800de9c:	08020583 	.word	0x08020583
+ 800de94:	08020550 	.word	0x08020550
+ 800de98:	08020630 	.word	0x08020630
+ 800de9c:	0802057f 	.word	0x0802057f
 
 0800dea0 <_ZN8touchgfx11Application14invalidateAreaENS_4RectE>:
  800dea0:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
@@ -33462,7 +33462,7 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  800ee12:	4b01      	ldr	r3, [pc, #4]	; (800ee18 <_ZN8touchgfx9ConstFontC1EPKNS_9GlyphNodeEtthhhhhtt+0x40>)
  800ee14:	6003      	str	r3, [r0, #0]
  800ee16:	bd30      	pop	{r4, r5, pc}
- 800ee18:	08020708 	.word	0x08020708
+ 800ee18:	08020704 	.word	0x08020704
 
 0800ee1c <_ZNK8touchgfx9ConstFont4findEt>:
  800ee1c:	b5f0      	push	{r4, r5, r6, r7, lr}
@@ -33687,7 +33687,7 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  800efce:	b007      	add	sp, #28
  800efd0:	bd30      	pop	{r4, r5, pc}
  800efd2:	bf00      	nop
- 800efd4:	08020788 	.word	0x08020788
+ 800efd4:	08020784 	.word	0x08020784
 
 0800efd8 <_ZNK8touchgfx4Rect9intersectEss>:
  800efd8:	b510      	push	{r4, lr}
@@ -33790,8 +33790,8 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  800f0be:	4798      	blx	r3
  800f0c0:	b009      	add	sp, #36	; 0x24
  800f0c2:	bdf0      	pop	{r4, r5, r6, r7, pc}
- 800f0c4:	08020760 	.word	0x08020760
- 800f0c8:	08020774 	.word	0x08020774
+ 800f0c4:	0802075c 	.word	0x0802075c
+ 800f0c8:	08020770 	.word	0x08020770
 
 0800f0cc <_ZN8touchgfx6Screen16handleClickEventERKNS_10ClickEventE>:
  800f0cc:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
@@ -33958,7 +33958,7 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  800f284:	20012d3c 	.word	0x20012d3c
  800f288:	0801deec 	.word	0x0801deec
  800f28c:	20012d3e 	.word	0x20012d3e
- 800f290:	08020760 	.word	0x08020760
+ 800f290:	0802075c 	.word	0x0802075c
 
 0800f294 <_ZN8touchgfx8Drawable20getCachedVisibleRectEv>:
  800f294:	b537      	push	{r0, r1, r2, r4, r5, lr}
@@ -34058,8 +34058,8 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  800f376:	4798      	blx	r3
  800f378:	4620      	mov	r0, r4
  800f37a:	bd70      	pop	{r4, r5, r6, pc}
- 800f37c:	0802079c 	.word	0x0802079c
- 800f380:	0801f880 	.word	0x0801f880
+ 800f37c:	08020798 	.word	0x08020798
+ 800f380:	0801f87c 	.word	0x0801f87c
  800f384:	20012d3e 	.word	0x20012d3e
  800f388:	20012d3c 	.word	0x20012d3c
 
@@ -34656,7 +34656,7 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  800f95e:	e7b6      	b.n	800f8ce <_ZN8touchgfx12TextProvider15adjustThaiGlyphEPKNS_4FontEPKNS_9GlyphNodeE+0x192>
  800f960:	3fc00079 	.word	0x3fc00079
  800f964:	0801f0c8 	.word	0x0801f0c8
- 800f968:	080209f7 	.word	0x080209f7
+ 800f968:	080209f3 	.word	0x080209f3
  800f96c:	0801f19a 	.word	0x0801f19a
 
 0800f970 <_ZN8touchgfx12TextProvider17adjustArabicGlyphEPKNS_4FontEPKNS_9GlyphNodeEt>:
@@ -35017,7 +35017,7 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  800fd54:	e7d9      	b.n	800fd0a <_ZN8touchgfx12TextProvider15getNextLigatureEhPKNS_4FontERPKNS_9GlyphNodeE+0x56>
  800fd56:	bf00      	nop
  800fd58:	0801f0c8 	.word	0x0801f0c8
- 800fd5c:	080209f7 	.word	0x080209f7
+ 800fd5c:	080209f3 	.word	0x080209f3
  800fd60:	0801f19a 	.word	0x0801f19a
 
 0800fd64 <_ZN8touchgfx12TextProvider15getNextLigatureEhPKNS_4FontERPKNS_9GlyphNodeERPKhRh>:
@@ -35088,7 +35088,7 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  800fe06:	f7ff fc6a 	bl	800f6de <_ZN8touchgfx12TextProvider16adjustHindiGlyphEPKNS_9GlyphNodeE>
  800fe0a:	e7d9      	b.n	800fdc0 <_ZN8touchgfx12TextProvider15getNextLigatureEhPKNS_4FontERPKNS_9GlyphNodeERPKhRh+0x5c>
  800fe0c:	0801f0c8 	.word	0x0801f0c8
- 800fe10:	080209f7 	.word	0x080209f7
+ 800fe10:	080209f3 	.word	0x080209f3
  800fe14:	0801f19a 	.word	0x0801f19a
 
 0800fe18 <_ZN8touchgfx12TextProvider15fillInputBufferEv>:
@@ -35149,8 +35149,8 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  800fe92:	8358      	strh	r0, [r3, #26]
  800fe94:	e7c2      	b.n	800fe1c <_ZN8touchgfx12TextProvider15fillInputBufferEv+0x4>
  800fe96:	bd10      	pop	{r4, pc}
- 800fe98:	080207c8 	.word	0x080207c8
- 800fe9c:	08020b4d 	.word	0x08020b4d
+ 800fe98:	080207c4 	.word	0x080207c4
+ 800fe9c:	08020b49 	.word	0x08020b49
  800fea0:	0801f19a 	.word	0x0801f19a
 
 0800fea4 <_ZN8touchgfx12TextProvider11getNextCharEv>:
@@ -35195,7 +35195,7 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  800fef8:	bd38      	pop	{r3, r4, r5, pc}
  800fefa:	bf00      	nop
  800fefc:	0801f0c8 	.word	0x0801f0c8
- 800ff00:	08020aa2 	.word	0x08020aa2
+ 800ff00:	08020a9e 	.word	0x08020a9e
  800ff04:	0801f19a 	.word	0x0801f19a
 
 0800ff08 <_ZN8touchgfx12TextProvider22replaceInputCharactersEttPKt>:
@@ -35257,14 +35257,14 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  800ff7c:	e8bd 4038 	ldmia.w	sp!, {r3, r4, r5, lr}
  800ff80:	f7ff bf4a 	b.w	800fe18 <_ZN8touchgfx12TextProvider15fillInputBufferEv>
  800ff84:	0801f0c8 	.word	0x0801f0c8
- 800ff88:	0802087b 	.word	0x0802087b
+ 800ff88:	08020877 	.word	0x08020877
  800ff8c:	0801f19a 	.word	0x0801f19a
  800ff90:	0801f1c6 	.word	0x0801f1c6
- 800ff94:	08020925 	.word	0x08020925
- 800ff98:	080207d4 	.word	0x080207d4
- 800ff9c:	08020bfc 	.word	0x08020bfc
- 800ffa0:	080207e0 	.word	0x080207e0
- 800ffa4:	080207f3 	.word	0x080207f3
+ 800ff94:	08020921 	.word	0x08020921
+ 800ff98:	080207d0 	.word	0x080207d0
+ 800ff9c:	08020bf8 	.word	0x08020bf8
+ 800ffa0:	080207dc 	.word	0x080207dc
+ 800ffa4:	080207ef 	.word	0x080207ef
 
 0800ffa8 <_ZN8touchgfx12TextProvider13gsubRuleMatchEPKtttt>:
  800ffa8:	3a01      	subs	r2, #1
@@ -35325,9 +35325,9 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  8010024:	e7e0      	b.n	800ffe8 <_ZN8touchgfx12TextProvider13gsubRuleMatchEPKtttt+0x40>
  8010026:	bf00      	nop
  8010028:	0801f1c6 	.word	0x0801f1c6
- 801002c:	08020c80 	.word	0x08020c80
+ 801002c:	08020c7c 	.word	0x08020c7c
  8010030:	0801f19a 	.word	0x0801f19a
- 8010034:	08020925 	.word	0x08020925
+ 8010034:	08020921 	.word	0x08020921
 
 08010038 <_ZN8touchgfx12TextProvider14applyGsubRulesEPKtt>:
  8010038:	e92d 4ff7 	stmdb	sp!, {r0, r1, r2, r4, r5, r6, r7, r8, r9, sl, fp, lr}
@@ -35432,7 +35432,7 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  8010126:	e8bd 81f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, pc}
  801012a:	bf00      	nop
  801012c:	0801f0c8 	.word	0x0801f0c8
- 8010130:	080209f7 	.word	0x080209f7
+ 8010130:	080209f3 	.word	0x080209f3
  8010134:	0801f19a 	.word	0x0801f19a
 
 08010138 <_ZN8touchgfx8ceil28_4El>:
@@ -35479,9 +35479,9 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  8010196:	6818      	ldr	r0, [r3, #0]
  8010198:	1a09      	subs	r1, r1, r0
  801019a:	e7ed      	b.n	8010178 <_ZN8touchgfx11floorDivModEllRlS0_+0x20>
- 801019c:	08020d51 	.word	0x08020d51
- 80101a0:	08020d90 	.word	0x08020d90
- 80101a4:	08020d61 	.word	0x08020d61
+ 801019c:	08020d4d 	.word	0x08020d4d
+ 80101a0:	08020d8c 	.word	0x08020d8c
+ 80101a4:	08020d5d 	.word	0x08020d5d
 
 080101a8 <_ZN8touchgfx9GradientsC1EPKNS_7Point3DE>:
  80101a8:	b570      	push	{r4, r5, r6, lr}
@@ -36701,9 +36701,9 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  8010dc8:	20012db8 	.word	0x20012db8
  8010dcc:	20012dcc 	.word	0x20012dcc
  8010dd0:	20012dc8 	.word	0x20012dc8
- 8010dd4:	08020e2e 	.word	0x08020e2e
- 8010dd8:	08020e87 	.word	0x08020e87
- 8010ddc:	08020e09 	.word	0x08020e09
+ 8010dd4:	08020e2a 	.word	0x08020e2a
+ 8010dd8:	08020e83 	.word	0x08020e83
+ 8010ddc:	08020e05 	.word	0x08020e05
  8010de0:	20012db4 	.word	0x20012db4
  8010de4:	20012dac 	.word	0x20012dac
 
@@ -36766,8 +36766,8 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  8010e62:	bf00      	nop
  8010e64:	20012dd0 	.word	0x20012dd0
  8010e68:	0801f31c 	.word	0x0801f31c
- 8010e6c:	08020f34 	.word	0x08020f34
- 8010e70:	08020e09 	.word	0x08020e09
+ 8010e6c:	08020f30 	.word	0x08020f30
+ 8010e70:	08020e05 	.word	0x08020e05
  8010e74:	20012dc8 	.word	0x20012dc8
  8010e78:	20012dcc 	.word	0x20012dcc
  8010e7c:	20012db0 	.word	0x20012db0
@@ -36813,8 +36813,8 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  8010ed6:	bf00      	nop
  8010ed8:	20012dd0 	.word	0x20012dd0
  8010edc:	0801f31c 	.word	0x0801f31c
- 8010ee0:	08020f60 	.word	0x08020f60
- 8010ee4:	08020e09 	.word	0x08020e09
+ 8010ee0:	08020f5c 	.word	0x08020f5c
+ 8010ee4:	08020e05 	.word	0x08020e05
  8010ee8:	20012dc8 	.word	0x20012dc8
  8010eec:	20012dcc 	.word	0x20012dcc
  8010ef0:	20012db0 	.word	0x20012db0
@@ -36884,8 +36884,8 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  8010f86:	bf00      	nop
  8010f88:	20012dd0 	.word	0x20012dd0
  8010f8c:	0801f31c 	.word	0x0801f31c
- 8010f90:	08020ecd 	.word	0x08020ecd
- 8010f94:	08020e09 	.word	0x08020e09
+ 8010f90:	08020ec9 	.word	0x08020ec9
+ 8010f94:	08020e05 	.word	0x08020e05
  8010f98:	20012dc8 	.word	0x20012dc8
  8010f9c:	20012dcc 	.word	0x20012dcc
  8010fa0:	20012db0 	.word	0x20012db0
@@ -36978,8 +36978,8 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  801106a:	bf00      	nop
  801106c:	20012dd0 	.word	0x20012dd0
  8011070:	0801f31c 	.word	0x0801f31c
- 8011074:	08020f03 	.word	0x08020f03
- 8011078:	08020e09 	.word	0x08020e09
+ 8011074:	08020eff 	.word	0x08020eff
+ 8011078:	08020e05 	.word	0x08020e05
  801107c:	20012d48 	.word	0x20012d48
  8011080:	20012dac 	.word	0x20012dac
 
@@ -40437,9 +40437,9 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  80136a8:	bd08      	pop	{r3, pc}
  80136aa:	bf00      	nop
  80136ac:	20012d42 	.word	0x20012d42
- 80136b0:	080212e4 	.word	0x080212e4
- 80136b4:	080218dc 	.word	0x080218dc
- 80136b8:	08021326 	.word	0x08021326
+ 80136b0:	080212e0 	.word	0x080212e0
+ 80136b4:	080218d8 	.word	0x080218d8
+ 80136b8:	08021322 	.word	0x08021322
 
 080136bc <_ZN8touchgfx8LCD16bpp8blitCopyEPKtRKNS_4RectES5_hb>:
  80136bc:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
@@ -41069,14 +41069,14 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  8013c8c:	e7f1      	b.n	8013c72 <_ZN8touchgfx8LCD16bpp29copyFrameBufferRegionToMemoryERKNS_4RectES3_t+0x246>
  8013c8e:	bf00      	nop
  8013c90:	20012d48 	.word	0x20012d48
- 8013c94:	080210dc 	.word	0x080210dc
- 8013c98:	0802198c 	.word	0x0802198c
- 8013c9c:	0802118e 	.word	0x0802118e
- 8013ca0:	080211c0 	.word	0x080211c0
- 8013ca4:	08021215 	.word	0x08021215
+ 8013c94:	080210d8 	.word	0x080210d8
+ 8013c98:	08021988 	.word	0x08021988
+ 8013c9c:	0802118a 	.word	0x0802118a
+ 8013ca0:	080211bc 	.word	0x080211bc
+ 8013ca4:	08021211 	.word	0x08021211
  8013ca8:	20012d42 	.word	0x20012d42
  8013cac:	20012d44 	.word	0x20012d44
- 8013cb0:	08021253 	.word	0x08021253
+ 8013cb0:	0802124f 	.word	0x0802124f
 
 08013cb4 <_ZN8touchgfx8LCD16bpp8fillRectERKNS_4RectENS_9colortypeEh>:
  8013cb4:	b5f0      	push	{r4, r5, r6, r7, lr}
@@ -41291,9 +41291,9 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  8013eda:	e7eb      	b.n	8013eb4 <_ZN8touchgfx8LCD16bpp10fillBufferEPhtRKNS_4RectENS_9colortypeEh+0x15c>
  8013edc:	e8bd 87f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, pc}
  8013ee0:	fffff800 	.word	0xfffff800
- 8013ee4:	08020f8d 	.word	0x08020f8d
- 8013ee8:	080215d8 	.word	0x080215d8
- 8013eec:	0802118e 	.word	0x0802118e
+ 8013ee4:	08020f89 	.word	0x08020f89
+ 8013ee8:	080215d4 	.word	0x080215d4
+ 8013eec:	0802118a 	.word	0x0802118a
 
 08013ef0 <_ZN8touchgfx8LCD16bppC1Ev>:
  8013ef0:	2200      	movs	r2, #0
@@ -41316,7 +41316,7 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  8013f2c:	e9c0 221c 	strd	r2, r2, [r0, #112]	; 0x70
  8013f30:	4770      	bx	lr
  8013f32:	bf00      	nop
- 8013f34:	08021594 	.word	0x08021594
+ 8013f34:	08021590 	.word	0x08021590
 
 08013f38 <_ZN8touchgfx8LCD16bpp16blitCopyARGB8888EPKmRKNS_4RectES5_h>:
  8013f38:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
@@ -41511,9 +41511,9 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  801414e:	f44f 7142 	mov.w	r1, #776	; 0x308
  8014152:	f008 fd49 	bl	801cbe8 <__assert_func>
  8014156:	bd70      	pop	{r4, r5, r6, pc}
- 8014158:	080212b3 	.word	0x080212b3
- 801415c:	08021a12 	.word	0x08021a12
- 8014160:	0802118e 	.word	0x0802118e
+ 8014158:	080212af 	.word	0x080212af
+ 801415c:	08021a0e 	.word	0x08021a0e
+ 8014160:	0802118a 	.word	0x0802118a
 
 08014164 <_ZN8touchgfx8LCD16bpp14blitCopyRGB888EPKhRKNS_4RectES5_h>:
  8014164:	e92d 47f0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, lr}
@@ -41852,9 +41852,9 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  801451e:	4798      	blx	r3
  8014520:	e770      	b.n	8014404 <_ZN8touchgfx8LCD16bpp19blitCopyL8_ARGB8888EPKhS2_RKNS_4RectES5_h+0xb8>
  8014522:	bf00      	nop
- 8014524:	0802108c 	.word	0x0802108c
- 8014528:	080217e3 	.word	0x080217e3
- 801452c:	0802118e 	.word	0x0802118e
+ 8014524:	08021088 	.word	0x08021088
+ 8014528:	080217df 	.word	0x080217df
+ 801452c:	0802118a 	.word	0x0802118a
  8014530:	20012d48 	.word	0x20012d48
  8014534:	20012d42 	.word	0x20012d42
 
@@ -41999,9 +41999,9 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  80146d4:	b007      	add	sp, #28
  80146d6:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
  80146da:	bf00      	nop
- 80146dc:	08020fbc 	.word	0x08020fbc
- 80146e0:	0802164d 	.word	0x0802164d
- 80146e4:	0802118e 	.word	0x0802118e
+ 80146dc:	08020fb8 	.word	0x08020fb8
+ 80146e0:	08021649 	.word	0x08021649
+ 80146e4:	0802118a 	.word	0x0802118a
  80146e8:	20012d48 	.word	0x20012d48
  80146ec:	20012d42 	.word	0x20012d42
 
@@ -42190,9 +42190,9 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  8014916:	4798      	blx	r3
  8014918:	e750      	b.n	80147bc <_ZN8touchgfx8LCD16bpp17blitCopyL8_RGB888EPKhS2_RKNS_4RectES5_h+0xcc>
  801491a:	bf00      	nop
- 801491c:	0802100a 	.word	0x0802100a
- 8014920:	080216d6 	.word	0x080216d6
- 8014924:	0802118e 	.word	0x0802118e
+ 801491c:	08021006 	.word	0x08021006
+ 8014920:	080216d2 	.word	0x080216d2
+ 8014924:	0802118a 	.word	0x0802118a
  8014928:	fffff800 	.word	0xfffff800
  801492c:	20012d48 	.word	0x20012d48
  8014930:	20012d42 	.word	0x20012d42
@@ -42590,9 +42590,9 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  8014d98:	4803      	ldr	r0, [pc, #12]	; (8014da8 <_ZN8touchgfx8LCD16bpp17drawPartialBitmapERKNS_6BitmapEssRKNS_4RectEhb+0x1f8>)
  8014d9a:	2181      	movs	r1, #129	; 0x81
  8014d9c:	f007 ff24 	bl	801cbe8 <__assert_func>
- 8014da0:	08021058 	.word	0x08021058
- 8014da4:	0802175f 	.word	0x0802175f
- 8014da8:	0802118e 	.word	0x0802118e
+ 8014da0:	08021054 	.word	0x08021054
+ 8014da4:	0802175b 	.word	0x0802175b
+ 8014da8:	0802118a 	.word	0x0802118a
 
 08014dac <_ZN8touchgfx8LCD16bpp9nextPixelEbNS_12TextRotationE>:
  8014dac:	b508      	push	{r3, lr}
@@ -42632,9 +42632,9 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  8014df8:	e7e1      	b.n	8014dbe <_ZN8touchgfx8LCD16bpp9nextPixelEbNS_12TextRotationE+0x12>
  8014dfa:	bf00      	nop
  8014dfc:	20012d42 	.word	0x20012d42
- 8014e00:	080212e4 	.word	0x080212e4
- 8014e04:	080218dc 	.word	0x080218dc
- 8014e08:	08021326 	.word	0x08021326
+ 8014e00:	080212e0 	.word	0x080212e0
+ 8014e04:	080218d8 	.word	0x080218d8
+ 8014e08:	08021322 	.word	0x08021322
 
 08014e0c <_ZN8touchgfx8LCD16bpp8nextLineEbNS_12TextRotationE>:
  8014e0c:	b508      	push	{r3, lr}
@@ -42674,9 +42674,9 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  8014e58:	e7f6      	b.n	8014e48 <_ZN8touchgfx8LCD16bpp8nextLineEbNS_12TextRotationE+0x3c>
  8014e5a:	bf00      	nop
  8014e5c:	20012d42 	.word	0x20012d42
- 8014e60:	080212e4 	.word	0x080212e4
- 8014e64:	080218dc 	.word	0x080218dc
- 8014e68:	08021326 	.word	0x08021326
+ 8014e60:	080212e0 	.word	0x080212e0
+ 8014e64:	080218d8 	.word	0x080218d8
+ 8014e68:	08021322 	.word	0x08021322
 
 08014e6c <_ZN8touchgfx8LCD16bpp9drawGlyphEPtNS_4RectEssttRKS2_PKNS_9GlyphNodeEPKhhNS_9colortypeEhhNS_12TextRotationE>:
  8014e6c:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
@@ -43912,9 +43912,9 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  8015b2a:	4603      	mov	r3, r0
  8015b2c:	4686      	mov	lr, r0
  8015b2e:	e785      	b.n	8015a3c <_ZN8touchgfx8LCD16bpp55TextureMapper_L8_RGB565_Opaque_BilinearInterpolation_GA16writePixelOnEdgeEPtPKhPKtssiihhh+0xbc>
- 8015b30:	080212a2 	.word	0x080212a2
- 8015b34:	08021917 	.word	0x08021917
- 8015b38:	08021326 	.word	0x08021326
+ 8015b30:	0802129e 	.word	0x0802129e
+ 8015b34:	08021913 	.word	0x08021913
+ 8015b38:	08021322 	.word	0x08021322
 
 08015b3c <_ZN8touchgfx8LCD16bpp55TextureMapper_L8_RGB565_Opaque_BilinearInterpolation_GA34drawTextureMapScanLineSubdivisionsEiiiifffllllfffffRKNS_14DrawingSurfaceEiiRKNS_14TextureSurfaceEhfff>:
  8015b3c:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
@@ -44428,9 +44428,9 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  8016118:	8008      	strh	r0, [r1, #0]
  801611a:	e8bd 83f8 	ldmia.w	sp!, {r3, r4, r5, r6, r7, r8, r9, pc}
  801611e:	bf00      	nop
- 8016120:	080212a2 	.word	0x080212a2
- 8016124:	08021917 	.word	0x08021917
- 8016128:	08021326 	.word	0x08021326
+ 8016120:	0802129e 	.word	0x0802129e
+ 8016124:	08021913 	.word	0x08021913
+ 8016128:	08021322 	.word	0x08021322
 
 0801612c <_ZN8touchgfx8LCD16bpp57TextureMapper_L8_RGB565_Opaque_BilinearInterpolation_NoGA34drawTextureMapScanLineSubdivisionsEiiiifffllllfffffRKNS_14DrawingSurfaceEiiRKNS_14TextureSurfaceEhfff>:
  801612c:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
@@ -44922,9 +44922,9 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  80166be:	f8ab 6000 	strh.w	r6, [fp]
  80166c2:	b009      	add	sp, #36	; 0x24
  80166c4:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
- 80166c8:	080212a2 	.word	0x080212a2
- 80166cc:	0802186e 	.word	0x0802186e
- 80166d0:	08021326 	.word	0x08021326
+ 80166c8:	0802129e 	.word	0x0802129e
+ 80166cc:	0802186a 	.word	0x0802186a
+ 80166d0:	08021322 	.word	0x08021322
 
 080166d4 <_ZN8touchgfx8LCD16bpp55TextureMapper_L8_RGB888_Opaque_BilinearInterpolation_GA34drawTextureMapScanLineSubdivisionsEiiiifffllllfffffRKNS_14DrawingSurfaceEiiRKNS_14TextureSurfaceEhfff>:
  80166d4:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
@@ -45522,9 +45522,9 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  8016d5c:	b005      	add	sp, #20
  8016d5e:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
  8016d62:	bf00      	nop
- 8016d64:	080212a2 	.word	0x080212a2
- 8016d68:	0802186e 	.word	0x0802186e
- 8016d6c:	08021326 	.word	0x08021326
+ 8016d64:	0802129e 	.word	0x0802129e
+ 8016d68:	0802186a 	.word	0x0802186a
+ 8016d6c:	08021322 	.word	0x08021322
 
 08016d70 <_ZN8touchgfx8LCD16bpp57TextureMapper_L8_RGB888_Opaque_BilinearInterpolation_NoGA34drawTextureMapScanLineSubdivisionsEiiiifffllllfffffRKNS_14DrawingSurfaceEiiRKNS_14TextureSurfaceEhfff>:
  8016d70:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
@@ -46129,9 +46129,9 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  8017448:	b005      	add	sp, #20
  801744a:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
  801744e:	bf00      	nop
- 8017450:	080212a2 	.word	0x080212a2
- 8017454:	0802186e 	.word	0x0802186e
- 8017458:	08021326 	.word	0x08021326
+ 8017450:	0802129e 	.word	0x0802129e
+ 8017454:	0802186a 	.word	0x0802186a
+ 8017458:	08021322 	.word	0x08021322
 
 0801745c <_ZN8touchgfx8LCD16bpp60TextureMapper_L8_ARGB8888_NonOpaque_BilinearInterpolation_GA34drawTextureMapScanLineSubdivisionsEiiiifffllllfffffRKNS_14DrawingSurfaceEiiRKNS_14TextureSurfaceEhfff>:
  801745c:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
@@ -46996,9 +46996,9 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  8017e84:	8008      	strh	r0, [r1, #0]
  8017e86:	b005      	add	sp, #20
  8017e88:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
- 8017e8c:	080212a2 	.word	0x080212a2
- 8017e90:	0802186e 	.word	0x0802186e
- 8017e94:	08021326 	.word	0x08021326
+ 8017e8c:	0802129e 	.word	0x0802129e
+ 8017e90:	0802186a 	.word	0x0802186a
+ 8017e94:	08021322 	.word	0x08021322
 
 08017e98 <_ZN8touchgfx8LCD16bpp62TextureMapper_L8_ARGB8888_NonOpaque_BilinearInterpolation_NoGA34drawTextureMapScanLineSubdivisionsEiiiifffllllfffffRKNS_14DrawingSurfaceEiiRKNS_14TextureSurfaceEhfff>:
  8017e98:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
@@ -47891,9 +47891,9 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  801892a:	46f3      	mov	fp, lr
  801892c:	e753      	b.n	80187d6 <_ZN8touchgfx8LCD16bpp55TextureMapper_RGB565_NonOpaque_BilinearInterpolation_GA16writePixelOnEdgeEPtPKtPKhssiihhh+0x1e6>
  801892e:	bf00      	nop
- 8018930:	080212a2 	.word	0x080212a2
- 8018934:	0802186e 	.word	0x0802186e
- 8018938:	08021326 	.word	0x08021326
+ 8018930:	0802129e 	.word	0x0802129e
+ 8018934:	0802186a 	.word	0x0802186a
+ 8018938:	08021322 	.word	0x08021322
 
 0801893c <_ZN8touchgfx8LCD16bpp55TextureMapper_RGB565_NonOpaque_BilinearInterpolation_GA34drawTextureMapScanLineSubdivisionsEiiiifffllllfffffRKNS_14DrawingSurfaceEiiRKNS_14TextureSurfaceEhfff>:
  801893c:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
@@ -48818,9 +48818,9 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  8019462:	46f3      	mov	fp, lr
  8019464:	e763      	b.n	801932e <_ZN8touchgfx8LCD16bpp57TextureMapper_RGB565_NonOpaque_BilinearInterpolation_NoGA16writePixelOnEdgeEPtPKhPKtssiihh+0x1e6>
  8019466:	bf00      	nop
- 8019468:	080212a2 	.word	0x080212a2
- 801946c:	0802186e 	.word	0x0802186e
- 8019470:	08021326 	.word	0x08021326
+ 8019468:	0802129e 	.word	0x0802129e
+ 801946c:	0802186a 	.word	0x0802186a
+ 8019470:	08021322 	.word	0x08021322
 
 08019474 <_ZN8touchgfx8LCD16bpp57TextureMapper_RGB565_NonOpaque_BilinearInterpolation_NoGA34drawTextureMapScanLineSubdivisionsEiiiifffllllfffffRKNS_14DrawingSurfaceEiiRKNS_14TextureSurfaceEhfff>:
  8019474:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
@@ -49600,9 +49600,9 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  8019de6:	4603      	mov	r3, r0
  8019de8:	4684      	mov	ip, r0
  8019dea:	e784      	b.n	8019cf6 <_ZN8touchgfx8LCD16bpp52TextureMapper_RGB565_Opaque_BilinearInterpolation_GA16writePixelOnEdgeEPtPKtssiihhh+0xa6>
- 8019dec:	080212a2 	.word	0x080212a2
- 8019df0:	08021917 	.word	0x08021917
- 8019df4:	08021326 	.word	0x08021326
+ 8019dec:	0802129e 	.word	0x0802129e
+ 8019df0:	08021913 	.word	0x08021913
+ 8019df4:	08021322 	.word	0x08021322
 
 08019df8 <_ZN8touchgfx8LCD16bpp52TextureMapper_RGB565_Opaque_BilinearInterpolation_GA34drawTextureMapScanLineSubdivisionsEiiiifffllllfffffRKNS_14DrawingSurfaceEiiRKNS_14TextureSurfaceEhfff>:
  8019df8:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
@@ -50077,9 +50077,9 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  801a378:	8008      	strh	r0, [r1, #0]
  801a37a:	e8bd 81f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, pc}
  801a37e:	bf00      	nop
- 801a380:	080212a2 	.word	0x080212a2
- 801a384:	08021917 	.word	0x08021917
- 801a388:	08021326 	.word	0x08021326
+ 801a380:	0802129e 	.word	0x0802129e
+ 801a384:	08021913 	.word	0x08021913
+ 801a388:	08021322 	.word	0x08021322
 
 0801a38c <_ZN8touchgfx8LCD16bpp54TextureMapper_RGB565_Opaque_BilinearInterpolation_NoGA34drawTextureMapScanLineSubdivisionsEiiiifffllllfffffRKNS_14DrawingSurfaceEiiRKNS_14TextureSurfaceEhfff>:
  801a38c:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
@@ -50598,9 +50598,9 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  801a99c:	b005      	add	sp, #20
  801a99e:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
  801a9a2:	bf00      	nop
- 801a9a4:	080212a2 	.word	0x080212a2
- 801a9a8:	0802186e 	.word	0x0802186e
- 801a9ac:	08021326 	.word	0x08021326
+ 801a9a4:	0802129e 	.word	0x0802129e
+ 801a9a8:	0802186a 	.word	0x0802186a
+ 801a9ac:	08021322 	.word	0x08021322
 
 0801a9b0 <_ZN8touchgfx8LCD16bpp57TextureMapper_ARGB8888_NonOpaque_BilinearInterpolation_GA34drawTextureMapScanLineSubdivisionsEiiiifffllllfffffRKNS_14DrawingSurfaceEiiRKNS_14TextureSurfaceEhfff>:
  801a9b0:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
@@ -51444,9 +51444,9 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  801b39c:	8008      	strh	r0, [r1, #0]
  801b39e:	b005      	add	sp, #20
  801b3a0:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
- 801b3a4:	080212a2 	.word	0x080212a2
- 801b3a8:	0802186e 	.word	0x0802186e
- 801b3ac:	08021326 	.word	0x08021326
+ 801b3a4:	0802129e 	.word	0x0802129e
+ 801b3a8:	0802186a 	.word	0x0802186a
+ 801b3ac:	08021322 	.word	0x08021322
 
 0801b3b0 <_ZN8touchgfx8LCD16bpp59TextureMapper_ARGB8888_NonOpaque_BilinearInterpolation_NoGA34drawTextureMapScanLineSubdivisionsEiiiifffllllfffffRKNS_14DrawingSurfaceEiiRKNS_14TextureSurfaceEhfff>:
  801b3b0:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
@@ -52235,9 +52235,9 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  801bcea:	463c      	mov	r4, r7
  801bcec:	e7a2      	b.n	801bc34 <_ZN8touchgfx8LCD16bpp41TextureMapper_A4_BilinearInterpolation_GA16writePixelOnEdgeEPtPKtsssiihhh+0x104>
  801bcee:	bf00      	nop
- 801bcf0:	080212a2 	.word	0x080212a2
- 801bcf4:	0802186e 	.word	0x0802186e
- 801bcf8:	08021326 	.word	0x08021326
+ 801bcf0:	0802129e 	.word	0x0802129e
+ 801bcf4:	0802186a 	.word	0x0802186a
+ 801bcf8:	08021322 	.word	0x08021322
  801bcfc:	20012d50 	.word	0x20012d50
 
 0801bd00 <_ZN8touchgfx8LCD16bpp41TextureMapper_A4_BilinearInterpolation_GA34drawTextureMapScanLineSubdivisionsEiiiifffllllfffffRKNS_14DrawingSurfaceEiiRKNS_14TextureSurfaceEhfff>:
@@ -52844,9 +52844,9 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  801c3d6:	463c      	mov	r4, r7
  801c3d8:	e7aa      	b.n	801c330 <_ZN8touchgfx8LCD16bpp43TextureMapper_A4_BilinearInterpolation_NoGA16writePixelOnEdgeEPtPKtsssiihh+0x104>
  801c3da:	bf00      	nop
- 801c3dc:	080212a2 	.word	0x080212a2
- 801c3e0:	0802186e 	.word	0x0802186e
- 801c3e4:	08021326 	.word	0x08021326
+ 801c3dc:	0802129e 	.word	0x0802129e
+ 801c3e0:	0802186a 	.word	0x0802186a
+ 801c3e4:	08021322 	.word	0x08021322
  801c3e8:	20012d50 	.word	0x20012d50
 
 0801c3ec <_ZN8touchgfx8LCD16bpp43TextureMapper_A4_BilinearInterpolation_NoGA34drawTextureMapScanLineSubdivisionsEiiiifffllllfffffRKNS_14DrawingSurfaceEiiRKNS_14TextureSurfaceEhfff>:
@@ -53451,7 +53451,7 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  801ca74:	e8bd 81f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, pc}
  801ca78:	2000      	movs	r0, #0
  801ca7a:	e7fa      	b.n	801ca72 <_ZN8touchgfx8Gestures17registerDragEventEtttt+0x7a>
- 801ca7c:	08020774 	.word	0x08020774
+ 801ca7c:	08020770 	.word	0x08020770
 
 0801ca80 <_ZN8touchgfx8Gestures18registerClickEventENS_10ClickEvent14ClickEventTypeEtt>:
  801ca80:	b5f0      	push	{r4, r5, r6, r7, lr}
@@ -53524,8 +53524,8 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  801cb36:	73a1      	strb	r1, [r4, #14]
  801cb38:	e7e5      	b.n	801cb06 <_ZN8touchgfx8Gestures18registerClickEventENS_10ClickEvent14ClickEventTypeEtt+0x86>
  801cb3a:	bf00      	nop
- 801cb3c:	08020760 	.word	0x08020760
- 801cb40:	08020788 	.word	0x08020788
+ 801cb3c:	0802075c 	.word	0x0802075c
+ 801cb40:	08020784 	.word	0x08020784
 
 0801cb44 <_ZN8touchgfx14AbstractButton16handleClickEventERKNS_10ClickEventE>:
  801cb44:	b570      	push	{r4, r5, r6, lr}
@@ -53638,9 +53638,9 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  801cc10:	e7f3      	b.n	801cbfa <__assert_func+0x12>
  801cc12:	bf00      	nop
  801cc14:	200000fc 	.word	0x200000fc
- 801cc18:	08021aa9 	.word	0x08021aa9
- 801cc1c:	08021ab6 	.word	0x08021ab6
- 801cc20:	08021ae4 	.word	0x08021ae4
+ 801cc18:	08021aa5 	.word	0x08021aa5
+ 801cc1c:	08021ab2 	.word	0x08021ab2
+ 801cc20:	08021ae0 	.word	0x08021ae0
 
 0801cc24 <atexit>:
  801cc24:	2300      	movs	r3, #0
@@ -53798,7 +53798,7 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  801cd72:	61a3      	str	r3, [r4, #24]
  801cd74:	e7d2      	b.n	801cd1c <__sinit+0xc>
  801cd76:	bf00      	nop
- 801cd78:	08021b48 	.word	0x08021b48
+ 801cd78:	08021b44 	.word	0x08021b44
  801cd7c:	0801cca9 	.word	0x0801cca9
 
 0801cd80 <__sfp>:
@@ -53853,7 +53853,7 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  801cdfe:	603b      	str	r3, [r7, #0]
  801ce00:	e7ee      	b.n	801cde0 <__sfp+0x60>
  801ce02:	bf00      	nop
- 801ce04:	08021b48 	.word	0x08021b48
+ 801ce04:	08021b44 	.word	0x08021b44
  801ce08:	ffff0001 	.word	0xffff0001
 
 0801ce0c <fiprintf>:
@@ -53926,10 +53926,10 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  801cea2:	4798      	blx	r3
  801cea4:	3601      	adds	r6, #1
  801cea6:	e7f2      	b.n	801ce8e <__libc_init_array+0x1e>
- 801cea8:	08097c60 	.word	0x08097c60
- 801ceac:	08097c60 	.word	0x08097c60
- 801ceb0:	08097c60 	.word	0x08097c60
- 801ceb4:	08097c74 	.word	0x08097c74
+ 801cea8:	08097c5c 	.word	0x08097c5c
+ 801ceac:	08097c5c 	.word	0x08097c5c
+ 801ceb0:	08097c5c 	.word	0x08097c5c
+ 801ceb4:	08097c70 	.word	0x08097c70
 
 0801ceb8 <__retarget_lock_init_recursive>:
  801ceb8:	4770      	bx	lr
@@ -54418,14 +54418,14 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  801d2ec:	f000 f880 	bl	801d3f0 <_printf_i>
  801d2f0:	e7e4      	b.n	801d2bc <_vfiprintf_r+0x208>
  801d2f2:	bf00      	nop
- 801d2f4:	08021b08 	.word	0x08021b08
- 801d2f8:	08021b28 	.word	0x08021b28
- 801d2fc:	08021ae8 	.word	0x08021ae8
- 801d300:	08021b4c 	.word	0x08021b4c
- 801d304:	08021b56 	.word	0x08021b56
+ 801d2f4:	08021b04 	.word	0x08021b04
+ 801d2f8:	08021b24 	.word	0x08021b24
+ 801d2fc:	08021ae4 	.word	0x08021ae4
+ 801d300:	08021b48 	.word	0x08021b48
+ 801d304:	08021b52 	.word	0x08021b52
  801d308:	00000000 	.word	0x00000000
  801d30c:	0801d08f 	.word	0x0801d08f
- 801d310:	08021b52 	.word	0x08021b52
+ 801d310:	08021b4e 	.word	0x08021b4e
 
 0801d314 <_printf_common>:
  801d314:	e92d 47f0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, lr}
@@ -54761,8 +54761,8 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  801d62c:	f104 0619 	add.w	r6, r4, #25
  801d630:	e7f5      	b.n	801d61e <_printf_i+0x22e>
  801d632:	bf00      	nop
- 801d634:	08021b5d 	.word	0x08021b5d
- 801d638:	08021b6e 	.word	0x08021b6e
+ 801d634:	08021b59 	.word	0x08021b59
+ 801d638:	08021b6a 	.word	0x08021b6a
 
 0801d63c <cleanup_glue>:
  801d63c:	b538      	push	{r3, r4, r5, lr}
@@ -55103,7 +55103,7 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  801d93e:	230a      	movs	r3, #10
  801d940:	e7ad      	b.n	801d89e <_strtol_l.isra.0+0x5e>
  801d942:	bf00      	nop
- 801d944:	08021b85 	.word	0x08021b85
+ 801d944:	08021b81 	.word	0x08021b81
 
 0801d948 <strtol>:
  801d948:	4613      	mov	r3, r2
@@ -55187,9 +55187,9 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  801d9ec:	f04f 37ff 	mov.w	r7, #4294967295
  801d9f0:	e7ea      	b.n	801d9c8 <__swbuf_r+0x6c>
  801d9f2:	bf00      	nop
- 801d9f4:	08021b08 	.word	0x08021b08
- 801d9f8:	08021b28 	.word	0x08021b28
- 801d9fc:	08021ae8 	.word	0x08021ae8
+ 801d9f4:	08021b04 	.word	0x08021b04
+ 801d9f8:	08021b24 	.word	0x08021b24
+ 801d9fc:	08021ae4 	.word	0x08021ae4
 
 0801da00 <_write_r>:
  801da00:	b538      	push	{r3, r4, r5, lr}
@@ -55299,9 +55299,9 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  801daec:	e7f7      	b.n	801dade <__swsetup_r+0xba>
  801daee:	bf00      	nop
  801daf0:	200000fc 	.word	0x200000fc
- 801daf4:	08021b08 	.word	0x08021b08
- 801daf8:	08021b28 	.word	0x08021b28
- 801dafc:	08021ae8 	.word	0x08021ae8
+ 801daf4:	08021b04 	.word	0x08021b04
+ 801daf8:	08021b24 	.word	0x08021b24
+ 801dafc:	08021ae4 	.word	0x08021ae4
 
 0801db00 <__register_exitproc>:
  801db00:	e92d 43f8 	stmdb	sp!, {r3, r4, r5, r6, r7, r8, r9, lr}
@@ -55368,7 +55368,7 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  801dbae:	e7c6      	b.n	801db3e <__register_exitproc+0x3e>
  801dbb0:	20012fe0 	.word	0x20012fe0
  801dbb4:	20012f54 	.word	0x20012f54
- 801dbb8:	08021b80 	.word	0x08021b80
+ 801dbb8:	08021b7c 	.word	0x08021b7c
  801dbbc:	0801cec1 	.word	0x0801cec1
  801dbc0:	20000160 	.word	0x20000160
 
@@ -55562,9 +55562,9 @@ Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTi
  801dd56:	bf08      	it	eq
  801dd58:	68ec      	ldreq	r4, [r5, #12]
  801dd5a:	e7da      	b.n	801dd12 <_fflush_r+0x22>
- 801dd5c:	08021b08 	.word	0x08021b08
- 801dd60:	08021b28 	.word	0x08021b28
- 801dd64:	08021ae8 	.word	0x08021ae8
+ 801dd5c:	08021b04 	.word	0x08021b04
+ 801dd60:	08021b24 	.word	0x08021b24
+ 801dd64:	08021ae4 	.word	0x08021ae4
 
 0801dd68 <_lseek_r>:
  801dd68:	b538      	push	{r3, r4, r5, lr}
