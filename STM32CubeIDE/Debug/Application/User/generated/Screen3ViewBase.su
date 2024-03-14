@@ -19,7 +19,7 @@ Widget.hpp:47:18:virtual void touchgfx::Widget::getLastChild(int16_t, int16_t, t
 TypedText.hpp:65:13:touchgfx::TypedText::~TypedText()	0	static
 View.hpp:36:7:touchgfx::View<Screen3Presenter>::~View()	0	static
 Screen3ViewBase.hpp:19:13:Screen3ViewBase::~Screen3ViewBase()	0	static
-Screen3ViewBase.cpp:47:6:virtual void Screen3ViewBase::setupScreen()	0	static
+Screen3ViewBase.cpp:53:6:virtual void Screen3ViewBase::setupScreen()	0	static
 Callback.hpp:357:8:touchgfx::Callback<Screen3ViewBase, const touchgfx::AbstractButton&>::~Callback()	0	static
 Callback.hpp:386:18:void touchgfx::Callback<dest_type, T1, void, void>::execute(T1) [with dest_type = Screen3ViewBase; T1 = const touchgfx::AbstractButton&]	8	static
 Callback.hpp:396:18:bool touchgfx::Callback<dest_type, T1, void, void>::isValid() const [with dest_type = Screen3ViewBase; T1 = const touchgfx::AbstractButton&]	0	static
@@ -27,7 +27,7 @@ TypedText.hpp:65:13:virtual touchgfx::TypedText::~TypedText()	8	static
 Callback.hpp:357:8:virtual touchgfx::Callback<Screen3ViewBase, const touchgfx::AbstractButton&>::~Callback()	8	static
 View.hpp:36:7:virtual touchgfx::View<Screen3Presenter>::~View()	8	static
 Screen3ViewBase.hpp:19:13:virtual Screen3ViewBase::~Screen3ViewBase()	8	static
-Screen3ViewBase.cpp:52:6:void Screen3ViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	8	static
+Screen3ViewBase.cpp:58:6:void Screen3ViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	8	static
 Drawable.hpp:48:5:touchgfx::Drawable::Drawable()	0	static
 Drawable.hpp:297:10:void touchgfx::Drawable::setXY(int16_t, int16_t)	16	static
 Image.hpp:50:5:touchgfx::Image::Image(const touchgfx::Bitmap&)	16	static

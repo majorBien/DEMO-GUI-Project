@@ -535,6 +535,11 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__designer/image_Dark_Icons_Done_48.cpp</locationURI>
 		</link>
 		<link>
+			<name>Application/User/generated/image_Dark_Icons_Go_back_32.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__designer/image_Dark_Icons_Go_back_32.cpp</locationURI>
+		</link>
+		<link>
 			<name>Application/User/generated/image_Dark_Icons_Remove_48.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__designer/image_Dark_Icons_Remove_48.cpp</locationURI>

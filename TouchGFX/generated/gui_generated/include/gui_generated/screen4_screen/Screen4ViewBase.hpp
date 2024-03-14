@@ -13,7 +13,6 @@
 #include <touchgfx/widgets/ScalableImage.hpp>
 #include <touchgfx/widgets/TextAreaWithWildcard.hpp>
 #include <touchgfx/widgets/TextArea.hpp>
-#include <touchgfx/widgets/ButtonWithIcon.hpp>
 
 class Screen4ViewBase : public touchgfx::View<Screen4Presenter>
 {
@@ -21,6 +20,84 @@ public:
     Screen4ViewBase();
     virtual ~Screen4ViewBase() {}
     virtual void setupScreen();
+
+    /*
+     * Virtual Action Handlers
+     */
+    virtual void clicked_one()
+    {
+        // Override and implement this function in Screen4
+    }
+
+    virtual void clicked_two()
+    {
+        // Override and implement this function in Screen4
+    }
+
+    virtual void clicked_three()
+    {
+        // Override and implement this function in Screen4
+    }
+
+    virtual void clicked_four()
+    {
+        // Override and implement this function in Screen4
+    }
+
+    virtual void clicked_five()
+    {
+        // Override and implement this function in Screen4
+    }
+
+    virtual void clicked_six()
+    {
+        // Override and implement this function in Screen4
+    }
+
+    virtual void clicked_seven()
+    {
+        // Override and implement this function in Screen4
+    }
+
+    virtual void clicked_eight()
+    {
+        // Override and implement this function in Screen4
+    }
+
+    virtual void clicked_nine()
+    {
+        // Override and implement this function in Screen4
+    }
+
+    virtual void clicked_zero()
+    {
+        // Override and implement this function in Screen4
+    }
+
+    virtual void clicked_add()
+    {
+        // Override and implement this function in Screen4
+    }
+
+    virtual void clicked_mul()
+    {
+        // Override and implement this function in Screen4
+    }
+
+    virtual void clicked_eq()
+    {
+        // Override and implement this function in Screen4
+    }
+
+    virtual void clicked_div()
+    {
+        // Override and implement this function in Screen4
+    }
+
+    virtual void clicked_sub()
+    {
+        // Override and implement this function in Screen4
+    }
 
 protected:
     FrontendApplication& application() {
@@ -41,12 +118,12 @@ protected:
     touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger > flexButton7;
     touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger > flexButton8;
     touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger > flexButton9;
-    touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger > flexButton2_1;
-    touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger > flexButton3_1;
-    touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger > flexButton5_1;
-    touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger > flexButton6_1;
-    touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger > flexButton8_1;
-    touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger > flexButton9_1;
+    touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger > flexButton_add;
+    touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger > flexButton_mul;
+    touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger > flexButton0;
+    touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger > flexButton_eq;
+    touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger > flexButton_sub;
+    touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger > flexButton_div;
     touchgfx::ScalableImage scalableImage1;
     touchgfx::TextAreaWithOneWildcard calculation_text_area;
     touchgfx::TextArea textArea2;
@@ -66,7 +143,8 @@ protected:
     touchgfx::TextArea textArea16;
     touchgfx::TextArea textArea17;
     touchgfx::TextArea textArea17_1;
-    touchgfx::ButtonWithIcon buttonWithIcon1;
+    touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger > flexButton10;
+    touchgfx::ScalableImage scalableImage2;
 
     /*
      * Wildcard Buffers
@@ -81,13 +159,11 @@ private:
     /*
      * Callback Declarations
      */
-    touchgfx::Callback<Screen4ViewBase, const touchgfx::AbstractButton&> buttonCallback;
     touchgfx::Callback<Screen4ViewBase, const touchgfx::AbstractButtonContainer&> flexButtonCallback;
 
     /*
      * Callback Handler Declarations
      */
-    void buttonCallbackHandler(const touchgfx::AbstractButton& src);
     void flexButtonCallbackHandler(const touchgfx::AbstractButtonContainer& src);
 
 };

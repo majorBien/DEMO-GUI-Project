@@ -7,7 +7,6 @@
 #include <texts/TextKeysAndLanguages.hpp>
 
 Screen4ViewBase::Screen4ViewBase() :
-    buttonCallback(this, &Screen4ViewBase::buttonCallbackHandler),
     flexButtonCallback(this, &Screen4ViewBase::flexButtonCallbackHandler)
 {
 
@@ -21,76 +20,91 @@ Screen4ViewBase::Screen4ViewBase() :
     flexButton1.setBorderSize(5);
     flexButton1.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
     flexButton1.setPosition(7, 174, 50, 50);
+    flexButton1.setAction(flexButtonCallback);
 
     flexButton2.setBoxWithBorderPosition(0, 0, 50, 50);
     flexButton2.setBorderSize(5);
     flexButton2.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
     flexButton2.setPosition(51, 174, 50, 50);
+    flexButton2.setAction(flexButtonCallback);
 
     flexButton3.setBoxWithBorderPosition(0, 0, 50, 50);
     flexButton3.setBorderSize(5);
     flexButton3.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
     flexButton3.setPosition(95, 174, 50, 50);
+    flexButton3.setAction(flexButtonCallback);
 
     flexButton4.setBoxWithBorderPosition(0, 0, 50, 50);
     flexButton4.setBorderSize(5);
     flexButton4.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
     flexButton4.setPosition(7, 218, 50, 50);
+    flexButton4.setAction(flexButtonCallback);
 
     flexButton5.setBoxWithBorderPosition(0, 0, 50, 50);
     flexButton5.setBorderSize(5);
     flexButton5.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
     flexButton5.setPosition(51, 218, 50, 50);
+    flexButton5.setAction(flexButtonCallback);
 
     flexButton6.setBoxWithBorderPosition(0, 0, 50, 50);
     flexButton6.setBorderSize(5);
     flexButton6.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
     flexButton6.setPosition(95, 218, 50, 50);
+    flexButton6.setAction(flexButtonCallback);
 
     flexButton7.setBoxWithBorderPosition(0, 0, 50, 50);
     flexButton7.setBorderSize(5);
     flexButton7.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
     flexButton7.setPosition(7, 264, 50, 50);
+    flexButton7.setAction(flexButtonCallback);
 
     flexButton8.setBoxWithBorderPosition(0, 0, 50, 50);
     flexButton8.setBorderSize(5);
     flexButton8.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
     flexButton8.setPosition(51, 264, 50, 50);
+    flexButton8.setAction(flexButtonCallback);
 
     flexButton9.setBoxWithBorderPosition(0, 0, 50, 50);
     flexButton9.setBorderSize(5);
     flexButton9.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
     flexButton9.setPosition(95, 264, 50, 50);
+    flexButton9.setAction(flexButtonCallback);
 
-    flexButton2_1.setBoxWithBorderPosition(0, 0, 50, 50);
-    flexButton2_1.setBorderSize(5);
-    flexButton2_1.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
-    flexButton2_1.setPosition(140, 174, 50, 50);
+    flexButton_add.setBoxWithBorderPosition(0, 0, 50, 50);
+    flexButton_add.setBorderSize(5);
+    flexButton_add.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
+    flexButton_add.setPosition(140, 174, 50, 50);
+    flexButton_add.setAction(flexButtonCallback);
 
-    flexButton3_1.setBoxWithBorderPosition(0, 0, 50, 50);
-    flexButton3_1.setBorderSize(5);
-    flexButton3_1.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
-    flexButton3_1.setPosition(185, 174, 50, 50);
+    flexButton_mul.setBoxWithBorderPosition(0, 0, 50, 50);
+    flexButton_mul.setBorderSize(5);
+    flexButton_mul.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
+    flexButton_mul.setPosition(185, 174, 50, 50);
+    flexButton_mul.setAction(flexButtonCallback);
 
-    flexButton5_1.setBoxWithBorderPosition(0, 0, 50, 50);
-    flexButton5_1.setBorderSize(5);
-    flexButton5_1.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
-    flexButton5_1.setPosition(140, 218, 50, 50);
+    flexButton0.setBoxWithBorderPosition(0, 0, 50, 50);
+    flexButton0.setBorderSize(5);
+    flexButton0.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
+    flexButton0.setPosition(140, 218, 50, 50);
+    flexButton0.setAction(flexButtonCallback);
 
-    flexButton6_1.setBoxWithBorderPosition(0, 0, 50, 50);
-    flexButton6_1.setBorderSize(5);
-    flexButton6_1.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
-    flexButton6_1.setPosition(185, 218, 50, 50);
+    flexButton_eq.setBoxWithBorderPosition(0, 0, 50, 50);
+    flexButton_eq.setBorderSize(5);
+    flexButton_eq.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
+    flexButton_eq.setPosition(185, 218, 50, 50);
+    flexButton_eq.setAction(flexButtonCallback);
 
-    flexButton8_1.setBoxWithBorderPosition(0, 0, 50, 50);
-    flexButton8_1.setBorderSize(5);
-    flexButton8_1.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
-    flexButton8_1.setPosition(140, 264, 50, 50);
+    flexButton_sub.setBoxWithBorderPosition(0, 0, 50, 50);
+    flexButton_sub.setBorderSize(5);
+    flexButton_sub.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
+    flexButton_sub.setPosition(140, 264, 50, 50);
+    flexButton_sub.setAction(flexButtonCallback);
 
-    flexButton9_1.setBoxWithBorderPosition(0, 0, 50, 50);
-    flexButton9_1.setBorderSize(5);
-    flexButton9_1.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
-    flexButton9_1.setPosition(185, 264, 50, 50);
+    flexButton_div.setBoxWithBorderPosition(0, 0, 50, 50);
+    flexButton_div.setBorderSize(5);
+    flexButton_div.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
+    flexButton_div.setPosition(185, 264, 50, 50);
+    flexButton_div.setAction(flexButtonCallback);
 
     scalableImage1.setBitmap(touchgfx::Bitmap(BITMAP_BLUE_BACKGROUNDS_MAIN_BG_320X240PX_ID));
     scalableImage1.setPosition(7, 60, 227, 114);
@@ -191,10 +205,15 @@ Screen4ViewBase::Screen4ViewBase() :
     textArea17_1.setLinespacing(0);
     textArea17_1.setTypedText(touchgfx::TypedText(T_SINGLEUSEID26));
 
-    buttonWithIcon1.setXY(35, 0);
-    buttonWithIcon1.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_PRESSED_ID), touchgfx::Bitmap(BITMAP_BLUE_ICONS_GO_BACK_32_ID), touchgfx::Bitmap(BITMAP_BLUE_ICONS_ADD_NEW_32_ID));
-    buttonWithIcon1.setIconXY(70, 16);
-    buttonWithIcon1.setAction(buttonCallback);
+    flexButton10.setBoxWithBorderPosition(0, 0, 227, 54);
+    flexButton10.setBorderSize(5);
+    flexButton10.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 102, 153), touchgfx::Color::getColorFromRGB(0, 153, 204), touchgfx::Color::getColorFromRGB(0, 51, 102), touchgfx::Color::getColorFromRGB(51, 102, 153));
+    flexButton10.setPosition(7, 6, 227, 54);
+    flexButton10.setAction(flexButtonCallback);
+
+    scalableImage2.setBitmap(touchgfx::Bitmap(BITMAP_DARK_ICONS_GO_BACK_32_ID));
+    scalableImage2.setPosition(88, 13, 57, 40);
+    scalableImage2.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
 
     add(__background);
     add(image1);
@@ -207,12 +226,12 @@ Screen4ViewBase::Screen4ViewBase() :
     add(flexButton7);
     add(flexButton8);
     add(flexButton9);
-    add(flexButton2_1);
-    add(flexButton3_1);
-    add(flexButton5_1);
-    add(flexButton6_1);
-    add(flexButton8_1);
-    add(flexButton9_1);
+    add(flexButton_add);
+    add(flexButton_mul);
+    add(flexButton0);
+    add(flexButton_eq);
+    add(flexButton_sub);
+    add(flexButton_div);
     add(scalableImage1);
     add(calculation_text_area);
     add(textArea2);
@@ -232,7 +251,8 @@ Screen4ViewBase::Screen4ViewBase() :
     add(textArea16);
     add(textArea17);
     add(textArea17_1);
-    add(buttonWithIcon1);
+    add(flexButton10);
+    add(scalableImage2);
 }
 
 void Screen4ViewBase::setupScreen()
@@ -240,17 +260,118 @@ void Screen4ViewBase::setupScreen()
 
 }
 
-void Screen4ViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
+void Screen4ViewBase::flexButtonCallbackHandler(const touchgfx::AbstractButtonContainer& src)
 {
-    if (&src == &buttonWithIcon1)
+    if (&src == &flexButton1)
+    {
+        //clicked_one
+        //When flexButton1 clicked call virtual function
+        //Call clicked_one
+        clicked_one();
+    }
+    else if (&src == &flexButton2)
+    {
+        //clicked_two
+        //When flexButton2 clicked call virtual function
+        //Call clicked_two
+        clicked_two();
+    }
+    else if (&src == &flexButton3)
+    {
+        //clicked_three
+        //When flexButton3 clicked call virtual function
+        //Call clicked_three
+        clicked_three();
+    }
+    else if (&src == &flexButton4)
+    {
+        //clicked_four
+        //When flexButton4 clicked call virtual function
+        //Call clicked_four
+        clicked_four();
+    }
+    else if (&src == &flexButton5)
+    {
+        //clicked_five
+        //When flexButton5 clicked call virtual function
+        //Call clicked_five
+        clicked_five();
+    }
+    else if (&src == &flexButton6)
+    {
+        //clicked_six
+        //When flexButton6 clicked call virtual function
+        //Call clicked_six
+        clicked_six();
+    }
+    else if (&src == &flexButton7)
+    {
+        //slicked_seven
+        //When flexButton7 clicked call virtual function
+        //Call clicked_seven
+        clicked_seven();
+    }
+    else if (&src == &flexButton8)
+    {
+        //clicked_eight
+        //When flexButton8 clicked call virtual function
+        //Call clicked_eight
+        clicked_eight();
+    }
+    else if (&src == &flexButton9)
+    {
+        //clicked_nine
+        //When flexButton9 clicked call virtual function
+        //Call clicked_nine
+        clicked_nine();
+    }
+    else if (&src == &flexButton_add)
+    {
+        //clicked_add
+        //When flexButton_add clicked call virtual function
+        //Call clicked_add
+        clicked_add();
+    }
+    else if (&src == &flexButton_mul)
+    {
+        //clicked_mul
+        //When flexButton_mul clicked call virtual function
+        //Call clicked_mul
+        clicked_mul();
+    }
+    else if (&src == &flexButton0)
+    {
+        //clicked_zero
+        //When flexButton0 clicked call virtual function
+        //Call clicked_zero
+        clicked_zero();
+    }
+    else if (&src == &flexButton_eq)
+    {
+        //clicked_eq
+        //When flexButton_eq clicked call virtual function
+        //Call clicked_eq
+        clicked_eq();
+    }
+    else if (&src == &flexButton_sub)
+    {
+        //clicked_sub
+        //When flexButton_sub clicked call virtual function
+        //Call clicked_sub
+        clicked_sub();
+    }
+    else if (&src == &flexButton_div)
+    {
+        //clicked_div
+        //When flexButton_div clicked call virtual function
+        //Call clicked_div
+        clicked_div();
+    }
+    else if (&src == &flexButton10)
     {
         //ChangeScreen6
-        //When buttonWithIcon1 clicked change screen to Screen3
+        //When flexButton10 clicked change screen to Screen3
         //Go to Screen3 with no screen transition
         application().gotoScreen3ScreenNoTransition();
     }
-}
-
-void Screen4ViewBase::flexButtonCallbackHandler(const touchgfx::AbstractButtonContainer& src)
-{
 }

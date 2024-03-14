@@ -1080,7 +1080,7 @@
                 }
               }
             ],
-            "Name": "flexButton2_1",
+            "Name": "flexButton_add",
             "X": 140,
             "Y": 174,
             "Width": 50,
@@ -1129,7 +1129,7 @@
                 }
               }
             ],
-            "Name": "flexButton3_1",
+            "Name": "flexButton_mul",
             "X": 185,
             "Y": 174,
             "Width": 50,
@@ -1178,7 +1178,7 @@
                 }
               }
             ],
-            "Name": "flexButton5_1",
+            "Name": "flexButton0",
             "X": 140,
             "Y": 218,
             "Width": 50,
@@ -1227,7 +1227,7 @@
                 }
               }
             ],
-            "Name": "flexButton6_1",
+            "Name": "flexButton_eq",
             "X": 185,
             "Y": 218,
             "Width": 50,
@@ -1276,7 +1276,7 @@
                 }
               }
             ],
-            "Name": "flexButton8_1",
+            "Name": "flexButton_sub",
             "X": 140,
             "Y": 264,
             "Width": 50,
@@ -1325,7 +1325,7 @@
                 }
               }
             ],
-            "Name": "flexButton9_1",
+            "Name": "flexButton_div",
             "X": 185,
             "Y": 264,
             "Width": 50,
@@ -1797,22 +1797,64 @@
             "Moveable": false
           },
           {
-            "Type": "ButtonWithIcon",
-            "Pressed": "__designer\\Blue_Buttons_Round_Edge_small_pressed.png",
-            "Released": "__designer\\Blue_Buttons_Round_Edge_small.png",
+            "Type": "FlexButton",
             "Alpha": 255,
-            "IconPressed": "__designer\\Blue_Icons_Add_new_32.png",
-            "IconReleased": "__designer\\Blue_Icons_Go_back_32.png",
-            "IconX": 70,
-            "IconY": 16,
-            "IconHeight": 28,
-            "IconWidth": 30,
-            "ButtonStyle": "Style4",
-            "Name": "buttonWithIcon1",
-            "X": 35,
-            "Y": 0,
-            "Width": 170,
-            "Height": 60,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "X": 0,
+                "Y": 0,
+                "Width": 227,
+                "Height": 54,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Red": 0,
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Red": 0,
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Red": 0,
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ],
+            "Name": "flexButton10",
+            "X": 7,
+            "Y": 6,
+            "Width": 227,
+            "Height": 54,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "ScalableImage",
+            "Filename": "__designer\\Dark_Icons_Go_back_32.png",
+            "Alpha": 255,
+            "ScalingAlgorithm": "Nearest-neighbor",
+            "Name": "scalableImage2",
+            "X": 88,
+            "Y": 13,
+            "Width": 57,
+            "Height": 40,
             "Visible": true,
             "LockPosition": false,
             "Draggable": false,
@@ -1827,12 +1869,192 @@
             "HasCompletedTrigger": false,
             "Trigger": {
               "Type": "TriggerClicked",
-              "TriggerComponent": "buttonWithIcon1"
+              "TriggerComponent": "flexButton10"
             },
             "Action": {
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionNone",
               "ActionComponent": "Screen3"
+            }
+          },
+          {
+            "InteractionName": "clicked_one",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "flexButton1"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "clicked_one"
+            }
+          },
+          {
+            "InteractionName": "clicked_two",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "flexButton2"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "clicked_two"
+            }
+          },
+          {
+            "InteractionName": "clicked_three",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "flexButton3"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "clicked_three"
+            }
+          },
+          {
+            "InteractionName": "clicked_four",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "flexButton4"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "clicked_four"
+            }
+          },
+          {
+            "InteractionName": "clicked_five",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "flexButton5"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "clicked_five"
+            }
+          },
+          {
+            "InteractionName": "clicked_six",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "flexButton6"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "clicked_six"
+            }
+          },
+          {
+            "InteractionName": "slicked_seven",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "flexButton7"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "clicked_seven"
+            }
+          },
+          {
+            "InteractionName": "clicked_eight",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "flexButton8"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "clicked_eight"
+            }
+          },
+          {
+            "InteractionName": "clicked_nine",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "flexButton9"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "clicked_nine"
+            }
+          },
+          {
+            "InteractionName": "clicked_zero",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "flexButton0"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "clicked_zero"
+            }
+          },
+          {
+            "InteractionName": "clicked_add",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "flexButton_add"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "clicked_add"
+            }
+          },
+          {
+            "InteractionName": "clicked_mul",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "flexButton_mul"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "clicked_mul"
+            }
+          },
+          {
+            "InteractionName": "clicked_eq",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "flexButton_eq"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "clicked_eq"
+            }
+          },
+          {
+            "InteractionName": "clicked_div",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "flexButton_div"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "clicked_div"
+            }
+          },
+          {
+            "InteractionName": "clicked_sub",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "flexButton_sub"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "clicked_sub"
             }
           }
         ],
