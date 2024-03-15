@@ -281,24 +281,40 @@ void Screen4View::clicked_add()
 {
 	value = 1;
 	add_v = 1;
+	sign = '+';
+	Unicode::snprintf(sign_text_areaBuffer, SIGN_TEXT_AREA_SIZE, "%c", sign);
+	sign_text_area.invalidate();
 }
 
 void Screen4View::clicked_sub()
 {
 	value = 1;
 	sub = 1;
+
+	sign = '-';
+	Unicode::snprintf(sign_text_areaBuffer, SIGN_TEXT_AREA_SIZE, "%c", sign);
+	sign_text_area.invalidate();
 }
 
 void Screen4View::clicked_div()
 {
 	value = 1;
 	div = 1;
+
+	sign = ':';
+	Unicode::snprintf(sign_text_areaBuffer, SIGN_TEXT_AREA_SIZE, "%c", sign);
+	sign_text_area.invalidate();
 }
 
 void Screen4View::clicked_mul()
 {
 	value = 1;
 	mul = 1;
+
+	sign = 'x';
+	Unicode::snprintf(sign_text_areaBuffer, SIGN_TEXT_AREA_SIZE, "%c", sign);
+	sign_text_area.invalidate();
+
 }
 
 void Screen4View::clicked_eq()
@@ -339,11 +355,14 @@ void Screen4View::clicked_clear()
 	value1 = 0;
 	value2 = 0;
 	result = 0;
+	sign = ' ';
 	memset(text_buffer1, 0, sizeof(text_buffer1));
 	memset(text_buffer2, 0, sizeof(text_buffer2));
 	Unicode::snprintf(calculation_text_areaBuffer, CALCULATION_TEXT_AREA_SIZE, "%d", value1);
     Unicode::snprintf(calculation_text_area_2Buffer, CALCULATION_TEXT_AREA_2_SIZE, "%d", value2);
 	Unicode::snprintf(result_text_areaBuffer, RESULT_TEXT_AREA_SIZE, "%d",result);
+	Unicode::snprintf(sign_text_areaBuffer, SIGN_TEXT_AREA_SIZE, "%c", sign);
+	sign_text_area.invalidate();
 	calculation_text_area.invalidate();
 	calculation_text_area_2.invalidate();
 	result_text_area.invalidate();

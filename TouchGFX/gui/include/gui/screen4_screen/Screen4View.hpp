@@ -47,6 +47,7 @@ protected:
     bool sub = 0;
     bool div = 0;
     bool mul = 0;
+    char sign = ' ';
 
 };
 

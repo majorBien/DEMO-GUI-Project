@@ -110,7 +110,7 @@ Screen4ViewBase::Screen4ViewBase() :
     scalableImage1.setPosition(7, 60, 227, 114);
     scalableImage1.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
 
-    calculation_text_area.setPosition(18, 71, 102, 31);
+    calculation_text_area.setPosition(11, 71, 102, 31);
     calculation_text_area.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     calculation_text_area.setLinespacing(0);
     Unicode::snprintf(calculation_text_areaBuffer, CALCULATION_TEXT_AREA_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID8).getText());
@@ -231,6 +231,13 @@ Screen4ViewBase::Screen4ViewBase() :
     calculation_text_area_2.setWildcard(calculation_text_area_2Buffer);
     calculation_text_area_2.setTypedText(touchgfx::TypedText(T_SINGLEUSEID27));
 
+    sign_text_area.setPosition(111, 78, 32, 24);
+    sign_text_area.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    sign_text_area.setLinespacing(0);
+    Unicode::snprintf(sign_text_areaBuffer, SIGN_TEXT_AREA_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID30).getText());
+    sign_text_area.setWildcard(sign_text_areaBuffer);
+    sign_text_area.setTypedText(touchgfx::TypedText(T_SINGLEUSEID29));
+
     add(__background);
     add(image1);
     add(flexButton1);
@@ -272,6 +279,7 @@ Screen4ViewBase::Screen4ViewBase() :
     add(flexButtonClear);
     add(scalableImage3);
     add(calculation_text_area_2);
+    add(sign_text_area);
 }
 
 void Screen4ViewBase::setupScreen()

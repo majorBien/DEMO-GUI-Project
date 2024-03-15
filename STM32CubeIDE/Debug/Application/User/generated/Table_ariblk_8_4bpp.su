@@ -1,0 +1,2 @@
+Table_ariblk_8_4bpp.cpp:116:152:void __tcf_0()	0	static
+Table_ariblk_8_4bpp.cpp:114:26:touchgfx::GeneratedFont& getFont_ariblk_8_4bpp()	64	static

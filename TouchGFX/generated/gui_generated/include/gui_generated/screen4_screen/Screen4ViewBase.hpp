@@ -153,6 +153,7 @@ protected:
     touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger > flexButtonClear;
     touchgfx::ScalableImage scalableImage3;
     touchgfx::TextAreaWithOneWildcard calculation_text_area_2;
+    touchgfx::TextAreaWithOneWildcard sign_text_area;
 
     /*
      * Wildcard Buffers
@@ -163,6 +164,8 @@ protected:
     touchgfx::Unicode::UnicodeChar result_text_areaBuffer[RESULT_TEXT_AREA_SIZE];
     static const uint16_t CALCULATION_TEXT_AREA_2_SIZE = 10;
     touchgfx::Unicode::UnicodeChar calculation_text_area_2Buffer[CALCULATION_TEXT_AREA_2_SIZE];
+    static const uint16_t SIGN_TEXT_AREA_SIZE = 5;
+    touchgfx::Unicode::UnicodeChar sign_text_areaBuffer[SIGN_TEXT_AREA_SIZE];
 
 private:
 

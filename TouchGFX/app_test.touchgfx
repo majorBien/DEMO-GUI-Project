@@ -1372,7 +1372,7 @@
               "BufferSize": 10
             },
             "Name": "calculation_text_area",
-            "X": 18,
+            "X": 11,
             "Y": 71,
             "Width": 102,
             "Height": 31,
@@ -1956,6 +1956,35 @@
             "Clickable": false,
             "Fadeable": false,
             "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "SingleUseId29",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "AutoSize": false,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId30",
+              "UseBuffer": true,
+              "BufferSize": 5
+            },
+            "Name": "sign_text_area",
+            "X": 111,
+            "Y": 78,
+            "Width": 32,
+            "Height": 24,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
           }
         ],
         "Interactions": [
@@ -2292,6 +2321,14 @@
       },
       {
         "TextEntryId": "SingleUseId28",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId29",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId30",
         "IsResource": false
       }
     ],
